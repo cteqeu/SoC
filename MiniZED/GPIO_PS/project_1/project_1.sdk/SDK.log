@@ -1,0 +1,26 @@
+13:21:54 INFO  : Registering command handlers for SDK TCF services
+13:21:56 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA\ZYNQ_PS1\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+13:22:01 INFO  : XSCT server has started successfully.
+13:22:03 INFO  : Successfully done setting XSCT server connection channel  
+13:22:03 INFO  : Processing command line option -hwspec C:/FPGA/ZYNQ_PS1/project_1/project_1.sdk/design_1_wrapper.hdf.
+13:22:03 INFO  : Successfully done setting SDK workspace  
+13:28:48 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA\ZYNQ_PS1\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+13:28:54 INFO  : XSCT server has started successfully.
+13:28:54 INFO  : Successfully done setting XSCT server connection channel  
+13:29:01 INFO  : Successfully done setting SDK workspace  
+13:29:03 INFO  : Registering command handlers for SDK TCF services
+13:29:06 INFO  : Processing command line option -hwspec C:/FPGA/ZYNQ_PS1/project_1/project_1.sdk/design_1_wrapper.hdf.
+13:29:06 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:05:44 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA\ZYNQ_PS1\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+13:05:49 INFO  : XSCT server has started successfully.
+13:05:49 INFO  : Successfully done setting XSCT server connection channel  
+13:05:50 INFO  : Successfully done setting SDK workspace  
+13:05:57 INFO  : Registering command handlers for SDK TCF services
+14:10:31 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA\ZYNQ_PS1\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+14:10:36 INFO  : XSCT server has started successfully.
+14:10:36 INFO  : Successfully done setting XSCT server connection channel  
+14:10:41 INFO  : Successfully done setting SDK workspace  
+14:10:44 INFO  : Registering command handlers for SDK TCF services
+14:10:47 INFO  : Processing command line option -hwspec C:/FPGA/ZYNQ_PS1/project_1/project_1.sdk/design_1_wrapper.hdf.
+14:10:47 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:17:27 INFO  : Inferring section assignments and sizes from elf file: C:\FPGA\ZYNQ_PS1\project_1\project_1.sdk\ZYNQ_PS1\Debug\ZYNQ_PS1.elf

@@ -1,0 +1,6 @@
+14:51:51 INFO  : Registering command handlers for SDK TCF services
+14:51:52 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA\HelloWorldPS\HelloWorldPS.sdk\temp_xsdb_launch_script.tcl
+14:51:58 INFO  : XSCT server has started successfully.
+14:51:59 INFO  : Successfully done setting XSCT server connection channel  
+14:51:59 INFO  : Processing command line option -hwspec C:/FPGA/HelloWorldPS/HelloWorldPS.sdk/design_1_wrapper.hdf.
+14:51:59 INFO  : Successfully done setting SDK workspace  
