@@ -1,0 +1,8 @@
+17:23:59 **** Incremental Build of configuration Debug for project GPIO_PMOD_7S ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Er is niets te doen voor 'main-build'.
+
+17:24:01 Build Finished (took 1s.485ms)
+

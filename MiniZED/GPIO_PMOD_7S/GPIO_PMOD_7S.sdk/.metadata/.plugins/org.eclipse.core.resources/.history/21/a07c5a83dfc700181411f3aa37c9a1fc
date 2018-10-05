@@ -1,0 +1,35 @@
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+#define GPIO_7SEGMENT_DEVICE_ID XPAR_GPIO_0_DEVICE_ID
+#define SEGMENT_CHANNEL 1
+
+#define SEGMENT7 0b01111111;
+
+XGpio Gpio;
+
+
+int main()
+{
+	int Status;
+
+	init_platform();
+
+	/* Initialize the GPIO driver */
+	Status = XGpio_Initialize(&Gpio, GPIO_7SEGMENT_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	XGpio_SetDataDirection(&Gpio, SEGMENT_CHANNEL, ~SEGMENT7);
+
+
+    cleanup_platform();
+    return 0;
+}

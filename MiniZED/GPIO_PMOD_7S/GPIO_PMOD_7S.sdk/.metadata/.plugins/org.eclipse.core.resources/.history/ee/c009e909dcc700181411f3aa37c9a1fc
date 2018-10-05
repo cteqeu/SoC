@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+#define GPIO_7SEGMENT_DEVICE_ID XPAR_GPIO_0_DEVICE_ID
+
+#define SEGMENT_CHANNEL 1
+
+XGpio Gpio;
+
+
+int main()
+{
+    init_platform();
+
+
+
+
+    cleanup_platform();
+    return 0;
+}

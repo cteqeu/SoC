@@ -1,0 +1,567 @@
+15:34:36 INFO  : Registering command handlers for SDK TCF services
+15:34:38 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\temp_xsdb_launch_script.tcl
+15:34:44 INFO  : XSCT server has started successfully.
+15:34:44 INFO  : Successfully done setting XSCT server connection channel  
+15:34:45 INFO  : Successfully done setting SDK workspace  
+15:34:45 INFO  : Processing command line option -hwspec C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper.hdf.
+15:41:58 INFO  : Refreshed build settings on project GPIO_PMOD_7S
+16:15:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:15:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:15:18 INFO  : FPGA configured successfully with bitstream "C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:15:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:15:48 INFO  : 'fpga -state' command is executed.
+16:15:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:15:49 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:15:49 INFO  : 'jtag frequency' command is executed.
+16:15:49 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:15:49 INFO  : Context for 'APU' is selected.
+16:15:49 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:15:49 INFO  : 'configparams force-mem-access 1' command is executed.
+16:15:49 INFO  : Context for 'APU' is selected.
+16:15:49 INFO  : 'stop' command is executed.
+16:15:49 INFO  : 'ps7_init' command is executed.
+16:15:49 INFO  : 'ps7_post_config' command is executed.
+16:15:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:15:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:15:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:15:50 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:15:50 INFO  : 'configparams force-mem-access 0' command is executed.
+16:15:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:15:50 INFO  : Memory regions updated for context APU
+16:15:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:15:50 INFO  : 'con' command is executed.
+16:15:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+16:15:50 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+16:16:39 INFO  : Disconnected from the channel tcfchan#1.
+16:16:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:16:40 INFO  : 'fpga -state' command is executed.
+16:16:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:40 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:16:40 INFO  : 'jtag frequency' command is executed.
+16:16:40 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:16:40 INFO  : Context for 'APU' is selected.
+16:16:43 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:16:43 INFO  : 'configparams force-mem-access 1' command is executed.
+16:16:43 INFO  : Context for 'APU' is selected.
+16:16:43 INFO  : 'stop' command is executed.
+16:16:43 INFO  : 'ps7_init' command is executed.
+16:16:43 INFO  : 'ps7_post_config' command is executed.
+16:16:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:16:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:44 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:16:44 INFO  : 'configparams force-mem-access 0' command is executed.
+16:16:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:16:44 INFO  : Memory regions updated for context APU
+16:16:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:44 INFO  : 'con' command is executed.
+16:16:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+16:16:44 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+16:27:32 INFO  : Disconnected from the channel tcfchan#2.
+16:40:58 INFO  : Registering command handlers for SDK TCF services
+16:41:01 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\temp_xsdb_launch_script.tcl
+16:41:07 INFO  : XSCT server has started successfully.
+16:41:07 INFO  : Successfully done setting XSCT server connection channel  
+16:41:09 INFO  : Processing command line option -hwspec C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper.hdf.
+16:41:09 INFO  : Successfully done setting SDK workspace  
+16:41:09 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:41:14 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1538664001378,  Project:1538659967685
+16:41:14 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper.hdf.
+16:41:14 INFO  : Copied contents of C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+16:41:18 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:41:23 INFO  : 
+16:41:24 INFO  : Updating hardware inferred compiler options for GPIO_PMOD_7S.
+16:41:24 INFO  : Clearing existing target manager status.
+16:44:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:44:36 INFO  : FPGA configured successfully with bitstream "C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:44:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:44:58 INFO  : 'fpga -state' command is executed.
+16:44:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:58 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:44:58 INFO  : 'jtag frequency' command is executed.
+16:44:58 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:44:58 INFO  : Context for 'APU' is selected.
+16:44:58 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:44:58 INFO  : 'configparams force-mem-access 1' command is executed.
+16:44:58 INFO  : Context for 'APU' is selected.
+16:44:58 INFO  : 'stop' command is executed.
+16:44:59 INFO  : 'ps7_init' command is executed.
+16:44:59 INFO  : 'ps7_post_config' command is executed.
+16:44:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:44:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:44:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:44:59 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:44:59 INFO  : 'configparams force-mem-access 0' command is executed.
+16:44:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:44:59 INFO  : Memory regions updated for context APU
+16:45:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:45:00 INFO  : 'con' command is executed.
+16:45:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+16:45:00 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+16:49:01 INFO  : Disconnected from the channel tcfchan#1.
+16:49:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:49:02 INFO  : 'fpga -state' command is executed.
+16:49:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:03 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:49:03 INFO  : 'jtag frequency' command is executed.
+16:49:03 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:49:03 INFO  : Context for 'APU' is selected.
+16:49:05 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:49:05 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:05 INFO  : Context for 'APU' is selected.
+16:49:05 INFO  : 'stop' command is executed.
+16:49:06 INFO  : 'ps7_init' command is executed.
+16:49:06 INFO  : 'ps7_post_config' command is executed.
+16:49:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:49:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:06 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:06 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:06 INFO  : Memory regions updated for context APU
+16:49:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:06 INFO  : 'con' command is executed.
+16:49:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+16:49:06 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+16:49:56 INFO  : Disconnected from the channel tcfchan#2.
+16:49:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:49:57 INFO  : 'fpga -state' command is executed.
+16:49:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:57 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:49:57 INFO  : 'jtag frequency' command is executed.
+16:49:57 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:49:57 INFO  : Context for 'APU' is selected.
+16:49:57 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:49:57 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:57 INFO  : Context for 'APU' is selected.
+16:49:57 INFO  : 'stop' command is executed.
+16:49:58 INFO  : 'ps7_init' command is executed.
+16:49:58 INFO  : 'ps7_post_config' command is executed.
+16:49:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:49:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:58 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:58 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:58 INFO  : Memory regions updated for context APU
+16:49:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:59 INFO  : 'con' command is executed.
+16:49:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+16:49:59 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+16:53:13 INFO  : Disconnected from the channel tcfchan#3.
+16:53:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:53:14 INFO  : 'fpga -state' command is executed.
+16:53:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:14 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:53:14 INFO  : 'jtag frequency' command is executed.
+16:53:14 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:53:14 INFO  : Context for 'APU' is selected.
+16:53:14 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:53:14 INFO  : 'configparams force-mem-access 1' command is executed.
+16:53:14 INFO  : Context for 'APU' is selected.
+16:53:14 INFO  : 'stop' command is executed.
+16:53:15 INFO  : 'ps7_init' command is executed.
+16:53:15 INFO  : 'ps7_post_config' command is executed.
+16:53:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:53:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:15 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:53:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:53:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:53:15 INFO  : Memory regions updated for context APU
+16:53:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:15 INFO  : 'con' command is executed.
+16:53:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+16:53:15 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+17:15:34 INFO  : Disconnected from the channel tcfchan#4.
+17:15:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:15:35 INFO  : 'fpga -state' command is executed.
+17:15:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:35 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:15:35 INFO  : 'jtag frequency' command is executed.
+17:15:35 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:15:35 INFO  : Context for 'APU' is selected.
+17:15:35 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:15:35 INFO  : 'configparams force-mem-access 1' command is executed.
+17:15:35 INFO  : Context for 'APU' is selected.
+17:15:35 INFO  : 'stop' command is executed.
+17:15:36 INFO  : 'ps7_init' command is executed.
+17:15:36 INFO  : 'ps7_post_config' command is executed.
+17:15:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:15:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:15:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:15:36 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:15:36 INFO  : 'configparams force-mem-access 0' command is executed.
+17:15:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:15:36 INFO  : Memory regions updated for context APU
+17:15:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:15:36 INFO  : 'con' command is executed.
+17:15:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+17:15:36 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+17:16:58 INFO  : Disconnected from the channel tcfchan#5.
+17:16:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:16:59 INFO  : 'fpga -state' command is executed.
+17:16:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:59 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:16:59 INFO  : 'jtag frequency' command is executed.
+17:16:59 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:16:59 INFO  : Context for 'APU' is selected.
+17:16:59 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:16:59 INFO  : 'configparams force-mem-access 1' command is executed.
+17:16:59 INFO  : Context for 'APU' is selected.
+17:16:59 INFO  : 'stop' command is executed.
+17:17:00 INFO  : 'ps7_init' command is executed.
+17:17:00 INFO  : 'ps7_post_config' command is executed.
+17:17:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:17:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:17:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:17:00 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:17:00 INFO  : 'configparams force-mem-access 0' command is executed.
+17:17:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:17:00 INFO  : Memory regions updated for context APU
+17:17:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:17:00 INFO  : 'con' command is executed.
+17:17:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+17:17:00 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+17:18:24 INFO  : Disconnected from the channel tcfchan#6.
+17:18:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:18:25 INFO  : 'fpga -state' command is executed.
+17:18:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:25 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:18:25 INFO  : 'jtag frequency' command is executed.
+17:18:25 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:18:25 INFO  : Context for 'APU' is selected.
+17:18:25 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:18:25 INFO  : 'configparams force-mem-access 1' command is executed.
+17:18:25 INFO  : Context for 'APU' is selected.
+17:18:25 INFO  : 'stop' command is executed.
+17:18:26 INFO  : 'ps7_init' command is executed.
+17:18:26 INFO  : 'ps7_post_config' command is executed.
+17:18:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:18:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:18:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:18:26 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:18:26 INFO  : 'configparams force-mem-access 0' command is executed.
+17:18:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:18:26 INFO  : Memory regions updated for context APU
+17:18:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:18:27 INFO  : 'con' command is executed.
+17:18:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+17:18:27 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+17:19:50 INFO  : Disconnected from the channel tcfchan#7.
+17:19:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:19:51 INFO  : 'fpga -state' command is executed.
+17:19:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:19:52 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:19:52 INFO  : 'jtag frequency' command is executed.
+17:19:52 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:19:52 INFO  : Context for 'APU' is selected.
+17:19:52 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:19:52 INFO  : 'configparams force-mem-access 1' command is executed.
+17:19:52 INFO  : Context for 'APU' is selected.
+17:19:52 INFO  : 'stop' command is executed.
+17:19:52 INFO  : 'ps7_init' command is executed.
+17:19:52 INFO  : 'ps7_post_config' command is executed.
+17:19:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:19:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:19:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:19:52 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:19:52 INFO  : 'configparams force-mem-access 0' command is executed.
+17:19:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:19:53 INFO  : Memory regions updated for context APU
+17:19:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:19:53 INFO  : 'con' command is executed.
+17:19:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+17:19:53 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+17:21:46 INFO  : Disconnected from the channel tcfchan#8.
+17:21:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:21:47 INFO  : 'fpga -state' command is executed.
+17:21:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:21:47 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:21:47 INFO  : 'jtag frequency' command is executed.
+17:21:47 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:21:47 INFO  : Context for 'APU' is selected.
+17:21:47 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:21:47 INFO  : 'configparams force-mem-access 1' command is executed.
+17:21:47 INFO  : Context for 'APU' is selected.
+17:21:47 INFO  : 'stop' command is executed.
+17:21:48 INFO  : 'ps7_init' command is executed.
+17:21:48 INFO  : 'ps7_post_config' command is executed.
+17:21:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:21:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:21:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:21:48 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:21:48 INFO  : 'configparams force-mem-access 0' command is executed.
+17:21:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:21:48 INFO  : Memory regions updated for context APU
+17:21:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:21:48 INFO  : 'con' command is executed.
+17:21:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+17:21:48 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+17:24:04 INFO  : Disconnected from the channel tcfchan#9.
+17:24:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:24:05 INFO  : 'fpga -state' command is executed.
+17:24:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:24:06 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:24:06 INFO  : 'jtag frequency' command is executed.
+17:24:06 INFO  : Sourcing of 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:24:06 INFO  : Context for 'APU' is selected.
+17:24:06 INFO  : Hardware design information is loaded from 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:24:06 INFO  : 'configparams force-mem-access 1' command is executed.
+17:24:06 INFO  : Context for 'APU' is selected.
+17:24:06 INFO  : 'stop' command is executed.
+17:24:06 INFO  : 'ps7_init' command is executed.
+17:24:06 INFO  : 'ps7_post_config' command is executed.
+17:24:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:24:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:07 INFO  : The application 'C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:24:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:24:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+loadhw -hw C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+dow C:/FPGA/GPIO_PMOD_7S/GPIO_PMOD_7S.sdk/GPIO_PMOD_7S/Debug/GPIO_PMOD_7S.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:24:07 INFO  : Memory regions updated for context APU
+17:24:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:07 INFO  : 'con' command is executed.
+17:24:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A"} -index 0
+con
+----------------End of Script----------------
+
+17:24:07 INFO  : Launch script is exported to file 'C:\FPGA\GPIO_PMOD_7S\GPIO_PMOD_7S.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_pmod_7s.elf_on_local.tcl'
+17:25:10 INFO  : Disconnected from the channel tcfchan#10.

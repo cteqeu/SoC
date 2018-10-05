@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+#define GPIO_7SEGMENT_DEVICE_ID XPAR_GPIO_0_DEVICE_ID
+#define SEGMENT_CHANNEL 1
+
+#define SEGMENT7 0b11111111
+
+XGpio Gpio;
+
+void testfunction(XGpio *gpio);
+
+int main()
+{
+	int Status;
+	int value=0b00000001;
+	init_platform();
+
+	Status = XGpio_Initialize(&Gpio, GPIO_7SEGMENT_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	XGpio_SetDataDirection(&Gpio, SEGMENT_CHANNEL, ~SEGMENT7);
+	while(1){
+		testfunction(&Gpio);
+	}
+
+    cleanup_platform();
+    return 0;
+}
+
+
+void testfunction(*XGpio gpio)
+{
+	value=0b00000001;
+	for(int i=0;i<9;i++)
+	{
+	XGpio_DiscreteWrite(&Gpio,SEGMENT_CHANNEL,value);
+	value=value<<1;
+	sleep_A9(1);
+	}
+}
