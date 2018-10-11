@@ -1,0 +1,8 @@
+10:34:27 **** Incremental Build of configuration Debug for project Dobbelsteen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Er is niets te doen voor 'main-build'.
+
+10:34:29 Build Finished (took 1s.608ms)
+

@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER dobbelsteen
+	OPTION supported_peripherals = (dobbelsteen);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = dobbelsteen;
+END DRIVER
