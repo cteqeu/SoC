@@ -1,0 +1,70 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
+| Date         : Tue Nov 28 21:08:11 2017
+| Host         : 5CG64360W4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z007s
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    19 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              13 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             115 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+---------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |                   Enable Signal                   |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-------------------------------------------------+---------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/WS2812_0/U0/delay_high_cntr[5]_i_1_n_0 |                                                    |                2 |              4 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 |                                                   |                                                    |                3 |              5 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/WS2812_0/U0/delay_low_cntr[11]_i_1_n_0 |                                                    |                3 |              9 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/WS2812_0/U0/delay_low_cntr[11]_i_1_n_0 | design_1_i/WS2812_0/U0/delay_low_cntr[31]_i_1_n_0  |                7 |             23 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/WS2812_0/U0/delay_high_cntr[5]_i_1_n_0 | design_1_i/WS2812_0/U0/delay_high_cntr[31]_i_1_n_0 |                8 |             28 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/WS2812_0/U0/index[31]_i_2_n_0          | design_1_i/WS2812_0/U0/index[31]_i_1_n_0           |                9 |             32 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/WS2812_0/U0/bit_cntr[31]_i_2_n_0       | design_1_i/WS2812_0/U0/bit_cntr[31]_i_1_n_0        |                9 |             32 |
++-------------------------------------------------+---------------------------------------------------+----------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     1 |
+| 5      |                     1 |
+| 9      |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+
