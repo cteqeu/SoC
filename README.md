@@ -13,3 +13,4 @@ Xilinx Vivado 2018.2
 - Dobbelsteen_1.0_axi_ip  => Example Custom AXI IP Block
 - Dobbelsteen_ip_app      => Example project integrating the custom Dice AXI IP Block [Dobbelsteen_1.0_axi_ip]
 - ZYNQ_PS_INPUT           => Reading values from the Serial Terminal as input [ZYBO BOARD EXAMPLE]
+- ZYNQ BRAM				  => Example Project for Implementing AXI BRAM Controller in Xiling ZYNQ FPGA
