@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:heap=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:stack=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.AXI_BRAM\:stack-size=1024
+eclipse.preferences.version=1

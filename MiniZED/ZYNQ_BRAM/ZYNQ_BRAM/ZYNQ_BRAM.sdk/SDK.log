@@ -1,0 +1,23 @@
+10:44:35 INFO  : Registering command handlers for SDK TCF services
+10:44:37 INFO  : Launching XSCT server: xsct.bat -interactive D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\temp_xsdb_launch_script.tcl
+10:44:42 INFO  : XSCT server has started successfully.
+10:44:44 INFO  : Successfully done setting XSCT server connection channel  
+10:44:44 INFO  : Successfully done setting SDK workspace  
+10:44:44 INFO  : Processing command line option -hwspec D:/FPGA/ZYNQ_BRAM/ZYNQ_BRAM.sdk/design_1_wrapper.hdf.
+11:00:15 INFO  : Inferring section assignments and sizes from elf file: D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\Debug\AXI_BRAM.elf
+11:02:48 INFO  : Inferring section assignments and sizes from elf file: D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\Debug\AXI_BRAM.elf
+11:13:04 INFO  : Successfully generated D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\src\lscript.ld.
+11:13:04 INFO  : Applying linker script to all configurations of project AXI_BRAM.
+11:13:04 INFO  : Setting rebuild state to true for all configurations of project AXI_BRAM.
+11:18:42 INFO  : Inferring section assignments and sizes from elf file: D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\Debug\AXI_BRAM.elf
+11:19:11 INFO  : Successfully generated D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\src\lscript.ld.
+11:19:11 INFO  : Applying linker script to all configurations of project AXI_BRAM.
+11:19:11 INFO  : Setting rebuild state to true for all configurations of project AXI_BRAM.
+11:20:40 INFO  : Inferring section assignments and sizes from elf file: D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\Debug\AXI_BRAM.elf
+11:20:51 INFO  : Successfully generated D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\src\lscript.ld.
+11:20:51 INFO  : Applying linker script to all configurations of project AXI_BRAM.
+11:20:51 INFO  : Setting rebuild state to true for all configurations of project AXI_BRAM.
+11:22:43 INFO  : Successfully generated D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\src\lscript.ld.
+11:22:43 INFO  : Applying linker script to all configurations of project AXI_BRAM.
+11:22:43 INFO  : Setting rebuild state to true for all configurations of project AXI_BRAM.
+11:25:12 INFO  : Inferring section assignments and sizes from elf file: D:\FPGA\ZYNQ_BRAM\ZYNQ_BRAM.sdk\AXI_BRAM\Debug\AXI_BRAM.elf
