@@ -1,0 +1,21 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace inst vio_0 -pg 1 -lvl 3 -y 80 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 2 -y 70 -defaultsOSRD
+preplace inst MATH_UNIT_0 -pg 1 -lvl 4 -y 80 -defaultsOSRD
+preplace inst vhdlnoclk_0 -pg 1 -lvl 1 -y 70 -defaultsOSRD
+preplace netloc MATH_UNIT_0_resultaat 1 2 3 400 160 NJ 160 970
+preplace netloc vhdlnoclk_0_clk65MHz 1 1 1 NJ
+preplace netloc vio_0_probe_out0 1 3 1 N
+preplace netloc vio_0_probe_out1 1 3 1 N
+preplace netloc vio_0_probe_out2 1 3 1 N
+preplace netloc clk_wiz_clk_out1 1 2 1 NJ
+levelinfo -pg 1 0 110 310 540 830 990 -top 0 -bot 170
+",
+}
+{
+   da_board_cnt: "2",
+   da_clkrst_cnt: "1",
+}
