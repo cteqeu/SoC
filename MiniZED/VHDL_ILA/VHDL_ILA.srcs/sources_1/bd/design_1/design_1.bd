@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x0" bd:device="xc7z007sclg225-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>MATH_UNIT_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="MATH_UNIT" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_MATH_UNIT_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">MATH_UNIT</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ila_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="ila" spirit:vendor="xilinx.com" spirit:version="6.2"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ila_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE0_WIDTH">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUM_OF_PROBES">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ALL_PROBE_SAME_MU">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ENABLE_ILA_AXI_MON">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_MONITOR_TYPE">Native</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>vhdlnoclk_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="vhdlnoclk" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_vhdlnoclk_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">vhdlnoclk</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>vio_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="vio" spirit:vendor="xilinx.com" spirit:version="3.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_vio_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT2_WIDTH">3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT1_WIDTH">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT0_WIDTH">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUM_PROBE_OUT">3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_EN_PROBE_IN_ACTIVITY">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>MATH_UNIT_0_resultaat</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="MATH_UNIT_0" spirit:portRef="resultaat"/>
+        <spirit:internalPortReference spirit:componentRef="ila_0" spirit:portRef="probe0"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vhdlnoclk_0_clk65MHz</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vhdlnoclk_0" spirit:portRef="clk65MHz"/>
+        <spirit:internalPortReference spirit:componentRef="ila_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vio_0_probe_out2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_out2"/>
+        <spirit:internalPortReference spirit:componentRef="MATH_UNIT_0" spirit:portRef="bewerking"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vio_0_probe_out1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_out1"/>
+        <spirit:internalPortReference spirit:componentRef="MATH_UNIT_0" spirit:portRef="getal2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vio_0_probe_out0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_out0"/>
+        <spirit:internalPortReference spirit:componentRef="MATH_UNIT_0" spirit:portRef="getal1"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>
