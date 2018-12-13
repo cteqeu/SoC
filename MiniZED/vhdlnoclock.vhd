@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: Vincent Claes
+-- Engineer: Vincent Claes 
 -- 
 -- Create Date: 26.02.2018 12:53:50
 -- Design Name: 
@@ -28,8 +28,8 @@ use UNISIM.VComponents.all;
 
 entity vhdlnoclk is
   Port (
-    r_led : out std_logic;
-    g_led : out std_logic
+    clk65MHz : out std_logic
+    -- g_led : out std_logic
   );
 end vhdlnoclk;
 
@@ -69,20 +69,22 @@ begin
         );
 	
 	-- buf_i_clk has around 65MHz
+	clk65MHz <= buf_i_clk;  
 	
-	process(buf_i_clk)
-	begin
-	   if rising_edge(buf_i_clk) then
-	           if counter = "111111111111111111111111" then
-	               counter <=(others=>'0');
-	           elsif counter > "00001111111111111111111" then
-	               r_led_value <=  not r_led_value;
+	
+--	process(buf_i_clk)
+--	begin
+--	   if rising_edge(buf_i_clk) then
+--	           if counter = "111111111111111111111111" then
+--	               counter <=(others=>'0');
+--	           elsif counter > "00001111111111111111111" then
+--	               r_led_value <=  not r_led_value;
 	               
-	          end if;
-              counter <= std_logic_vector(unsigned(counter) + 1);
-	   end if;
-	end process;
+--	          end if;
+--              counter <= std_logic_vector(unsigned(counter) + 1);
+--	   end if;
+--	end process;
     
-    g_led <= std_logic(counter(25));
-    r_led <= r_led_value;
+--    g_led <= std_logic(counter(25));
+--    r_led <= r_led_value;
 end Behavioral;
