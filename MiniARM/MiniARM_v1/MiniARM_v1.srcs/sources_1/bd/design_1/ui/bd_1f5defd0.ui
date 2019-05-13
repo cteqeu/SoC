@@ -1,0 +1,11 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace inst CORTEXM3_AXI_0 -pg 1 -lvl 1 -y -30 -defaultsOSRD
+levelinfo -pg 1 0 230 610 800 -top -230 -bot 400
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

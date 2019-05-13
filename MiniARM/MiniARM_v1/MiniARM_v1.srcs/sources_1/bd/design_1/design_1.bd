@@ -1,0 +1,34 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z007sclg225-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "CORTEXM3_AXI_0": ""
+    },
+    "components": {
+      "CORTEXM3_AXI_0": {
+        "vlnv": "Arm.com:CortexM:CORTEXM3_AXI:1.0",
+        "xci_name": "design_1_CORTEXM3_AXI_0_0"
+      }
+    },
+    "addressing": {
+      "/CORTEXM3_AXI_0": {
+        "address_spaces": {
+          "CM3_SYS_AXI3": {
+            "range": "4G",
+            "width": "32"
+          },
+          "CM3_CODE_AXI3": {
+            "range": "4G",
+            "width": "32"
+          }
+        }
+      }
+    }
+  }
+}
