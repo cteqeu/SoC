@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root version="1.1">
+  <repository name="Keil">
+    <description>Keil CMSIS packs repository</description>
+    <properties>
+      <property name="type">cmsis.repo</property>
+      <property name="repo.url">http://www.keil.com/pack/index.idx</property>
+      <property name="generator">GNU ARM Eclipse Plug-ins</property>
+      <property name="date">20200210153842</property>
+    </properties>
+  </repository>
+</root>

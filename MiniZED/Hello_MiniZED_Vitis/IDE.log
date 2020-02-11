@@ -1,0 +1,15 @@
+16:01:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\temp_xsdb_launch_script.tcl
+16:01:39 INFO  : XSCT server has started successfully.
+16:01:39 INFO  : plnx-install-location is set to ''
+16:01:39 INFO  : Registering command handlers for Vitis TCF services
+16:01:41 INFO  : Successfully done setting XSCT server connection channel  
+16:01:41 INFO  : Successfully done query RDI_DATADIR 
+16:01:41 INFO  : Successfully done setting workspace for the tool. 
+16:11:59 INFO  : Checking for BSP changes to sync application flags for project 'Hello_MiniZED_Vitis'...
+16:12:00 INFO  : Successfully done sdx_reload_mss "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+16:12:00 INFO  : Successfully done sdx_reload_mss "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+11:23:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\temp_xsdb_launch_script.tcl
+11:24:04 INFO  : Registering command handlers for Vitis TCF services
+11:24:06 INFO  : XSCT server has started successfully.
+11:24:06 INFO  : Successfully done setting XSCT server connection channel  
+11:24:06 INFO  : plnx-install-location is set to ''

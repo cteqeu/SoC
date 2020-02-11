@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Hello_MiniZED_Vitis_CMSIS_system&apos;" deleteContents="true" description="Delete resource &apos;Hello_MiniZED_Vitis_CMSIS_system&apos;" element1="/Hello_MiniZED_Vitis_CMSIS_system" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1581349551686"/>
+</session>
