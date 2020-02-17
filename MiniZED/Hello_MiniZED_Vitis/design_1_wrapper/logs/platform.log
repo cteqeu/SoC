@@ -3064,3 +3064,1262 @@ C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fs
 
 TRACE::2020-02-10.16:12:00::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
 TRACE::2020-02-10.16:12:00::SCWMssOS::Removing the swdes entry for  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:16::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:16::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:16::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:29::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:29::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:29::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:29::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-02-11.11:24:38::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWReader::Active system found as  design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWDomain::checking for install qemu data   : 
+TRACE::2020-02-11.11:24:38::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-02-11.11:24:38::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:38::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:38::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:38::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-02-11.11:24:38::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:38::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:38::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:38::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2020-02-11.11:24:38::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:24:38::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:38::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:38::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:38::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:38::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:38::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:38::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:38::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2020-02-11.11:24:39::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-02-11.11:24:39::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-02-11.11:24:39::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:39::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:39::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:39::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:39::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWReader::No isolation master present  
+TRACE::2020-02-11.11:24:39::SCWDomain::checking for install qemu data   : 
+TRACE::2020-02-11.11:24:39::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-02-11.11:24:39::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-02-11.11:24:39::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:39::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:39::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:39::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:39::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:39::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:39::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:39::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:24:39::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:24:39::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-02-11.11:24:39::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-02-11.11:24:39::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:39::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:39::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:39::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:39::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:39::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:39::SCWReader::No isolation master present  
+TRACE::2020-02-11.11:24:46::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:46::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:46::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:46::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:46::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:46::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:46::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:46::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:46::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:46::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:24:46::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:46::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:46::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:46::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:46::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:46::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:46::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:46::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:46::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:46::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:47::SCWMssOS::In reload Mss file.
+TRACE::2020-02-11.11:24:47::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:47::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:47::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:47::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:47::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:47::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:47::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:47::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:47::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2020-02-11.11:24:47::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2020-02-11.11:24:47::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2020-02-11.11:24:47::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-02-11.11:24:47::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:47::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:47::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:47::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:24:47::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:24:47::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:47::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:47::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:47::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:47::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:47::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:47::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:47::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:47::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:47::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:47::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:48::SCWMssOS::Removing the swdes entry for  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:48::SCWMssOS::In reload Mss file.
+TRACE::2020-02-11.11:24:48::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:48::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:48::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:48::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:48::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:48::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:48::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:48::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:48::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:48::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:48::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:48::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:48::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:24:48::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:24:49::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:49::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:49::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:49::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:49::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:24:49::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:24:49::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:24:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:24:49::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:24:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:24:49::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:49::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:24:49::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:24:49::SCWMssOS::Removing the swdes entry for  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:35::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:35::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:35::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:35::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:35::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:35::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:35::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:35::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:35::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:35::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:35::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:35::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:35::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:35::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:26:35::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:26:35::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:52::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:52::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:52::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:52::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:52::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:52::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:52::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:52::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:52::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:52::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:52::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:52::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:52::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:52::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:52::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:52::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:52::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:52::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:52::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:52::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:54::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:54::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:54::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:54::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:54::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:54::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:54::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:54::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:54::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:54::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:54::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:54::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:54::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:54::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:54::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:54::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:54::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:54::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:54::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:54::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:55::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:55::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:55::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:55::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:26:55::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:55::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:26:55::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:55::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:55::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:55::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:55::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:55::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:55::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"53c3fc6c9f0a301804bd8c1ef2b82404",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0b03ea46085d205a8763717c2109a36e",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"standalone":	{
+							"stdin":	"ps7_uart_1",
+							"stdout":	"ps7_uart_1",
+							"libOptionNames":	["stdin", "stdout"]
+						},
+						"libsContainingOptions":	["standalone"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-02-11.11:26:55::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:55::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:55::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:55::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:55::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:55::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:55::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:55::SCWMssOS::Removing the swdes entry for  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::In reload Mss file.
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:56::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:56::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:26:56::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:26:56::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:56::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:56::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:56::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:56::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:56::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:56::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:56::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:56::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:56::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:56::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::Removing the swdes entry for  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:26:56::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:26:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:26:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:26:56::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:26:56::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:26:56::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:26:56::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:26:56::SCWMssOS::Completed writing the mss file at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-02-11.11:26:56::SCWMssOS::Forcing BSP Sources regeneration.
+KEYINFO::2020-02-11.11:27:01::SCWMssOS::Removing file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp\system_0.mss
+TRACE::2020-02-11.11:27:44::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:44::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:44::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:44::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:27:44::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:44::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:27:44::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:27:44::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:27:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:27:44::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:44::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2020-02-11.11:27:44::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2020-02-11.11:27:44::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2020-02-11.11:27:44::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-02-11.11:27:44::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:44::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:44::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:44::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:27:44::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:27:44::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:50::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:27:50::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:27:50::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:27:50::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:27:50::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:27:50::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:27:50::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:27:50::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:50::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"53c3fc6c9f0a301804bd8c1ef2b82404",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"628cd8a0a636ca893dcb6c5109220834",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"standalone":	{
+							"stdin":	"ps7_uart_1",
+							"stdout":	"ps7_uart_1",
+							"libOptionNames":	["stdin", "stdout"]
+						},
+						"libsContainingOptions":	["standalone"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-02-11.11:27:50::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:27:50::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:27:50::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:27:50::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:27:50::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:27:50::SCWMssOS::Removing the swdes entry for  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+LOG::2020-02-11.11:28:23::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2020-02-11.11:28:23::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-02-11.11:28:23::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2020-02-11.11:28:23::SCWSystem::Checking the domain zynq_fsbl
+LOG::2020-02-11.11:28:23::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2020-02-11.11:28:23::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2020-02-11.11:28:23::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2020-02-11.11:28:23::SCWSystem::Checking the domain standalone_domain
+LOG::2020-02-11.11:28:23::SCWSystem::Not a boot domain 
+LOG::2020-02-11.11:28:23::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-02-11.11:28:23::SCWDomain::Generating domain artifcats
+TRACE::2020-02-11.11:28:23::SCWMssOS::Generating standalone artifcats
+TRACE::2020-02-11.11:28:23::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2020-02-11.11:28:23::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/qemu/
+TRACE::2020-02-11.11:28:23::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-02-11.11:28:23::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:28:23::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:28:23::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:28:23::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:28:23::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:28:23::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:28:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:28:23::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:28:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:28:23::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:28:23::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:28:23::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:28:23::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:28:23::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:28:23::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:28:23::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:28:23::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:28:23::SCWMssOS::Completed writing the mss file at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-02-11.11:28:23::SCWMssOS::Mss edits present, copying mssfile into export location C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:28:23::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-02-11.11:28:23::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-02-11.11:28:23::SCWDomain::Building the domain :  standalone_domain
+TRACE::2020-02-11.11:28:23::SCWMssOS::doing bsp build ... 
+TRACE::2020-02-11.11:28:23::SCWMssOS::System Command Ran  C: & cd  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2020-02-11.11:28:23::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2020-02-11.11:28:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2020-02-11.11:28:23::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2020-02-11.11:28:23::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2020-02-11.11:28:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-02-11.11:28:24::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-02-11.11:28:24::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2020-02-11.11:28:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-02-11.11:28:24::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-02-11.11:28:24::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2020-02-11.11:28:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-02-11.11:28:25::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-02-11.11:28:25::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2020-02-11.11:28:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-02-11.11:28:25::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-02-11.11:28:25::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:26::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2020-02-11.11:28:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-02-11.11:28:26::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-02-11.11:28:26::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:26::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_5/src"
+
+TRACE::2020-02-11.11:28:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-02-11.11:28:26::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-02-11.11:28:26::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:27::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
+
+TRACE::2020-02-11.11:28:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-02-11.11:28:27::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-02-11.11:28:27::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:27::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2020-02-11.11:28:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-02-11.11:28:27::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-02-11.11:28:27::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:27::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2020-02-11.11:28:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-02-11.11:28:27::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-02-11.11:28:27::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:28::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2020-02-11.11:28:28::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2020-02-11.11:28:28::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2020-02-11.11:28:28::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:28::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2020-02-11.11:28:28::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-02-11.11:28:28::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-02-11.11:28:28::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:29::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2020-02-11.11:28:29::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-02-11.11:28:29::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-02-11.11:28:29::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:29::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-02-11.11:28:29::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2020-02-11.11:28:29::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2020-02-11.11:28:29::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:30::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2020-02-11.11:28:30::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-02-11.11:28:30::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-02-11.11:28:30::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:30::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2020-02-11.11:28:30::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-02-11.11:28:30::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-02-11.11:28:30::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:31::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2020-02-11.11:28:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-02-11.11:28:31::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-02-11.11:28:31::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:31::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2020-02-11.11:28:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-02-11.11:28:31::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-02-11.11:28:31::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:32::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2020-02-11.11:28:33::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2020-02-11.11:28:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2020-02-11.11:28:33::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2020-02-11.11:28:33::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:33::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2020-02-11.11:28:33::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2020-02-11.11:28:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-02-11.11:28:33::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-02-11.11:28:33::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:33::SCWMssOS::"Compiling ddrps"
+
+TRACE::2020-02-11.11:28:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2020-02-11.11:28:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-02-11.11:28:34::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-02-11.11:28:34::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:34::SCWMssOS::"Compiling devcfg"
+
+TRACE::2020-02-11.11:28:39::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2020-02-11.11:28:39::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-02-11.11:28:39::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-02-11.11:28:39::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:40::SCWMssOS::"Compiling dmaps"
+
+TRACE::2020-02-11.11:28:47::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2020-02-11.11:28:47::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-02-11.11:28:47::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-02-11.11:28:47::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:47::SCWMssOS::"Compiling gpiops"
+
+TRACE::2020-02-11.11:28:52::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_5/src"
+
+TRACE::2020-02-11.11:28:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2020-02-11.11:28:52::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2020-02-11.11:28:52::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:52::SCWMssOS::"Compiling gpio"
+
+TRACE::2020-02-11.11:28:57::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
+
+TRACE::2020-02-11.11:28:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-02-11.11:28:57::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-02-11.11:28:57::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:28:57::SCWMssOS::"Compiling iicps"
+
+TRACE::2020-02-11.11:29:09::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2020-02-11.11:29:09::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-02-11.11:29:09::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-02-11.11:29:09::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:29:10::SCWMssOS::"Compiling qspips"
+
+TRACE::2020-02-11.11:29:18::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2020-02-11.11:29:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-02-11.11:29:18::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-02-11.11:29:18::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:29:18::SCWMssOS::"Compiling scugic"
+
+TRACE::2020-02-11.11:29:23::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2020-02-11.11:29:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-02-11.11:29:23::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-02-11.11:29:23::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:29:23::SCWMssOS::"Compiling scutimer"
+
+TRACE::2020-02-11.11:29:27::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2020-02-11.11:29:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-02-11.11:29:27::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-02-11.11:29:27::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:29:27::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2020-02-11.11:29:32::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2020-02-11.11:29:32::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2020-02-11.11:29:32::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2020-02-11.11:29:32::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:29:32::SCWMssOS::"Compiling sdps"
+
+TRACE::2020-02-11.11:29:37::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-02-11.11:29:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-02-11.11:29:37::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-02-11.11:29:37::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:29:37::SCWMssOS::"Compiling standalone"
+
+TRACE::2020-02-11.11:29:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2020-02-11.11:29:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-02-11.11:29:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-02-11.11:29:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:29:56::SCWMssOS::"Compiling uartps"
+
+TRACE::2020-02-11.11:30:01::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2020-02-11.11:30:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-02-11.11:30:01::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-02-11.11:30:01::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:30:02::SCWMssOS::"Compiling usbps"
+
+TRACE::2020-02-11.11:30:07::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2020-02-11.11:30:07::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-02-11.11:30:07::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-02-11.11:30:07::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-02-11.11:30:08::SCWMssOS::"Compiling xadcps"
+
+TRACE::2020-02-11.11:30:12::SCWMssOS::'Finished building libraries'
+
+TRACE::2020-02-11.11:30:12::SCWMssOS::Copying to export directory.
+TRACE::2020-02-11.11:30:12::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-02-11.11:30:12::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-02-11.11:30:12::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-02-11.11:30:12::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2020-02-11.11:30:12::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2020-02-11.11:30:12::SCWPlatform::Started preparing the platform 
+TRACE::2020-02-11.11:30:12::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2020-02-11.11:30:12::SCWSystem::dir created 
+TRACE::2020-02-11.11:30:12::SCWSystem::Writing the bif 
+TRACE::2020-02-11.11:30:12::SCWPlatform::Started writing the spfm file 
+TRACE::2020-02-11.11:30:12::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-02-11.11:30:12::SCWPlatform::Completed generating the platform
+TRACE::2020-02-11.11:30:12::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:12::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:12::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:12::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:30:12::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:12::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:30:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:30:12::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:30:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:30:12::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:30:12::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:30:12::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-11.11:30:12::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:12::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:12::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:12::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:30:12::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:12::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:30:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:30:12::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:30:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:30:12::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:30:12::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:30:12::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:30:12::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"53c3fc6c9f0a301804bd8c1ef2b82404",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"628cd8a0a636ca893dcb6c5109220834",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"standalone":	{
+							"stdin":	"ps7_uart_1",
+							"stdout":	"ps7_uart_1",
+							"libOptionNames":	["stdin", "stdout"]
+						},
+						"libsContainingOptions":	["standalone"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-02-11.11:30:12::SCWPlatform::updated the xpfm file.
+TRACE::2020-02-11.11:30:13::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:13::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:13::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:13::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:30:13::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:30:13::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:30:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:30:13::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:30:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:30:13::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:30:13::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:30:13::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:53:53::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:53:53::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:53:53::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:53:53::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:53:53::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:53:53::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:53:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:53:53::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:53:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:53:53::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:53:53::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:53:53::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::In reload Mss file.
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:54:00::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2020-02-11.11:54:00::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2020-02-11.11:54:00::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2020-02-11.11:54:00::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-02-11.11:54:00::SCWMssOS::No sw design opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::mss exists loading the mss file  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::Opened the sw design from mss  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::Adding the swdes entry C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-11.11:54:00::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-11.11:54:00::SCWMssOS::Opened the sw design.  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:54:00::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:54:00::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:54:00::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:54:00::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:54:00::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:54:00::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:00::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:54:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:54:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:54:00::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:00::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:54:01::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:01::SCWPlatform::Trying to open the hw design at C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:01::SCWPlatform::DSA given C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:01::SCWPlatform::DSA absoulate path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:01::SCWPlatform::DSA directory C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw
+TRACE::2020-02-11.11:54:01::SCWPlatform:: Platform Path C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2020-02-11.11:54:01::SCWPlatform:: Unique name xilinx:minized::0.0
+TRACE::2020-02-11.11:54:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-02-11.11:54:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-02-11.11:54:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-11.11:54:01::SCWMssOS::Checking the sw design at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:01::SCWMssOS::DEBUG:  swdes dump  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-11.11:54:01::SCWMssOS::Sw design exists and opened at  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-11.11:54:01::SCWMssOS::Removing the swdes entry for  C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss

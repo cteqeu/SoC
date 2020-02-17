@@ -55,7 +55,7 @@ int main()
 {
     init_platform();
 
-    print("Hello World\n\r");
+    xil_printf("Hello World\n\r");
 
     cleanup_platform();
     return 0;

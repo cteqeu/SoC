@@ -13,3 +13,526 @@
 11:24:06 INFO  : XSCT server has started successfully.
 11:24:06 INFO  : Successfully done setting XSCT server connection channel  
 11:24:06 INFO  : plnx-install-location is set to ''
+11:24:13 INFO  : Successfully done setting workspace for the tool. 
+11:24:14 INFO  : Successfully done query RDI_DATADIR 
+11:24:48 INFO  : Successfully done sdx_reload_mss "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+11:24:49 INFO  : Successfully done sdx_reload_mss "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+11:25:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:25:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:25:06 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:25:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:25:24 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:25:24 INFO  : 'jtag frequency' command is executed.
+11:25:24 INFO  : Context for 'APU' is selected.
+11:25:24 INFO  : System reset is completed.
+11:25:27 INFO  : 'after 3000' command is executed.
+11:25:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:25:28 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:25:29 INFO  : Context for 'APU' is selected.
+11:25:29 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:25:29 INFO  : 'configparams force-mem-access 1' command is executed.
+11:25:29 INFO  : Context for 'APU' is selected.
+11:25:29 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:25:29 INFO  : 'ps7_init' command is executed.
+11:25:29 INFO  : 'ps7_post_config' command is executed.
+11:25:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:30 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:25:30 INFO  : 'configparams force-mem-access 0' command is executed.
+11:25:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:25:30 INFO  : Memory regions updated for context APU
+11:25:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:30 INFO  : 'con' command is executed.
+11:25:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:25:30 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_hello_minized_vitis_system_standalone.tcl'
+11:26:01 INFO  : Disconnected from the channel tcfchan#1.
+11:26:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:03 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:26:03 INFO  : 'jtag frequency' command is executed.
+11:26:03 INFO  : Context for 'APU' is selected.
+11:26:03 INFO  : System reset is completed.
+11:26:06 INFO  : 'after 3000' command is executed.
+11:26:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:26:07 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:26:07 INFO  : Context for 'APU' is selected.
+11:26:07 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:26:07 INFO  : 'configparams force-mem-access 1' command is executed.
+11:26:07 INFO  : Context for 'APU' is selected.
+11:26:07 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:26:08 INFO  : 'ps7_init' command is executed.
+11:26:08 INFO  : 'ps7_post_config' command is executed.
+11:26:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:08 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:26:08 INFO  : 'configparams force-mem-access 0' command is executed.
+11:26:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:26:09 INFO  : Memory regions updated for context APU
+11:26:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:09 INFO  : 'con' command is executed.
+11:26:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:26:09 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_hello_minized_vitis_system_standalone.tcl'
+11:26:52 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:26:54 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:26:55 INFO  : (SwPlatform) Successfully done update_mss 
+11:26:56 INFO  : Successfully done sdx_reload_mss "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+11:27:24 INFO  : Disconnected from the channel tcfchan#2.
+11:27:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:27:25 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:27:25 INFO  : 'jtag frequency' command is executed.
+11:27:25 INFO  : Context for 'APU' is selected.
+11:27:25 INFO  : System reset is completed.
+11:27:28 INFO  : 'after 3000' command is executed.
+11:27:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:27:29 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:27:29 INFO  : Context for 'APU' is selected.
+11:27:29 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:27:29 INFO  : 'configparams force-mem-access 1' command is executed.
+11:27:29 INFO  : Context for 'APU' is selected.
+11:27:29 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:27:30 INFO  : 'ps7_init' command is executed.
+11:27:30 INFO  : 'ps7_post_config' command is executed.
+11:27:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:31 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:27:31 INFO  : 'configparams force-mem-access 0' command is executed.
+11:27:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:27:31 INFO  : Memory regions updated for context APU
+11:27:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:31 INFO  : 'con' command is executed.
+11:27:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:27:31 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_hello_minized_vitis_system_standalone.tcl'
+11:27:50 INFO  : (SwPlatform) Successfully done update_mss 
+11:27:50 INFO  : No changes in MSS file content so sources will not be generated.
+11:30:12 INFO  : Disconnected from the channel tcfchan#3.
+11:30:14 INFO  : Checking for BSP changes to sync application flags for project 'Hello_MiniZED_Vitis'...
+11:30:14 INFO  : Updating application flags with new BSP settings...
+11:30:16 INFO  : Successfully updated application flags for project Hello_MiniZED_Vitis.
+11:30:49 INFO  : Checking for BSP changes to sync application flags for project 'Hello_MiniZED_Vitis'...
+11:30:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:30:53 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:30:53 INFO  : 'jtag frequency' command is executed.
+11:30:53 INFO  : Context for 'APU' is selected.
+11:30:53 INFO  : System reset is completed.
+11:30:56 INFO  : 'after 3000' command is executed.
+11:30:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:30:58 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:30:58 INFO  : Context for 'APU' is selected.
+11:30:59 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:30:59 INFO  : 'configparams force-mem-access 1' command is executed.
+11:30:59 INFO  : Context for 'APU' is selected.
+11:30:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:30:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:30:59 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:31:00 INFO  : 'set bp_30_59_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:32:00 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+11:32:00 INFO  : 'bpremove $bp_30_59_fsbl_bp' command is executed.
+11:32:05 INFO  : 'configparams force-mem-access 0' command is executed.
+11:32:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_30_59_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_30_59_fsbl_bp
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:32:05 INFO  : Memory regions updated for context APU
+11:32:05 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\debugger_hello_minized_vitis-default.tcl'
+11:32:15 INFO  : Disconnected from the channel tcfchan#6.
+11:32:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:32:16 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:32:16 INFO  : 'jtag frequency' command is executed.
+11:32:16 INFO  : Context for 'APU' is selected.
+11:32:16 INFO  : System reset is completed.
+11:32:19 INFO  : 'after 3000' command is executed.
+11:32:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:32:21 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:32:21 INFO  : Context for 'APU' is selected.
+11:32:21 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:32:21 INFO  : 'configparams force-mem-access 1' command is executed.
+11:32:21 INFO  : Context for 'APU' is selected.
+11:32:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:32:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:32:21 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:32:21 INFO  : 'set bp_32_21_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:33:22 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+11:33:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:33:22 INFO  : 'bpremove $bp_32_21_fsbl_bp' command is executed.
+11:33:22 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:33:22 INFO  : 'jtag frequency' command is executed.
+11:33:22 INFO  : Context for 'APU' is selected.
+11:33:22 INFO  : System reset is completed.
+11:33:25 INFO  : 'after 3000' command is executed.
+11:33:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:33:26 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:33:26 INFO  : Context for 'APU' is selected.
+11:33:26 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:33:26 INFO  : 'configparams force-mem-access 1' command is executed.
+11:33:26 INFO  : Context for 'APU' is selected.
+11:33:26 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:33:27 INFO  : 'ps7_init' command is executed.
+11:33:27 INFO  : 'ps7_post_config' command is executed.
+11:33:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:33:27 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:33:27 INFO  : 'configparams force-mem-access 0' command is executed.
+11:33:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:33:27 INFO  : Memory regions updated for context APU
+11:33:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:33:27 INFO  : 'con' command is executed.
+11:33:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:33:27 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_hello_minized_vitis_system_standalone.tcl'
+11:33:29 INFO  : 'configparams force-mem-access 0' command is executed.
+11:33:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_32_21_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_32_21_fsbl_bp
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:33:29 INFO  : Memory regions updated for context APU
+11:33:29 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_hello_minized_vitis_system_standalone.tcl'
+11:49:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:50:00 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:50:06 INFO  : Disconnected from the channel tcfchan#7.
+11:50:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:50:07 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:50:07 INFO  : 'jtag frequency' command is executed.
+11:50:07 INFO  : Context for 'APU' is selected.
+11:50:07 INFO  : System reset is completed.
+11:50:10 INFO  : 'after 3000' command is executed.
+11:50:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:50:12 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:50:12 INFO  : Context for 'APU' is selected.
+11:50:12 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:50:12 INFO  : 'configparams force-mem-access 1' command is executed.
+11:50:12 INFO  : Context for 'APU' is selected.
+11:50:12 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:50:13 INFO  : 'ps7_init' command is executed.
+11:50:13 INFO  : 'ps7_post_config' command is executed.
+11:50:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:50:13 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:50:13 INFO  : 'configparams force-mem-access 0' command is executed.
+11:50:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:50:13 INFO  : Memory regions updated for context APU
+11:50:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:50:13 INFO  : 'con' command is executed.
+11:50:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:50:13 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_hello_minized_vitis_system_standalone.tcl'
+11:52:06 INFO  : Disconnected from the channel tcfchan#8.
+11:52:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:14 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:52:14 INFO  : 'jtag frequency' command is executed.
+11:52:14 INFO  : Context for 'APU' is selected.
+11:52:14 INFO  : System reset is completed.
+11:52:17 INFO  : 'after 3000' command is executed.
+11:52:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:52:18 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:52:18 INFO  : Context for 'APU' is selected.
+11:52:18 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:52:18 INFO  : 'configparams force-mem-access 1' command is executed.
+11:52:18 INFO  : Context for 'APU' is selected.
+11:52:19 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:52:19 INFO  : 'ps7_init' command is executed.
+11:52:19 INFO  : 'ps7_post_config' command is executed.
+11:52:19 INFO  : 'configparams force-mem-access 0' command is executed.
+11:52:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:52:19 INFO  : Memory regions updated for context APU
+11:52:19 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\debugger_hello_minized_vitis-default_(1).tcl'
+11:52:28 INFO  : Checking for BSP changes to sync application flags for project 'Hello_MiniZED_Vitis'...
+11:52:50 INFO  : Disconnected from the channel tcfchan#10.
+11:52:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:51 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:52:51 INFO  : 'jtag frequency' command is executed.
+11:52:51 INFO  : Context for 'APU' is selected.
+11:52:51 INFO  : System reset is completed.
+11:52:54 INFO  : 'after 3000' command is executed.
+11:52:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:52:56 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:52:56 INFO  : Context for 'APU' is selected.
+11:52:56 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:52:56 INFO  : 'configparams force-mem-access 1' command is executed.
+11:52:56 INFO  : Context for 'APU' is selected.
+11:52:56 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:52:56 INFO  : 'ps7_init' command is executed.
+11:52:56 INFO  : 'ps7_post_config' command is executed.
+11:52:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:57 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:52:57 INFO  : 'configparams force-mem-access 0' command is executed.
+11:52:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:52:57 INFO  : Memory regions updated for context APU
+11:52:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:57 INFO  : 'con' command is executed.
+11:52:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:52:57 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\debugger_hello_minized_vitis-default_(1).tcl'
+11:53:28 INFO  : Checking for BSP changes to sync application flags for project 'Hello_MiniZED_Vitis'...
+11:54:01 INFO  : Successfully done sdx_reload_mss "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+11:54:01 INFO  : No changes in MSS file content so sources will not be generated.
+11:54:37 INFO  : Disconnected from the channel tcfchan#11.
+11:54:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:54:38 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:54:38 INFO  : 'jtag frequency' command is executed.
+11:54:38 INFO  : Context for 'APU' is selected.
+11:54:38 INFO  : System reset is completed.
+11:54:41 INFO  : 'after 3000' command is executed.
+11:54:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:54:43 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:54:43 INFO  : Context for 'APU' is selected.
+11:54:43 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:54:43 INFO  : 'configparams force-mem-access 1' command is executed.
+11:54:43 INFO  : Context for 'APU' is selected.
+11:54:43 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:54:43 INFO  : 'ps7_init' command is executed.
+11:54:43 INFO  : 'ps7_post_config' command is executed.
+11:54:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:44 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:54:44 INFO  : 'configparams force-mem-access 0' command is executed.
+11:54:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:54:44 INFO  : Memory regions updated for context APU
+11:54:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:44 INFO  : 'con' command is executed.
+11:54:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:54:44 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_hello_minized_vitis_system_standalone.tcl'
+11:56:10 INFO  : Disconnected from the channel tcfchan#13.
+11:56:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:56:11 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:56:11 INFO  : 'jtag frequency' command is executed.
+11:56:11 INFO  : Context for 'APU' is selected.
+11:56:11 INFO  : System reset is completed.
+11:56:14 INFO  : 'after 3000' command is executed.
+11:56:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:56:16 INFO  : FPGA configured successfully with bitstream "C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit"
+11:56:16 INFO  : Context for 'APU' is selected.
+11:56:16 INFO  : Hardware design information is loaded from 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:56:16 INFO  : 'configparams force-mem-access 1' command is executed.
+11:56:16 INFO  : Context for 'APU' is selected.
+11:56:16 INFO  : Sourcing of 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl' is done.
+11:56:17 INFO  : 'ps7_init' command is executed.
+11:56:17 INFO  : 'ps7_post_config' command is executed.
+11:56:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:56:17 INFO  : The application 'C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:56:17 INFO  : 'configparams force-mem-access 0' command is executed.
+11:56:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Github/Own/Embedded-FPGA/MiniZED/Hello_MiniZED_Vitis/Hello_MiniZED_Vitis/Debug/Hello_MiniZED_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:56:17 INFO  : Memory regions updated for context APU
+11:56:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:56:17 INFO  : 'con' command is executed.
+11:56:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:56:17 INFO  : Launch script is exported to file 'C:\Github\Own\Embedded-FPGA\MiniZED\Hello_MiniZED_Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_hello_minized_vitis_system_standalone.tcl'
+15:14:28 INFO  : Disconnected from the channel tcfchan#14.

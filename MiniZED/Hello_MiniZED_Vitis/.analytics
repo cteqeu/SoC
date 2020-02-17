@@ -3,3 +3,6 @@ timestamp=[2020-02-10 16:01:27], mode=WORKBENCH_UI_INIT, duration=0:00:03.644, d
 timestamp=[2020-02-10 16:04:06], mode=APP_CREATION, duration=0:00:43.131, duration_ms=43131, data={name=Hello_MiniZED_Vitis, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=design_1_wrapper, application_type=application}
 timestamp=[2020-02-10 16:11:59], mode=PLATFORM_GENERATION, duration=0:04:05.149, duration_ms=245149, data={name=design_1_wrapper}
 timestamp=[2020-02-10 16:29:39], mode=APP_CREATION, duration=0:00:13.756, duration_ms=13756, data={name=Hello_MiniZED_Vitis_CMSIS, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=design_1_wrapper, application_type=application}
+timestamp=[2020-02-11 11:23:51], mode=WORKBENCH_START, duration=0:00:57.373, duration_ms=57373, data={}
+timestamp=[2020-02-11 11:23:53], mode=WORKBENCH_UI_INIT, duration=0:00:01.675, duration_ms=1675, data={editors_count=6, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Hello_MiniZED_Vitis,Hello_MiniZED_Vitis_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2020-02-11 11:30:13], mode=PLATFORM_GENERATION, duration=0:01:56.376, duration_ms=116376, data={name=design_1_wrapper}

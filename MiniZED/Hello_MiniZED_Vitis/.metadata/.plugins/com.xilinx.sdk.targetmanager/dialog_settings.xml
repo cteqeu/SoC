@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="_ide/bitstream/design_1_wrapper.bit" key="Hello_MiniZED_Vitis-bitFile"/>
+	<item value="" key="Hello_MiniZED_Vitis-bmmFile"/>
+	<item value="false" key="Hello_MiniZED_Vitis-partial_bit"/>
+	<item value="Hello_MiniZED_Vitis" key="programfpga.sdxproject"/>
+	<item value="false" key="Hello_MiniZED_Vitis-skip_rev_check"/>
+	<item value="Auto Detect" key="Hello_MiniZED_Vitis-device"/>
+	<item value="Local" key="Hello_MiniZED_Vitis-target"/>
+</section>
