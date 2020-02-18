@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;eFPGA_I2C_PL_Application/src/lis2ds12.c&apos; to &apos;lis2ds12_pl.c&apos;" description="Rename resource &apos;lis2ds12.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/lis2ds12.c" name="lis2ds12_pl.c" stamp="1582035592193" updateReferences="true"/>
+</session>

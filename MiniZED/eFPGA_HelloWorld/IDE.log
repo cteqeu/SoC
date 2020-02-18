@@ -1,0 +1,173 @@
+16:33:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\FPGA\eFPGA_HelloWorld\temp_xsdb_launch_script.tcl
+16:33:38 INFO  : XSCT server has started successfully.
+16:33:38 INFO  : Registering command handlers for Vitis TCF services
+16:33:41 INFO  : plnx-install-location is set to ''
+16:33:41 INFO  : Successfully done setting XSCT server connection channel  
+16:33:41 INFO  : Successfully done query RDI_DATADIR 
+16:33:41 INFO  : Successfully done setting workspace for the tool. 
+16:41:49 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+16:41:49 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+16:43:37 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:43:40 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:43:55 INFO  : (SwPlatform) Successfully done update_mss 
+16:43:55 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+17:13:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:14:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:14:01 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:15:59 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+17:15:59 INFO  : No changes in MSS file content so sources will not be generated.
+17:23:36 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_HelloWorld_Application'...
+17:26:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:12 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:26:12 INFO  : 'jtag frequency' command is executed.
+17:26:12 INFO  : Context for 'APU' is selected.
+17:26:12 INFO  : System reset is completed.
+17:26:15 INFO  : 'after 3000' command is executed.
+17:26:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:26:16 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/bitstream/eFPGA_HelloWorld.bit"
+17:26:16 INFO  : Context for 'APU' is selected.
+17:26:17 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa'.
+17:26:17 INFO  : 'configparams force-mem-access 1' command is executed.
+17:26:17 INFO  : Context for 'APU' is selected.
+17:26:17 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/psinit/ps7_init.tcl' is done.
+17:26:17 INFO  : 'ps7_init' command is executed.
+17:26:17 INFO  : 'ps7_post_config' command is executed.
+17:26:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:17 INFO  : The application 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/Debug/eFPGA_HelloWorld_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:26:17 INFO  : 'configparams force-mem-access 0' command is executed.
+17:26:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/bitstream/eFPGA_HelloWorld.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/Debug/eFPGA_HelloWorld_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:26:17 INFO  : Memory regions updated for context APU
+17:26:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:17 INFO  : 'con' command is executed.
+17:26:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:26:17 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_HelloWorld\.sdk\launch_scripts\single_application_debug\debugger_efpga_helloworld_application-default.tcl'
+17:33:32 INFO  : Disconnected from the channel tcfchan#4.
+17:33:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:33 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:33:33 INFO  : 'jtag frequency' command is executed.
+17:33:33 INFO  : Context for 'APU' is selected.
+17:33:33 INFO  : System reset is completed.
+17:33:36 INFO  : 'after 3000' command is executed.
+17:33:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:33:37 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/bitstream/eFPGA_HelloWorld.bit"
+17:33:37 INFO  : Context for 'APU' is selected.
+17:33:37 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa'.
+17:33:37 INFO  : 'configparams force-mem-access 1' command is executed.
+17:33:38 INFO  : Context for 'APU' is selected.
+17:33:38 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/psinit/ps7_init.tcl' is done.
+17:33:38 INFO  : 'ps7_init' command is executed.
+17:33:38 INFO  : 'ps7_post_config' command is executed.
+17:33:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:38 INFO  : The application 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/Debug/eFPGA_HelloWorld_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:33:38 INFO  : 'configparams force-mem-access 0' command is executed.
+17:33:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/bitstream/eFPGA_HelloWorld.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/Debug/eFPGA_HelloWorld_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:33:38 INFO  : Memory regions updated for context APU
+17:33:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:38 INFO  : 'con' command is executed.
+17:33:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:33:38 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_HelloWorld\.sdk\launch_scripts\single_application_debug\debugger_efpga_helloworld_application-default.tcl'
+17:34:58 INFO  : Disconnected from the channel tcfchan#8.
+17:34:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:34:59 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+17:34:59 INFO  : 'jtag frequency' command is executed.
+17:34:59 INFO  : Context for 'APU' is selected.
+17:34:59 INFO  : System reset is completed.
+17:35:02 INFO  : 'after 3000' command is executed.
+17:35:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+17:35:04 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/bitstream/eFPGA_HelloWorld.bit"
+17:35:04 INFO  : Context for 'APU' is selected.
+17:35:04 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa'.
+17:35:04 INFO  : 'configparams force-mem-access 1' command is executed.
+17:35:04 INFO  : Context for 'APU' is selected.
+17:35:04 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/psinit/ps7_init.tcl' is done.
+17:35:04 INFO  : 'ps7_init' command is executed.
+17:35:04 INFO  : 'ps7_post_config' command is executed.
+17:35:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:35:04 INFO  : The application 'C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/Debug/eFPGA_HelloWorld_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:35:04 INFO  : 'configparams force-mem-access 0' command is executed.
+17:35:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/bitstream/eFPGA_HelloWorld.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld_Application/Debug/eFPGA_HelloWorld_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:35:05 INFO  : Memory regions updated for context APU
+17:35:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:35:05 INFO  : 'con' command is executed.
+17:35:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:35:05 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_HelloWorld\.sdk\launch_scripts\single_application_debug\debugger_efpga_helloworld_application-default.tcl'
+17:36:13 INFO  : Disconnected from the channel tcfchan#9.

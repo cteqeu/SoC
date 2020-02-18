@@ -1,0 +1,525 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb 18 13:52:33 2020
+# Process ID: 126324
+# Current directory: C:/devWorks/FPGA/eFPGA_I2C_PL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent122044 C:\devWorks\FPGA\eFPGA_I2C_PL\eFPGA_I2C_PL.xpr
+# Log file: C:/devWorks/FPGA/eFPGA_I2C_PL/vivado.log
+# Journal file: C:/devWorks/FPGA/eFPGA_I2C_PL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:32 . Memory (MB): peak = 1207.809 ; gain = 309.125
+open_bd_design {C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Successfully read diagram <design_1> from BD file <C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1330.176 ; gain = 78.324
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_intf_nets processing_system7_0_IIC_0]
+delete_bd_objs [get_bd_intf_ports IIC_0_0]
+set_property location {1 113 -99} [get_bd_cells processing_system7_0]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_iic:2.0 axi_iic_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_iic_0/IIC]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 iic_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /iic_rtl /axi_iic_0/IIC
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /axi_iic_0/IIC. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_iic_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_iic_0/S_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment </axi_iic_0/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4160_0000 [ 64K ]>
+endgroup
+reset_run design_1_processing_system7_0_0_synth_1
+save_bd_design
+Wrote  : <C:\devWorks\FPGA\eFPGA_I2C_PL\eFPGA_I2C_PL.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Wrote  : <C:\devWorks\FPGA\eFPGA_I2C_PL\eFPGA_I2C_PL.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Tue Feb 18 14:01:44 2020] Launched design_1_processing_system7_0_0_synth_1, design_1_auto_pc_0_synth_1, design_1_axi_iic_0_0_synth_1, design_1_rst_ps7_0_50M_0_synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_axi_iic_0_0_synth_1: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.runs/design_1_axi_iic_0_0_synth_1/runme.log
+design_1_rst_ps7_0_50M_0_synth_1: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.runs/design_1_rst_ps7_0_50M_0_synth_1/runme.log
+[Tue Feb 18 14:01:44 2020] Launched synth_1...
+Run output will be captured here: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:59 ; elapsed = 00:01:15 . Memory (MB): peak = 1661.055 ; gain = 183.340
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z007sclg225-1
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0.dcp' for cell 'design_1_i/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.dcp' for cell 'design_1_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1797.805 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/axi_iic_0/U0'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/axi_iic_0/U0'
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'IIC_0_0_scl_io'. [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IIC_0_0_sda_io'. [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IIC_0_0_scl_io'. [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IIC_0_0_sda_io'. [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1915.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2035.770 ; gain = 374.715
+export_ip_user_files -of_objects  [get_files C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc
+file delete -force C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C.xdc
+set_property IOSTANDARD LVCMOS33 [get_ports [list iic_rtl_scl_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list iic_rtl_sda_io]]
+place_ports iic_rtl_scl_io G15
+place_ports iic_rtl_sda_io F15
+close [ open C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C_PL.xdc w ]
+add_files -fileset constrs_1 C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C_PL.xdc
+set_property target_constrs_file C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.srcs/constrs_1/new/eFPGA_I2C_PL.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Feb 18 14:10:36 2020] Launched synth_1...
+Run output will be captured here: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.runs/synth_1/runme.log
+[Tue Feb 18 14:10:36 2020] Launched impl_1...
+Run output will be captured here: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 2463.090 ; gain = 0.000
+close_design
+write_hw_platform -fixed -force  -include_bit -file C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2019.2/data\embeddedsw) loading 1 seconds
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL.xsa
+write_hw_platform: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2470.004 ; gain = 0.000
+regenerate_bd_layout
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultra96:part0:1.2 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Avnet/ultra96/1.2/1.2/board.xml as part xczu3eg-sbva484-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2CG_1E/1.0/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2CG_1E/2.0/2.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2EG_1E/1.0/1.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2EG_1E/2.0/2.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3CG_1E/1.0/1.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3CG_1E/2.0/2.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/1.0/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/3.0/3.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/2.0/2.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/4.0/4.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4CG_1E/1.0/1.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4CG_1E/2.0/2.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1E/1.0/1.0/board.xml as part xczu4eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1E/2.0/2.0/board.xml as part xczu4eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1i:part0:5.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1I/5.0/5.0/board.xml as part xczu4eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1i_tebf0808:part0:6.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1I/6.0/6.0/board.xml as part xczu4eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EV_1E/1.0/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4ev_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EV_1E/2.0/2.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1E/1.0/1.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1E/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1i:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1I/1.0/1.0/board.xml as part xczu5ev-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1i_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1I/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_15eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_15EG_1E/3.0/3.0/board.xml as part xczu15eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_15eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_15EG_1E/4.0/4.0/board.xml as part xczu15eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_6eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_6EG_1E/3.0/3.0/board.xml as part xczu6eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_6eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_6EG_1E/4.0/4.0/board.xml as part xczu6eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2CG_1E/1.0/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2EG_1E/1.0/1.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2eg_1e:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2EG_1E/2.0/2.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_3cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_3CG_1E/1.0/1.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_3eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_3EG_1E/1.0/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_4cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_4CG_1E/1.0/1.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_4ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_4EV_1E/1.0/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:tec0850_15eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TEC0850_15EG_1E/1.0/1.0/board.xml as part xczu15eg-ffvb1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/kcu105/1.6/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/kcu116/1.4/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu108/1.6/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu110/1.4/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/production/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/es/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/es/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu129/production/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu111/1.2/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu1275/1.0/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu1285/1.0/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu216/1.0/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultra96:part0:1.2 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Avnet/ultra96/1.2/1.2/board.xml as part xczu3eg-sbva484-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2CG_1E/1.0/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2CG_1E/2.0/2.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2EG_1E/1.0/1.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2EG_1E/2.0/2.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3CG_1E/1.0/1.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3CG_1E/2.0/2.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/1.0/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/3.0/3.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/2.0/2.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/4.0/4.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4CG_1E/1.0/1.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4CG_1E/2.0/2.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1E/1.0/1.0/board.xml as part xczu4eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1E/2.0/2.0/board.xml as part xczu4eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1i:part0:5.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1I/5.0/5.0/board.xml as part xczu4eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1i_tebf0808:part0:6.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1I/6.0/6.0/board.xml as part xczu4eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EV_1E/1.0/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4ev_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EV_1E/2.0/2.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1E/1.0/1.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1E/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1i:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1I/1.0/1.0/board.xml as part xczu5ev-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1i_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1I/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_15eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_15EG_1E/3.0/3.0/board.xml as part xczu15eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_15eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_15EG_1E/4.0/4.0/board.xml as part xczu15eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_6eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_6EG_1E/3.0/3.0/board.xml as part xczu6eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_6eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_6EG_1E/4.0/4.0/board.xml as part xczu6eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2CG_1E/1.0/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2EG_1E/1.0/1.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2eg_1e:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2EG_1E/2.0/2.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_3cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_3CG_1E/1.0/1.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_3eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_3EG_1E/1.0/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_4cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_4CG_1E/1.0/1.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_4ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_4EV_1E/1.0/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:tec0850_15eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TEC0850_15EG_1E/1.0/1.0/board.xml as part xczu15eg-ffvb1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/kcu105/1.6/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/kcu116/1.4/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu108/1.6/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu110/1.4/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/production/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/es/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/es/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu129/production/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu111/1.2/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu1275/1.0/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu1285/1.0/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu216/1.0/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+close_project
+create_project eFPGA_GPIO C:/devWorks/FPGA/eFPGA_GPIO -part xc7z007sclg225-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2499.547 ; gain = 13.063
+set_property board_part em.avnet.com:minized:part0:1.2 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "design_1"
+Wrote  : <C:\devWorks\FPGA\eFPGA_GPIO\eFPGA_GPIO.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2499.547 ; gain = 0.000
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2517.453 ; gain = 0.027
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_IO {8}] [get_bd_cells processing_system7_0]
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins processing_system7_0/GPIO_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {pl_led_g ( pl_led_g ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE pl_led_g [get_bd_cells /axi_gpio_0]
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultra96:part0:1.2 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Avnet/ultra96/1.2/1.2/board.xml as part xczu3eg-sbva484-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2CG_1E/1.0/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2CG_1E/2.0/2.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2EG_1E/1.0/1.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2EG_1E/2.0/2.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3CG_1E/1.0/1.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3CG_1E/2.0/2.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/1.0/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/3.0/3.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/2.0/2.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/4.0/4.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4CG_1E/1.0/1.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4CG_1E/2.0/2.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1E/1.0/1.0/board.xml as part xczu4eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1E/2.0/2.0/board.xml as part xczu4eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1i:part0:5.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1I/5.0/5.0/board.xml as part xczu4eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1i_tebf0808:part0:6.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1I/6.0/6.0/board.xml as part xczu4eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EV_1E/1.0/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4ev_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EV_1E/2.0/2.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1E/1.0/1.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1E/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1i:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1I/1.0/1.0/board.xml as part xczu5ev-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1i_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1I/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_15eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_15EG_1E/3.0/3.0/board.xml as part xczu15eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_15eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_15EG_1E/4.0/4.0/board.xml as part xczu15eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_6eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_6EG_1E/3.0/3.0/board.xml as part xczu6eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_6eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_6EG_1E/4.0/4.0/board.xml as part xczu6eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2CG_1E/1.0/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2EG_1E/1.0/1.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2eg_1e:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2EG_1E/2.0/2.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_3cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_3CG_1E/1.0/1.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_3eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_3EG_1E/1.0/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_4cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_4CG_1E/1.0/1.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_4ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_4EV_1E/1.0/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:tec0850_15eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TEC0850_15EG_1E/1.0/1.0/board.xml as part xczu15eg-ffvb1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/kcu105/1.6/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/kcu116/1.4/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu108/1.6/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu110/1.4/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/production/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/es/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/es/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu129/production/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu111/1.2/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu1275/1.0/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu1285/1.0/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu216/1.0/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultra96:part0:1.2 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Avnet/ultra96/1.2/1.2/board.xml as part xczu3eg-sbva484-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2CG_1E/1.0/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2CG_1E/2.0/2.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2EG_1E/1.0/1.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_2eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_2EG_1E/2.0/2.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3CG_1E/1.0/1.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3CG_1E/2.0/2.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/1.0/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/3.0/3.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/2.0/2.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_3eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_3EG_1E/4.0/4.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4CG_1E/1.0/1.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4cg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4CG_1E/2.0/2.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1E/1.0/1.0/board.xml as part xczu4eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1E/2.0/2.0/board.xml as part xczu4eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1i:part0:5.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1I/5.0/5.0/board.xml as part xczu4eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4eg_1i_tebf0808:part0:6.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EG_1I/6.0/6.0/board.xml as part xczu4eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EV_1E/1.0/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_4ev_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_4EV_1E/2.0/2.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1E/1.0/1.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1E/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1i:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1I/1.0/1.0/board.xml as part xczu5ev-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1i_tebf0808:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0803_5EV_1I/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_15eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_15EG_1E/3.0/3.0/board.xml as part xczu15eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_15eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_15EG_1E/4.0/4.0/board.xml as part xczu15eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_6eg_1e:part0:3.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_6EG_1E/3.0/3.0/board.xml as part xczu6eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0808_6eg_1e_tebf0808:part0:4.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0808_6EG_1E/4.0/4.0/board.xml as part xczu6eg-ffvc900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2CG_1E/1.0/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2EG_1E/1.0/1.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_2eg_1e:part0:2.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_2EG_1E/2.0/2.0/board.xml as part xczu2eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_3cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_3CG_1E/1.0/1.0/board.xml as part xczu3cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_3eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_3EG_1E/1.0/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_4cg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_4CG_1E/1.0/1.0/board.xml as part xczu4cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0820_4ev_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TE0820_4EV_1E/1.0/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:tec0850_15eg_1e:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Trenz_Electronic/TEC0850_15EG_1E/1.0/1.0/board.xml as part xczu15eg-ffvb1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/au280/es1/1.0/1.0/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:au280_es1:part0:1.1 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/au280/es1/1.1/1.1/board.xml as part xcu280-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/kcu105/1.6/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/kcu116/1.4/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu108/1.6/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu110/1.4/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/production/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/es/1.0/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.1 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu128/es/1.1/1.1/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu129/production/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/vcu129/es/1.0/1.0/board.xml as part xcvu29p-fsga2577-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu111/1.2/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu1275/1.0/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu1285/1.0/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store/XilinxBoardStore/Vivado/2019.2/boards/Xilinx/zcu216/1.0/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 pl_led_g
+INFO: [board_rule 100-100] connect_bd_intf_net /pl_led_g /axi_gpio_0/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment </axi_gpio_0/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4120_0000 [ 64K ]>
+endgroup
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports pl_led_g]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {Custom} Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE Custom [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /gpio_rtl /axi_gpio_0/GPIO
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /axi_gpio_0/GPIO. Users may need to specify the location constraint manually.
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports gpio_rtl]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO]
+endgroup
+regenerate_bd_layout
+make_wrapper -files [get_files C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Wrote  : <C:\devWorks\FPGA\eFPGA_GPIO\eFPGA_GPIO.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2531.734 ; gain = 8.051
+add_files -norecurse C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\devWorks\FPGA\eFPGA_GPIO\eFPGA_GPIO.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+Exporting to file C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Tue Feb 18 16:07:11 2020] Launched design_1_rst_ps7_0_50M_0_synth_1, design_1_axi_gpio_0_0_synth_1, design_1_auto_pc_0_synth_1, design_1_processing_system7_0_0_synth_1...
+Run output will be captured here:
+design_1_rst_ps7_0_50M_0_synth_1: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.runs/design_1_rst_ps7_0_50M_0_synth_1/runme.log
+design_1_axi_gpio_0_0_synth_1: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.runs/design_1_axi_gpio_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.runs/design_1_processing_system7_0_0_synth_1/runme.log
+[Tue Feb 18 16:07:12 2020] Launched synth_1...
+Run output will be captured here: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 2562.555 ; gain = 30.820
+write_hw_platform -fixed -force  -include_bit -file C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.xsa ...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.xsa
+write_hw_platform: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2582.578 ; gain = 20.023
+INFO: [Common 17-344] 'write_hw_platform' was cancelled
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z007sclg225-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.dcp' for cell 'design_1_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 2600.398 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2634.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2688.523 ; gain = 104.016
+set_property IOSTANDARD LVCMOS33 [get_ports [list {GPIO_0_0_tri_io[7]} {GPIO_0_0_tri_io[6]} {GPIO_0_0_tri_io[5]} {GPIO_0_0_tri_io[4]} {GPIO_0_0_tri_io[3]} {GPIO_0_0_tri_io[2]} {GPIO_0_0_tri_io[1]} {GPIO_0_0_tri_io[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {GPIO_0_tri_o[7]} {GPIO_0_tri_o[6]} {GPIO_0_tri_o[5]} {GPIO_0_tri_o[4]} {GPIO_0_tri_o[3]} {GPIO_0_tri_o[2]} {GPIO_0_tri_o[1]} {GPIO_0_tri_o[0]}]]
+place_ports {GPIO_0_0_tri_io[7]} M14
+place_ports {GPIO_0_0_tri_io[6]} L14
+place_ports {GPIO_0_0_tri_io[5]} M15
+place_ports {GPIO_0_0_tri_io[4]} L15
+place_ports {GPIO_0_0_tri_io[3]} N14
+place_ports {GPIO_0_0_tri_io[2]} N13
+place_ports {GPIO_0_0_tri_io[1]} L13
+place_ports {GPIO_0_0_tri_io[0]} K13
+place_ports {GPIO_0_tri_o[7]} N12
+place_ports {GPIO_0_tri_o[6]} N11
+place_ports {GPIO_0_tri_o[5]} P14
+place_ports {GPIO_0_tri_o[4]} P13
+place_ports {GPIO_0_tri_o[3]} R13
+place_ports {GPIO_0_tri_o[2]} R12
+place_ports {GPIO_0_tri_o[1]} R15
+place_ports {GPIO_0_tri_o[0]} P15
+file mkdir C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/constrs_1/new
+close [ open C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/constrs_1/new/eFPGA_GPIO.xdc w ]
+add_files -fileset constrs_1 C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/constrs_1/new/eFPGA_GPIO.xdc
+set_property target_constrs_file C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.srcs/constrs_1/new/eFPGA_GPIO.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Feb 18 16:18:38 2020] Launched synth_1...
+Run output will be captured here: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.runs/synth_1/runme.log
+[Tue Feb 18 16:18:38 2020] Launched impl_1...
+Run output will be captured here: C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 2721.656 ; gain = 2.094
+close_design
+regenerate_bd_layout

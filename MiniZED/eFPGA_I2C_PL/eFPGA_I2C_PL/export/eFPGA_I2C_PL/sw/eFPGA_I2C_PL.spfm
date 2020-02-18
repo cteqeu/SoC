@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="eFPGA_I2C_PL"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+eFPGA_I2C_PL
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="eFPGA_I2C_PL">
+        <sdx:configuration sdx:name="eFPGA_I2C_PL"
+                           sdx:displayName="eFPGA_I2C_PL"
+                           sdx:defaultProcessorGroup="standalone_domain"
+                           sdx:runtimes="cpp">
+            <sdx:description>eFPGA_I2C_PL</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="eFPGA_I2C_PL/boot/eFPGA_I2C_PL.bif"
+                            sdx:readme="eFPGA_I2C_PL/boot/generic.readme"
+                            sdx:qemuArguments="eFPGA_I2C_PL/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_domain"
+                            sdx:bif="eFPGA_I2C_PL/boot/eFPGA_I2C_PL.bif"
+                            sdx:readme="eFPGA_I2C_PL/boot/generic.readme"
+                            sdx:qemuArguments="eFPGA_I2C_PL/standalone_domain/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_domain"
+                                sdx:displayName="standalone on ps7_cortexa9_0"
+                                sdx:cpuType="cortex-a9"
+                                sdx:cpuInstance="ps7_cortexa9_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="eFPGA_I2C_PL/standalone_domain/bsplib/lib"
+                        sdx:bspIncludePaths="eFPGA_I2C_PL/standalone_domain/bspinclude/include"
+                        sdx:bspConfig="eFPGA_I2C_PL/standalone_domain/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

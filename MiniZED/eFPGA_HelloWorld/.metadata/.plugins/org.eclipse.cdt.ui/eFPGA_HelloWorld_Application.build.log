@@ -1,0 +1,30 @@
+17:23:36 **** Build of configuration Debug for project eFPGA_HelloWorld_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/sw/eFPGA_HelloWorld/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/sw/eFPGA_HelloWorld/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: eFPGA_HelloWorld_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_HelloWorld/eFPGA_HelloWorld/export/eFPGA_HelloWorld/sw/eFPGA_HelloWorld/standalone_domain/bsplib/lib -o "eFPGA_HelloWorld_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_HelloWorld_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_HelloWorld_Application.elf  |tee "eFPGA_HelloWorld_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19144	   1144	  22568	  42856	   a768	eFPGA_HelloWorld_Application.elf
+'Finished building: eFPGA_HelloWorld_Application.elf.size'
+' '
+
+17:23:43 Build Finished (took 7s.379ms)
+

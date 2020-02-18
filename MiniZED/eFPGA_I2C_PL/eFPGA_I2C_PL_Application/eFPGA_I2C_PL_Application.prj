@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="eFPGA_I2C_PL_Application" location="C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL_Application" platform="C:/devWorks/FPGA/eFPGA_I2C_PL/eFPGA_I2C_PL/export/eFPGA_I2C_PL/eFPGA_I2C_PL.xpfm" platformUID="xilinx:minized::0.0(custom)" systemProject="eFPGA_I2C_PL_Application_system" sysConfig="eFPGA_I2C_PL" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="07edbb0b493d96f6e22aacb8f478a63b">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1696581252">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1042500657" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

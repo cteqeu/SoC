@@ -1,0 +1,165 @@
+13:03:36 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\FPGA\eFPGA_I2C\temp_xsdb_launch_script.tcl
+13:03:47 INFO  : XSCT server has started successfully.
+13:03:47 INFO  : Registering command handlers for Vitis TCF services
+13:03:49 INFO  : plnx-install-location is set to ''
+13:03:49 INFO  : Successfully done setting XSCT server connection channel  
+13:03:49 INFO  : Successfully done query RDI_DATADIR 
+13:03:49 INFO  : Successfully done setting workspace for the tool. 
+13:07:02 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+13:07:02 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+13:07:12 INFO  : (SwPlaform) Successfully done setParamInSpec 
+13:07:21 INFO  : (SwPlaform) Successfully done setParamInSpec 
+13:07:59 INFO  : (SwPlatform) Successfully done update_mss 
+13:08:00 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+13:21:40 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:21:40 INFO  : Updating application flags with new BSP settings...
+13:21:40 INFO  : Successfully updated application flags for project eFPGA_I2C_Application.
+13:23:01 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:23:20 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:24:02 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:24:19 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:24:33 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:25:09 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:25:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:00 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:26:00 INFO  : 'jtag frequency' command is executed.
+13:26:00 INFO  : Context for 'APU' is selected.
+13:26:00 INFO  : System reset is completed.
+13:26:03 INFO  : 'after 3000' command is executed.
+13:26:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:26:05 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/bitstream/eFPGA_I2C.bit"
+13:26:05 INFO  : Context for 'APU' is selected.
+13:26:05 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/export/eFPGA_I2C/hw/eFPGA_I2C.xsa'.
+13:26:05 INFO  : 'configparams force-mem-access 1' command is executed.
+13:26:05 INFO  : Context for 'APU' is selected.
+13:26:05 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/psinit/ps7_init.tcl' is done.
+13:26:06 INFO  : 'ps7_init' command is executed.
+13:26:06 INFO  : 'ps7_post_config' command is executed.
+13:26:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:07 INFO  : The application 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/Debug/eFPGA_I2C_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:26:07 INFO  : 'configparams force-mem-access 0' command is executed.
+13:26:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/bitstream/eFPGA_I2C.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/export/eFPGA_I2C/hw/eFPGA_I2C.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/Debug/eFPGA_I2C_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:26:07 INFO  : Memory regions updated for context APU
+13:26:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:08 INFO  : 'con' command is executed.
+13:26:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:26:08 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_I2C\.sdk\launch_scripts\single_application_debug\debugger_efpga_i2c_application-default.tcl'
+13:28:06 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:28:20 INFO  : Disconnected from the channel tcfchan#2.
+13:28:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:28:21 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:28:21 INFO  : 'jtag frequency' command is executed.
+13:28:21 INFO  : Context for 'APU' is selected.
+13:28:21 INFO  : System reset is completed.
+13:28:24 INFO  : 'after 3000' command is executed.
+13:28:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:28:26 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/bitstream/eFPGA_I2C.bit"
+13:28:26 INFO  : Context for 'APU' is selected.
+13:28:26 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/export/eFPGA_I2C/hw/eFPGA_I2C.xsa'.
+13:28:26 INFO  : 'configparams force-mem-access 1' command is executed.
+13:28:26 INFO  : Context for 'APU' is selected.
+13:28:26 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/psinit/ps7_init.tcl' is done.
+13:28:26 INFO  : 'ps7_init' command is executed.
+13:28:26 INFO  : 'ps7_post_config' command is executed.
+13:28:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:28:27 INFO  : The application 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/Debug/eFPGA_I2C_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:28:27 INFO  : 'configparams force-mem-access 0' command is executed.
+13:28:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/bitstream/eFPGA_I2C.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/export/eFPGA_I2C/hw/eFPGA_I2C.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/Debug/eFPGA_I2C_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:28:27 INFO  : Memory regions updated for context APU
+13:28:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:28:27 INFO  : 'con' command is executed.
+13:28:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:28:27 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_I2C\.sdk\launch_scripts\single_application_debug\debugger_efpga_i2c_application-default.tcl'
+13:29:46 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_I2C_Application'...
+13:30:23 INFO  : Disconnected from the channel tcfchan#3.
+13:30:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:30:24 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:30:24 INFO  : 'jtag frequency' command is executed.
+13:30:24 INFO  : Context for 'APU' is selected.
+13:30:24 INFO  : System reset is completed.
+13:30:27 INFO  : 'after 3000' command is executed.
+13:30:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:30:28 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/bitstream/eFPGA_I2C.bit"
+13:30:28 INFO  : Context for 'APU' is selected.
+13:30:29 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/export/eFPGA_I2C/hw/eFPGA_I2C.xsa'.
+13:30:29 INFO  : 'configparams force-mem-access 1' command is executed.
+13:30:29 INFO  : Context for 'APU' is selected.
+13:30:29 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/psinit/ps7_init.tcl' is done.
+13:30:29 INFO  : 'ps7_init' command is executed.
+13:30:29 INFO  : 'ps7_post_config' command is executed.
+13:30:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:30:29 INFO  : The application 'C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/Debug/eFPGA_I2C_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:30:29 INFO  : 'configparams force-mem-access 0' command is executed.
+13:30:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/bitstream/eFPGA_I2C.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/export/eFPGA_I2C/hw/eFPGA_I2C.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C_Application/Debug/eFPGA_I2C_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:30:29 INFO  : Memory regions updated for context APU
+13:30:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:30:29 INFO  : 'con' command is executed.
+13:30:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:30:29 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_I2C\.sdk\launch_scripts\single_application_debug\debugger_efpga_i2c_application-default.tcl'
+13:52:05 INFO  : Disconnected from the channel tcfchan#4.

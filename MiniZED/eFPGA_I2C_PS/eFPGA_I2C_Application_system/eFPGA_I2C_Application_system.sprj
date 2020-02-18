@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="eFPGA_I2C_Application_system" platform="C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C/export/eFPGA_I2C/eFPGA_I2C.xpfm" platformUID="xilinx:minized::0.0(custom)" sysConfig="eFPGA_I2C" runtime="C/C++">
+  <configuration name="Debug">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="eFPGA_I2C_Application" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="eFPGA_I2C_Application" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

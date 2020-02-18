@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:C:/devWorks/FPGA/eFPGA_I2C/eFPGA_I2C.srcs/constrs_1/new/eFPGA_I2C.xdc rfile:../../../eFPGA_I2C.srcs/constrs_1/new/eFPGA_I2C.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G15 [get_ports IIC_0_0_scl_io]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F15 [get_ports IIC_0_0_sda_io]

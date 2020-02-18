@@ -1,0 +1,7 @@
+/*eFPGA_I2C*/
+the_ROM_image:
+{
+  [bootloader]<eFPGA_I2C/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

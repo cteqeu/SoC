@@ -1,0 +1,10 @@
+2020-02-18T15:47:07.7347900255-15:47:07 **** Incremental Build of configuration Debug for project eFPGA_I2C_PL_Application ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-make[1]: Nothing to be done for 'main-build'.
+00255-
+15:47:09 Build Finished (took 1s.374ms)
+
