@@ -1,0 +1,7 @@
+/*eFPGA_GPIO*/
+the_ROM_image:
+{
+  [bootloader]<eFPGA_GPIO/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

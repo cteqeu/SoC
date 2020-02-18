@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="eFPGA_GPIO_Application" location="C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO_Application" platform="C:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO/export/eFPGA_GPIO/eFPGA_GPIO.xpfm" platformUID="xilinx:minized::0.0(custom)" systemProject="eFPGA_GPIO_Application_system" sysConfig="eFPGA_GPIO" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="b1795418fdbd5e36ee735ceadd88bbea">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1309405838" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1799446580" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,25 @@
+17:31:30 **** Incremental Build of configuration Debug for project eFPGA_GPIO_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO/export/eFPGA_GPIO/sw/eFPGA_GPIO/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_GPIO_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_GPIO/eFPGA_GPIO/export/eFPGA_GPIO/sw/eFPGA_GPIO/standalone_domain/bsplib/lib -o "eFPGA_GPIO_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_GPIO_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_GPIO_Application.elf  |tee "eFPGA_GPIO_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  66944	   2608	  23376	  92928	  16b00	eFPGA_GPIO_Application.elf
+'Finished building: eFPGA_GPIO_Application.elf.size'
+' '
+
+17:31:34 Build Finished (took 3s.676ms)
+
