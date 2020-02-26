@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Feb 26 20:39:21 2020
+# Process ID: 84928
+# Current directory: C:/devWorks/FPGA/eFPGA_AXI_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent81420 C:\devWorks\FPGA\eFPGA_AXI_Project\eFPGA_AXI_Project.xpr
+# Log file: C:/devWorks/FPGA/eFPGA_AXI_Project/vivado.log
+# Journal file: C:/devWorks/FPGA/eFPGA_AXI_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project.xpr
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -force  -include_bit -file C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project.xsa

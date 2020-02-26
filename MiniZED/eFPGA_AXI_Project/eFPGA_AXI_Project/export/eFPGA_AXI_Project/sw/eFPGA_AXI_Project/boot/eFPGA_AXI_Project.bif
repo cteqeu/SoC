@@ -1,0 +1,7 @@
+/*eFPGA_AXI_Project*/
+the_ROM_image:
+{
+  [bootloader]<eFPGA_AXI_Project/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

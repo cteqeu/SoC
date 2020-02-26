@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="eFPGA_AXI" location="C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI" platform="C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/eFPGA_AXI_Project.xpfm" platformUID="xilinx:minized::0.0(custom)" systemProject="eFPGA_AXI_system" sysConfig="eFPGA_AXI_Project" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="bec70c7a612e40dee63427a66fddf023">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1974144617" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.229329626" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Feb 26 20:39:21 2020
+# Process ID: 84928
+# Current directory: C:/devWorks/FPGA/eFPGA_AXI_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent81420 C:\devWorks\FPGA\eFPGA_AXI_Project\eFPGA_AXI_Project.xpr
+# Log file: C:/devWorks/FPGA/eFPGA_AXI_Project/vivado.log
+# Journal file: C:/devWorks/FPGA/eFPGA_AXI_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/devWorks/FPGA/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 1241.449 ; gain = 587.695
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -force  -include_bit -file C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2019.2/data\embeddedsw) loading 0 seconds
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project.xsa
+write_hw_platform: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1367.082 ; gain = 59.535
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 26 20:51:59 2020...

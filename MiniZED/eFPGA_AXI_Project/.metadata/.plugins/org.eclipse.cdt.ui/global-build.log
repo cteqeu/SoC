@@ -1,0 +1,926 @@
+20:48:30 **** Build of project eFPGA_AXI_Project ****
+buildplatform.bat 56620 eFPGA_AXI_Project  
+XSDB Server Channel: tcfchan#1
+Building the zynq_fsbl application.
+make -C zynq_fsbl_bsp
+
+make[1]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp'
+
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard -nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/coresightps_dcc_v1_6/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+coresightps_dcc_v1_6/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/cpu_cortexa9_v2_8/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+cpu_cortexa9_v2_8/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/ddrps_v1_0/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+ddrps_v1_0/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/devcfg_v3_5/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+devcfg_v3_5/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/dmaps_v2_5/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+dmaps_v2_5/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/eFPGA_AXI_Core1_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/eFPGA_AXI_Core1_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard -nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/eFPGA_AXI_Core1_v1_0/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+eFPGA_AXI_Core1_v1_0/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/gpiops_v3_6/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+gpiops_v3_6/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/iicps_v3_10/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+iicps_v3_10/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/qspips_v3_6/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+qspips_v3_6/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/scugic_v4_1/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+scugic_v4_1/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+startfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/scutimer_v2_1/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+scutimer_v2_1/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/scuwdt_v2_1/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+scuwdt_v2_1/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/sdps_v3_8/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+sdps_v3_8/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/standalone_v7_1/src'
+
+make[3]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/standalone_v7_1/src/profile'
+
+make[3]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+standalone_v7_1/src/profile'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+standalone_v7_1/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/uartps_v3_8/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+uartps_v3_8/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/usbps_v2_4/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+usbps_v2_4/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/xadcps_v2_3/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+xadcps_v2_3/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
+
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/xilffs_v4_2/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+xilffs_v4_2/src'
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
+
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/xilrsa_v1_5/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+xilrsa_v1_5/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/coresightps_dcc_v1_6/src'
+
+"Compiling coresightps_dcc"
+
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+coresightps_dcc_v1_6/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/cpu_cortexa9_v2_8/src'
+
+"Compiling cpu_cortexa9"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+cpu_cortexa9_v2_8/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/ddrps_v1_0/src'
+
+"Compiling ddrps"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+ddrps_v1_0/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/devcfg_v3_5/src'
+
+"Compiling devcfg"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+devcfg_v3_5/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/dmaps_v2_5/src'
+
+"Compiling dmaps"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+dmaps_v2_5/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/eFPGA_AXI_Core1_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/eFPGA_AXI_Core1_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/eFPGA_AXI_Core1_v1_0/src'
+
+"Compiling eFPGA_AXI_Core1..."
+
+eFPGA_AXI_Core1_selftest.c: In function 'EFPGA_AXI_CORE1_Reg_SelfTest':
+eFPGA_AXI_Core1_selftest.c:52:64: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( EFPGA_AXI_CORE1_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                ^~
+eFPGA_AXI_Core1_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make[3]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/eFPGA_AXI_Core1_v1_0/src'
+
+make[3]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+eFPGA_AXI_Core1_v1_0/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+eFPGA_AXI_Core1_v1_0/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/gpiops_v3_6/src'
+
+"Compiling gpiops"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+gpiops_v3_6/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/iicps_v3_10/src'
+
+"Compiling iicps"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+iicps_v3_10/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/qspips_v3_6/src'
+
+"Compiling qspips"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+qspips_v3_6/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/scugic_v4_1/src'
+
+"Compiling scugic"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+scugic_v4_1/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/scutimer_v2_1/src'
+
+"Compiling scutimer"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+scutimer_v2_1/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/scuwdt_v2_1/src'
+
+"Compiling scuwdt"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+scuwdt_v2_1/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+les -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/sdps_v3_8/src'
+
+"Compiling sdps"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+sdps_v3_8/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/standalone_v7_1/src'
+
+"Compiling standalone"
+
+In file included from usleep.c:54:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:52:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:47:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:51:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+standalone_v7_1/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/uartps_v3_8/src'
+
+"Compiling uartps"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+uartps_v3_8/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/usbps_v2_4/src'
+
+"Compiling usbps"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+usbps_v2_4/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/xadcps_v2_3/src'
+
+"Compiling xadcps"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+xadcps_v2_3/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
+
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/xilffs_v4_2/src'
+
+"Compiling XilFFs Library"
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+xilffs_v4_2/src'
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
+
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+make[2]: Entering directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc
+/xilrsa_v1_5/src'
+
+make[2]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/
+xilrsa_v1_5/src'
+
+'Finished building libraries'
+
+make[1]: Leaving directory 'C:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/zynq_fsbl/zynq_fsbl_bsp'
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cortexa9_0/
+include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_cortexa
+9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_cortexa9_
+0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c image_mover.c -o image_mover.o -Izynq_fsbl_b
+sp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_cortexa9_
+0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_fsbl_bsp
+/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c main.c -o main.o -Izynq_fsbl_bsp/ps7_cortexa
+9_0/include -I.
+
+In file included from main.c:135:
+zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_cortexa9_
+0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_cortexa
+9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c ps7_init.c -o ps7_init.o -Izynq_fsbl_bsp/ps7
+_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_cortexa
+9_0/include -I.
+
+In file included from pcap.c:98:
+zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_handoff.S -o fsbl_handoff.o -Izynq_fsbl
+_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -o executable.elf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o
+  pcap.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxi
+l,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                      -Wl,--gc-secti
+ons -Lzynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+Building the BSP Library for domain  - standalone_domain on processor ps7_cortexa9_0
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/eFPGA_AXI_Core1_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/eFPGA_AXI_Core1_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+startfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Compiling coresightps_dcc"
+
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+"Compiling cpu_cortexa9"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling ddrps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling devcfg"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling dmaps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/eFPGA_AXI_Core1_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/eFPGA_AXI_Core1_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Compiling eFPGA_AXI_Core1..."
+
+eFPGA_AXI_Core1_selftest.c: In function 'EFPGA_AXI_CORE1_Reg_SelfTest':
+eFPGA_AXI_Core1_selftest.c:52:64: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( EFPGA_AXI_CORE1_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                ^~
+eFPGA_AXI_Core1_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling gpiops"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling iicps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling qspips"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling scugic"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Compiling scutimer"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling scuwdt"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+les -g -Wall -Wextra"
+
+"Compiling sdps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+"Compiling standalone"
+
+In file included from usleep.c:54:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:52:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:47:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:51:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling uartps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling usbps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling xadcps"
+
+'Finished building libraries'
+
+20:59:54 **** Build of configuration Debug for project eFPGA_AXI ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: eFPGA_AXI.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bsplib/lib -o "eFPGA_AXI.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI.elf  |tee "eFPGA_AXI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56780	   2584	  23328	  82692	  14304	eFPGA_AXI.elf
+'Finished building: eFPGA_AXI.elf.size'
+' '
+21:03:52 **** Incremental Build of configuration Debug for project eFPGA_AXI ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_AXI.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bsplib/lib -o "eFPGA_AXI.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI.elf  |tee "eFPGA_AXI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56780	   2584	  23328	  82692	  14304	eFPGA_AXI.elf
+'Finished building: eFPGA_AXI.elf.size'
+' '
+21:05:34 **** Incremental Build of configuration Debug for project eFPGA_AXI ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_AXI.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bsplib/lib -o "eFPGA_AXI.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI.elf  |tee "eFPGA_AXI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56780	   2584	  23328	  82692	  14304	eFPGA_AXI.elf
+'Finished building: eFPGA_AXI.elf.size'
+' '

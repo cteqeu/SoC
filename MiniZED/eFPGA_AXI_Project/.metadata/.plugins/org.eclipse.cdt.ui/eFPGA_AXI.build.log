@@ -1,0 +1,25 @@
+21:05:34 **** Incremental Build of configuration Debug for project eFPGA_AXI ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_AXI.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_AXI_Project/eFPGA_AXI_Project/export/eFPGA_AXI_Project/sw/eFPGA_AXI_Project/standalone_domain/bsplib/lib -o "eFPGA_AXI.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI.elf  |tee "eFPGA_AXI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56780	   2584	  23328	  82692	  14304	eFPGA_AXI.elf
+'Finished building: eFPGA_AXI.elf.size'
+' '
+
+21:05:38 Build Finished (took 4s.88ms)
+
