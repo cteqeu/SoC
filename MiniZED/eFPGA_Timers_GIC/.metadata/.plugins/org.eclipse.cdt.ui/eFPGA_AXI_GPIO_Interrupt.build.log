@@ -1,0 +1,33 @@
+16:57:46 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:93:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^~~~~~
+At top level:
+../src/helloworld.c:18:12: warning: 'btn_value' defined but not used [-Wunused-variable]
+ static int btn_value;
+            ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_AXI_GPIO_Interrupt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_AXI_GPIO_Interrupt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI_GPIO_Interrupt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI_GPIO_Interrupt.elf  |tee "eFPGA_AXI_GPIO_Interrupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25116	   1952	  22632	  49700	   c224	eFPGA_AXI_GPIO_Interrupt.elf
+'Finished building: eFPGA_AXI_GPIO_Interrupt.elf.size'
+' '
+
+16:57:50 Build Finished (took 3s.749ms)
+

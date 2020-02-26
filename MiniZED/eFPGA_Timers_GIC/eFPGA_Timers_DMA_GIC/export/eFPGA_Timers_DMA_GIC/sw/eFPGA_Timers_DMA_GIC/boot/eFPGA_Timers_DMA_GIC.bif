@@ -1,0 +1,7 @@
+/*eFPGA_Timers_DMA_GIC*/
+the_ROM_image:
+{
+  [bootloader]<eFPGA_Timers_DMA_GIC/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

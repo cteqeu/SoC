@@ -1,0 +1,1541 @@
+14:49:15 **** Incremental Build of project eFPGA_Timers_DMA_GIC ****
+buildplatform.bat 65018 eFPGA_Timers_DMA_GIC standalone_domain 
+XSDB Server Channel: tcfchan#5
+Building the BSP Library for domain  - standalone_domain on processor ps7_cortexa9_0
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+ard -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_5/src"
+
+make -C ps7_cortexa9_0/libsrc/gpio_v4_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+startfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+tfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+nostartfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+ "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+artfiles -g -Wall -Wextra"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+ -nostartfiles -g -Wall -Wextra"
+
+"Compiling coresightps_dcc"
+
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+ostartfiles -g -Wall -Wextra"
+
+"Compiling cpu_cortexa9"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling ddrps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling devcfg"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling dmaps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling gpiops"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_5/src"
+
+make -C ps7_cortexa9_0/libsrc/gpio_v4_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+les -g -Wall -Wextra"
+
+"Compiling gpio"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_10/src"
+
+make -C ps7_cortexa9_0/libsrc/iicps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling iicps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling qspips"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling scugic"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+rtfiles -g -Wall -Wextra"
+
+"Compiling scutimer"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling scuwdt"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+les -g -Wall -Wextra"
+
+"Compiling sdps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+tartfiles -g -Wall -Wextra"
+
+"Compiling standalone"
+
+In file included from usleep.c:54:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:52:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:47:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:51:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling uartps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+iles -g -Wall -Wextra"
+
+"Compiling usbps"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+files -g -Wall -Wextra"
+
+"Compiling xadcps"
+
+'Finished building libraries'
+
+14:52:45 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:38: warning: unused variable 'Timer2_config' [-Wunused-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:71:20: warning: unused variable 'Timer2' [-Wunused-variable]
+  XScuTimer Timer1, Timer2;
+                    ^~~~~~
+../src/helloworld.c:62:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _vector_table; defaulting to 0000000000100000
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `main':
+C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\eFPGA_Timers_DMA_GIC_Application\Debug/../src/helloworld.c:84: undefined reference to `XScuTimer_LookupConfig'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\eFPGA_Timers_DMA_GIC_Application\Debug/../src/helloworld.c:90: undefined reference to `XScuTimer_CfgInitialize'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\eFPGA_Timers_DMA_GIC_Application\Debug/../src/helloworld.c:101: undefined reference to `XScuTimer_Start'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o): in function `_sbrk_r':
+sbrkr.c:(.text+0x12): undefined reference to `_sbrk'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-writer.o): in function `_write_r':
+writer.c:(.text+0x18): undefined reference to `_write'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-closer.o): in function `_close_r':
+closer.c:(.text+0x12): undefined reference to `_close'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fstatr.o): in function `_fstat_r':
+fstatr.c:(.text+0x16): undefined reference to `_fstat'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-isattyr.o): in function `_isatty_r':
+isattyr.c:(.text+0x12): undefined reference to `_isatty'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-lseekr.o): in function `_lseek_r':
+lseekr.c:(.text+0x18): undefined reference to `_lseek'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-readr.o): in function `_read_r':
+readr.c:(.text+0x18): undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [makefile:43: eFPGA_Timers_DMA_GIC_Application.elf] Error 1
+make: *** [makefile:34: all] Error 2
+14:53:01 **** Clean-only build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  eFPGA_Timers_DMA_GIC_Application.elf.size  eFPGA_Timers_DMA_GIC_Application.elf
+' '
+14:56:12 **** Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:117:7: error: too many arguments to function 'print'
+       print("Timervalue: %d\n\r",Timer1_Value);
+       ^~~~~
+In file included from ../src/helloworld.c:50:
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:77:38: warning: unused variable 'Timer2_config' [-Wunused-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:71:20: warning: unused variable 'Timer2' [-Wunused-variable]
+  XScuTimer Timer1, Timer2;
+                    ^~~~~~
+../src/helloworld.c:62:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+14:56:46 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:38: warning: unused variable 'Timer2_config' [-Wunused-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:71:20: warning: unused variable 'Timer2' [-Wunused-variable]
+  XScuTimer Timer1, Timer2;
+                    ^~~~~~
+../src/helloworld.c:62:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30592	   1552	  23272	  55416	   d878	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+14:58:13 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:110:6: warning: implicit declaration of function 'sleep_A9' [-Wimplicit-function-declaration]
+      sleep_A9(1);
+      ^~~~~~~~
+../src/helloworld.c:77:38: warning: unused variable 'Timer2_config' [-Wunused-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:71:20: warning: unused variable 'Timer2' [-Wunused-variable]
+  XScuTimer Timer1, Timer2;
+                    ^~~~~~
+../src/helloworld.c:62:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30656	   1552	  23272	  55480	   d8b8	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+14:59:23 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:111,
+                 from ../src/helloworld.c:51:
+../src/helloworld.c: In function 'main':
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:270:38: warning: unsigned conversion from 'long long int' to 'u32' {aka 'long unsigned int'} changes value from '10000000000' to '1410065408' [-Woverflow]
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+                                      ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:200:2: note: in expansion of macro 'XScuTimer_WriteReg'
+  XScuTimer_WriteReg((InstancePtr)->Config.BaseAddr,  \
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:97:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(&Timer1,10000000000);
+  ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:110:6: warning: implicit declaration of function 'sleep_A9' [-Wimplicit-function-declaration]
+      sleep_A9(1);
+      ^~~~~~~~
+../src/helloworld.c:77:38: warning: unused variable 'Timer2_config' [-Wunused-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:71:20: warning: unused variable 'Timer2' [-Wunused-variable]
+  XScuTimer Timer1, Timer2;
+                    ^~~~~~
+../src/helloworld.c:62:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57728	   2592	  23328	  83648	  146c0	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+15:00:36 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:111,
+                 from ../src/helloworld.c:51:
+../src/helloworld.c: In function 'main':
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:270:38: warning: unsigned conversion from 'long long int' to 'u32' {aka 'long unsigned int'} changes value from '10000000000' to '1410065408' [-Woverflow]
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+                                      ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:200:2: note: in expansion of macro 'XScuTimer_WriteReg'
+  XScuTimer_WriteReg((InstancePtr)->Config.BaseAddr,  \
+  ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:97:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(&Timer1,10000000000);
+  ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:110:6: warning: implicit declaration of function 'sleep_A9' [-Wimplicit-function-declaration]
+      sleep_A9(1);
+      ^~~~~~~~
+../src/helloworld.c:77:38: warning: unused variable 'Timer2_config' [-Wunused-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:71:20: warning: unused variable 'Timer2' [-Wunused-variable]
+  XScuTimer Timer1, Timer2;
+                    ^~~~~~
+../src/helloworld.c:62:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57728	   2592	  23328	  83648	  146c0	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+15:01:50 **** Clean-only build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  eFPGA_Timers_DMA_GIC_Application.elf.size  eFPGA_Timers_DMA_GIC_Application.elf
+' '
+15:01:54 **** Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:110:6: warning: implicit declaration of function 'sleep_A9' [-Wimplicit-function-declaration]
+      sleep_A9(1);
+      ^~~~~~~~
+../src/helloworld.c:77:38: warning: unused variable 'Timer2_config' [-Wunused-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:71:20: warning: unused variable 'Timer2' [-Wunused-variable]
+  XScuTimer Timer1, Timer2;
+                    ^~~~~~
+../src/helloworld.c:62:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57728	   2592	  23328	  83648	  146c0	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+15:03:08 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:110:6: warning: implicit declaration of function 'sleep_A9' [-Wimplicit-function-declaration]
+      sleep_A9(1);
+      ^~~~~~~~
+../src/helloworld.c:77:38: warning: unused variable 'Timer2_config' [-Wunused-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:71:20: warning: unused variable 'Timer2' [-Wunused-variable]
+  XScuTimer Timer1, Timer2;
+                    ^~~~~~
+../src/helloworld.c:62:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57728	   2592	  23328	  83648	  146c0	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+15:46:16 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:89:6: warning: implicit declaration of function 'sleep_A9' [-Wimplicit-function-declaration]
+      sleep_A9(1);
+      ^~~~~~~~
+../src/helloworld.c:103:31: error: 'XPAR_SCUTIMER_INT' undeclared (first use in this function); did you mean 'XPAR_SCUTIMER_INTR'?
+     XScuGic_Disconnect(&Gic1, XPAR_SCUTIMER_INT);
+                               ^~~~~~~~~~~~~~~~~
+                               XPAR_SCUTIMER_INTR
+../src/helloworld.c:103:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:30:38: warning: variable 'Timer2_config' set but not used [-Wunused-but-set-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:15:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:13:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+In file included from C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:111,
+                 from ../src/helloworld.c:4:
+../src/helloworld.c: In function 'timer2_interrupt_handler':
+../src/helloworld.c:111:26: error: 'Timer2' undeclared (first use in this function); did you mean 'timer_t'?
+  if (XScuTimer_IsExpired(Timer2))
+                          ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:252:12: note: in definition of macro 'XScuTimer_ReadReg'
+  Xil_In32((BaseAddr) + (RegOffset))
+            ^~~~~~~~
+../src/helloworld.c:111:6: note: in expansion of macro 'XScuTimer_IsExpired'
+  if (XScuTimer_IsExpired(Timer2))
+      ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:122:11: warning: too many arguments for format [-Wformat-extra-args]
+    printf("** Interrupt Handler! by Timer2\n\r", InterruptCounter);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+15:46:48 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:38: warning: variable 'Timer2_config' set but not used [-Wunused-but-set-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:15:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:13:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+In file included from C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:111,
+                 from ../src/helloworld.c:4:
+../src/helloworld.c: In function 'timer2_interrupt_handler':
+../src/helloworld.c:111:26: error: 'Timer2' undeclared (first use in this function); did you mean 'timer_t'?
+  if (XScuTimer_IsExpired(Timer2))
+                          ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:252:12: note: in definition of macro 'XScuTimer_ReadReg'
+  Xil_In32((BaseAddr) + (RegOffset))
+            ^~~~~~~~
+../src/helloworld.c:111:6: note: in expansion of macro 'XScuTimer_IsExpired'
+  if (XScuTimer_IsExpired(Timer2))
+      ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:111:26: note: each undeclared identifier is reported only once for each function it appears in
+  if (XScuTimer_IsExpired(Timer2))
+                          ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:252:12: note: in definition of macro 'XScuTimer_ReadReg'
+  Xil_In32((BaseAddr) + (RegOffset))
+            ^~~~~~~~
+../src/helloworld.c:111:6: note: in expansion of macro 'XScuTimer_IsExpired'
+  if (XScuTimer_IsExpired(Timer2))
+      ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:122:11: warning: too many arguments for format [-Wformat-extra-args]
+    printf("** Interrupt Handler! by Timer2\n\r", InterruptCounter);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+15:47:25 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:38: warning: variable 'Timer2_config' set but not used [-Wunused-but-set-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:16:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:14:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+In file included from C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:111,
+                 from ../src/helloworld.c:4:
+../src/helloworld.c: In function 'timer2_interrupt_handler':
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:159:35: error: invalid type argument of '->' (have 'XScuTimer' {aka 'struct <anonymous>'})
+  ((XScuTimer_ReadReg((InstancePtr)->Config.BaseAddr, \
+                                   ^~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:252:12: note: in definition of macro 'XScuTimer_ReadReg'
+  Xil_In32((BaseAddr) + (RegOffset))
+            ^~~~~~~~
+../src/helloworld.c:112:6: note: in expansion of macro 'XScuTimer_IsExpired'
+  if (XScuTimer_IsExpired(Timer2))
+      ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:123:11: warning: too many arguments for format [-Wformat-extra-args]
+    printf("** Interrupt Handler! by Timer2\n\r", InterruptCounter);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+15:49:53 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:38: warning: variable 'Timer2_config' set but not used [-Wunused-but-set-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:16:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:14:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+In file included from C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:111,
+                 from ../src/helloworld.c:4:
+../src/helloworld.c: In function 'timer2_interrupt_handler':
+../src/helloworld.c:112:28: error: 'Timer2' undeclared (first use in this function); did you mean 'timer_t'?
+  if (XScuTimer_IsExpired(& Timer2))
+                            ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:252:12: note: in definition of macro 'XScuTimer_ReadReg'
+  Xil_In32((BaseAddr) + (RegOffset))
+            ^~~~~~~~
+../src/helloworld.c:112:6: note: in expansion of macro 'XScuTimer_IsExpired'
+  if (XScuTimer_IsExpired(& Timer2))
+      ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:112:28: note: each undeclared identifier is reported only once for each function it appears in
+  if (XScuTimer_IsExpired(& Timer2))
+                            ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:252:12: note: in definition of macro 'XScuTimer_ReadReg'
+  Xil_In32((BaseAddr) + (RegOffset))
+            ^~~~~~~~
+../src/helloworld.c:112:6: note: in expansion of macro 'XScuTimer_IsExpired'
+  if (XScuTimer_IsExpired(& Timer2))
+      ^~~~~~~~~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+15:54:17 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:38: warning: variable 'Timer2_config' set but not used [-Wunused-but-set-variable]
+  XScuTimer_Config * Timer1_config ,* Timer2_config;
+                                      ^~~~~~~~~~~~~
+../src/helloworld.c:16:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:14:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61116	   3368	  23376	  87860	  15734	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+15:55:34 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:16:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:14:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61180	   3368	  23376	  87924	  15774	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+15:57:39 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:91:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:16:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:14:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61244	   3368	  23376	  87988	  157b4	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+16:08:02 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:91:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61308	   3368	  23376	  88052	  157f4	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+16:09:36 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:91:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61308	   3368	  23376	  88052	  157f4	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+16:11:01 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:91:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61308	   3368	  23376	  88052	  157f4	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+16:12:10 **** Clean-only build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  eFPGA_Timers_DMA_GIC_Application.elf.size  eFPGA_Timers_DMA_GIC_Application.elf
+' '
+16:12:13 **** Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:91:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61308	   3368	  23376	  88052	  157f4	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+16:16:58 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer.h:111,
+                 from ../src/helloworld.c:4:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:23: error: 'Timer2' undeclared (first use in this function); did you mean 'Timer1'?
+  XScuTimer_LoadTimer(&Timer2, XPAR_PS7_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2);
+                       ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:270:13: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+             ^~~~~~~~
+../src/helloworld.c:68:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(&Timer2, XPAR_PS7_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2);
+  ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:68:23: note: each undeclared identifier is reported only once for each function it appears in
+  XScuTimer_LoadTimer(&Timer2, XPAR_PS7_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2);
+                       ^~~~~~
+C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include/xscutimer_hw.h:270:13: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+             ^~~~~~~~
+../src/helloworld.c:68:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(&Timer2, XPAR_PS7_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2);
+  ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:81:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:7:13: warning: 'timer1_interrupt_handler' used but never defined
+ static void timer1_interrupt_handler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:101:13: warning: 'timer2_interrupt_handler' defined but not used [-Wunused-function]
+ static void timer2_interrupt_handler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+16:17:20 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:7:13: warning: 'timer1_interrupt_handler' used but never defined
+ static void timer1_interrupt_handler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:101:13: warning: 'timer2_interrupt_handler' defined but not used [-Wunused-function]
+ static void timer2_interrupt_handler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `main':
+C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\eFPGA_Timers_DMA_GIC_Application\Debug/../src/helloworld.c:58: undefined reference to `timer1_interrupt_handler'
+c:/xilinx/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\eFPGA_Timers_DMA_GIC_Application\Debug/../src/helloworld.c:58: undefined reference to `timer1_interrupt_handler'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [makefile:43: eFPGA_Timers_DMA_GIC_Application.elf] Error 1
+make: *** [makefile:34: all] Error 2
+16:17:41 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61180	   3368	  23360	  87908	  15764	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+16:20:12 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61100	   3368	  23360	  87828	  15714	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+16:30:08 **** Clean-only build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  eFPGA_Timers_DMA_GIC_Application.elf.size  eFPGA_Timers_DMA_GIC_Application.elf
+' '
+16:30:09 **** Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:6: warning: implicit declaration of function 'usleep_A9' [-Wimplicit-function-declaration]
+      usleep_A9(500);
+      ^~~~~~~~~
+../src/helloworld.c:22:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/helloworld.c:20:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61124	   3368	  23360	  87852	  1572c	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+16:52:08 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:21:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61124	   3368	  23360	  87852	  1572c	eFPGA_Timers_DMA_GIC_Application.elf
+'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+' '
+17:02:07 **** Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:21:35: error: 'BTN_INT' undeclared (first use in this function)
+  XGpio_InterruptDisable(&BTNInst, BTN_INT);
+                                   ^~~~~~~
+../src/helloworld.c:21:35: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:27:2: error: 'btn_value' undeclared (first use in this function)
+  btn_value = XGpio_DiscreteRead(&BTNInst, 1);
+  ^~~~~~~~~
+../src/helloworld.c:31:3: error: 'led_data' undeclared (first use in this function)
+   led_data = led_data + btn_value;
+   ^~~~~~~~
+../src/helloworld.c:35:23: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+  XGpio_DiscreteWrite(&LEDInst, 1, led_data);
+                       ^~~~~~~
+                       BTNInst
+../src/helloworld.c: In function 'InterruptSystemSetup':
+../src/helloworld.c:47:34: error: 'BTN_INT' undeclared (first use in this function)
+  XGpio_InterruptEnable(&BTNInst, BTN_INT);
+                                  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:5: error: 'status' undeclared (first use in this function); did you mean 'Status'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+     ^~~~~~
+     Status
+../src/helloworld.c:98:32: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                ^~~~~~~
+                                BTNInst
+../src/helloworld.c:98:41: error: 'LEDS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                         ^~~~~~~~~~~~~~
+                                         BTN_DEVICE_ID
+../src/helloworld.c:103:42: error: 'BTNS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+      status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~
+                                          BTN_DEVICE_ID
+../src/helloworld.c:93:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+17:02:41 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:28:2: error: 'btn_value' undeclared (first use in this function)
+  btn_value = XGpio_DiscreteRead(&BTNInst, 1);
+  ^~~~~~~~~
+../src/helloworld.c:28:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:32:3: error: 'led_data' undeclared (first use in this function)
+   led_data = led_data + btn_value;
+   ^~~~~~~~
+../src/helloworld.c:36:23: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+  XGpio_DiscreteWrite(&LEDInst, 1, led_data);
+                       ^~~~~~~
+                       BTNInst
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:99:5: error: 'status' undeclared (first use in this function); did you mean 'Status'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+     ^~~~~~
+     Status
+../src/helloworld.c:99:32: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                ^~~~~~~
+                                BTNInst
+../src/helloworld.c:99:41: error: 'LEDS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                         ^~~~~~~~~~~~~~
+                                         BTN_DEVICE_ID
+../src/helloworld.c:104:42: error: 'BTNS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+      status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~
+                                          BTN_DEVICE_ID
+../src/helloworld.c:94:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+17:03:21 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:39:23: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+  XGpio_DiscreteWrite(&LEDInst, 1, led_data);
+                       ^~~~~~~
+                       BTNInst
+../src/helloworld.c:39:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:102:5: error: 'status' undeclared (first use in this function); did you mean 'Status'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+     ^~~~~~
+     Status
+../src/helloworld.c:102:32: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                ^~~~~~~
+                                BTNInst
+../src/helloworld.c:102:41: error: 'LEDS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                         ^~~~~~~~~~~~~~
+                                         BTN_DEVICE_ID
+../src/helloworld.c:107:42: error: 'BTNS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+      status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~
+                                          BTN_DEVICE_ID
+../src/helloworld.c:97:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+17:03:39 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:39:23: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+  XGpio_DiscreteWrite(&LEDInst, 1, led_data);
+                       ^~~~~~~
+                       BTNInst
+../src/helloworld.c:39:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:102:5: error: 'status' undeclared (first use in this function); did you mean 'Status'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+     ^~~~~~
+     Status
+../src/helloworld.c:102:32: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                ^~~~~~~
+                                BTNInst
+../src/helloworld.c:102:41: error: 'LEDS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                         ^~~~~~~~~~~~~~
+                                         BTN_DEVICE_ID
+../src/helloworld.c:107:42: error: 'BTNS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+      status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~
+                                          BTN_DEVICE_ID
+../src/helloworld.c:97:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+17:05:24 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:39:23: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+  XGpio_DiscreteWrite(&LEDInst, 1, led_data);
+                       ^~~~~~~
+                       BTNInst
+../src/helloworld.c:39:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:102:32: error: 'LEDInst' undeclared (first use in this function); did you mean 'BTNInst'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                ^~~~~~~
+                                BTNInst
+../src/helloworld.c:102:41: error: 'LEDS_DEVICE_ID' undeclared (first use in this function); did you mean 'BTN_DEVICE_ID'?
+     status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+                                         ^~~~~~~~~~~~~~
+                                         BTN_DEVICE_ID
+../src/helloworld.c:97:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+16:45:43 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: eFPGA_AXI_GPIO_Interrupt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_AXI_GPIO_Interrupt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI_GPIO_Interrupt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI_GPIO_Interrupt.elf  |tee "eFPGA_AXI_GPIO_Interrupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25160	   1952	  22632	  49744	   c250	eFPGA_AXI_GPIO_Interrupt.elf
+'Finished building: eFPGA_AXI_GPIO_Interrupt.elf.size'
+' '
+16:50:12 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:93:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^~~~~~
+At top level:
+../src/helloworld.c:18:12: warning: 'btn_value' defined but not used [-Wunused-variable]
+ static int btn_value;
+            ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_AXI_GPIO_Interrupt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_AXI_GPIO_Interrupt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI_GPIO_Interrupt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI_GPIO_Interrupt.elf  |tee "eFPGA_AXI_GPIO_Interrupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25116	   1952	  22632	  49700	   c224	eFPGA_AXI_GPIO_Interrupt.elf
+'Finished building: eFPGA_AXI_GPIO_Interrupt.elf.size'
+' '
+16:56:42 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:93:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^~~~~~
+At top level:
+../src/helloworld.c:18:12: warning: 'btn_value' defined but not used [-Wunused-variable]
+ static int btn_value;
+            ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_AXI_GPIO_Interrupt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_AXI_GPIO_Interrupt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI_GPIO_Interrupt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI_GPIO_Interrupt.elf  |tee "eFPGA_AXI_GPIO_Interrupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25116	   1952	  22632	  49700	   c224	eFPGA_AXI_GPIO_Interrupt.elf
+'Finished building: eFPGA_AXI_GPIO_Interrupt.elf.size'
+' '
+16:57:46 **** Incremental Build of configuration Debug for project eFPGA_AXI_GPIO_Interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:93:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^~~~~~
+At top level:
+../src/helloworld.c:18:12: warning: 'btn_value' defined but not used [-Wunused-variable]
+ static int btn_value;
+            ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: eFPGA_AXI_GPIO_Interrupt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_AXI_GPIO_Interrupt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: eFPGA_AXI_GPIO_Interrupt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size eFPGA_AXI_GPIO_Interrupt.elf  |tee "eFPGA_AXI_GPIO_Interrupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25116	   1952	  22632	  49700	   c224	eFPGA_AXI_GPIO_Interrupt.elf
+'Finished building: eFPGA_AXI_GPIO_Interrupt.elf.size'
+' '

@@ -1,0 +1,10 @@
+14:45:03 **** Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 65018 C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC.xpfm standalone_domain C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application_system/Debug/system.bif
+sdcard_gen --xpfm C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC.xpfm --sys_config eFPGA_Timers_DMA_GIC --bif C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application_system/Debug/system.bif --bitstream C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit --elf C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf,ps7_cortexa9_0
+ELF does not exist: C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+make: *** [makefile:37: sd_card] Error 1
+
+14:45:10 Build Finished (took 6s.888ms)
+

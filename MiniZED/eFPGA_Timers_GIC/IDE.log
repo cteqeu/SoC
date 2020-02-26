@@ -1,0 +1,1148 @@
+11:16:19 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\temp_xsdb_launch_script.tcl
+11:16:29 INFO  : Registering command handlers for Vitis TCF services
+11:16:29 INFO  : XSCT server has started successfully.
+11:16:31 INFO  : plnx-install-location is set to ''
+11:16:31 INFO  : Successfully done setting XSCT server connection channel  
+11:16:31 INFO  : Successfully done query RDI_DATADIR 
+11:16:31 INFO  : Successfully done setting workspace for the tool. 
+11:47:33 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+11:47:34 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+14:45:22 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:45:43 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:46:28 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:46:45 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:47:09 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:47:22 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:47:39 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:47:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:47:54 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+14:47:54 INFO  : 'jtag frequency' command is executed.
+14:47:54 INFO  : Context for 'APU' is selected.
+14:47:54 INFO  : System reset is completed.
+14:47:57 INFO  : 'after 3000' command is executed.
+14:47:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+14:47:59 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+14:48:00 INFO  : Context for 'APU' is selected.
+14:48:00 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+14:48:00 INFO  : 'configparams force-mem-access 1' command is executed.
+14:48:00 INFO  : Context for 'APU' is selected.
+14:48:00 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+14:48:00 INFO  : 'ps7_init' command is executed.
+14:48:00 INFO  : 'ps7_post_config' command is executed.
+14:48:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:01 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:48:01 INFO  : 'configparams force-mem-access 0' command is executed.
+14:48:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:48:01 INFO  : Memory regions updated for context APU
+14:48:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:01 INFO  : 'con' command is executed.
+14:48:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:48:01 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+14:48:29 INFO  : Disconnected from the channel tcfchan#3.
+14:48:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:30 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+14:48:30 INFO  : 'jtag frequency' command is executed.
+14:48:30 INFO  : Context for 'APU' is selected.
+14:48:30 INFO  : System reset is completed.
+14:48:33 INFO  : 'after 3000' command is executed.
+14:48:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+14:48:35 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+14:48:35 INFO  : Context for 'APU' is selected.
+14:48:35 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+14:48:35 INFO  : 'configparams force-mem-access 1' command is executed.
+14:48:35 INFO  : Context for 'APU' is selected.
+14:48:35 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+14:48:35 INFO  : 'ps7_init' command is executed.
+14:48:35 INFO  : 'ps7_post_config' command is executed.
+14:48:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:35 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:48:35 INFO  : 'configparams force-mem-access 0' command is executed.
+14:48:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:48:35 INFO  : Memory regions updated for context APU
+14:48:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:36 INFO  : 'con' command is executed.
+14:48:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:48:36 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+14:49:04 INFO  : (SwPlaform) Successfully done setParamInSpec 
+14:49:07 INFO  : (SwPlaform) Successfully done setParamInSpec 
+14:49:07 INFO  : (SwPlatform) Successfully done update_mss 
+14:49:08 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+14:52:20 INFO  : Disconnected from the channel tcfchan#4.
+14:52:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:52:21 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+14:52:21 INFO  : 'jtag frequency' command is executed.
+14:52:21 INFO  : Context for 'APU' is selected.
+14:52:21 INFO  : System reset is completed.
+14:52:24 INFO  : 'after 3000' command is executed.
+14:52:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+14:52:25 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+14:52:25 INFO  : Context for 'APU' is selected.
+14:52:25 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+14:52:25 INFO  : 'configparams force-mem-access 1' command is executed.
+14:52:25 INFO  : Context for 'APU' is selected.
+14:52:25 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+14:52:26 INFO  : 'ps7_init' command is executed.
+14:52:26 INFO  : 'ps7_post_config' command is executed.
+14:52:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:52:26 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:52:26 INFO  : 'configparams force-mem-access 0' command is executed.
+14:52:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:52:26 INFO  : Memory regions updated for context APU
+14:52:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:52:26 INFO  : 'con' command is executed.
+14:52:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:52:26 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+14:52:44 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:52:44 INFO  : Updating application flags with new BSP settings...
+14:52:45 INFO  : Successfully updated application flags for project eFPGA_Timers_DMA_GIC_Application.
+14:56:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:56:46 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:56:59 INFO  : Disconnected from the channel tcfchan#6.
+14:57:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:57:00 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+14:57:00 INFO  : 'jtag frequency' command is executed.
+14:57:00 INFO  : Context for 'APU' is selected.
+14:57:00 INFO  : System reset is completed.
+14:57:03 INFO  : 'after 3000' command is executed.
+14:57:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+14:57:05 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+14:57:05 INFO  : Context for 'APU' is selected.
+14:57:05 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+14:57:05 INFO  : 'configparams force-mem-access 1' command is executed.
+14:57:05 INFO  : Context for 'APU' is selected.
+14:57:05 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+14:57:05 INFO  : 'ps7_init' command is executed.
+14:57:05 INFO  : 'ps7_post_config' command is executed.
+14:57:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:57:05 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:57:05 INFO  : 'configparams force-mem-access 0' command is executed.
+14:57:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:57:05 INFO  : Memory regions updated for context APU
+14:57:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:57:05 INFO  : 'con' command is executed.
+14:57:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:57:06 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+14:58:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:58:23 INFO  : Disconnected from the channel tcfchan#7.
+14:58:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:58:24 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+14:58:24 INFO  : 'jtag frequency' command is executed.
+14:58:24 INFO  : Context for 'APU' is selected.
+14:58:24 INFO  : System reset is completed.
+14:58:27 INFO  : 'after 3000' command is executed.
+14:58:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+14:58:28 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+14:58:28 INFO  : Context for 'APU' is selected.
+14:58:28 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+14:58:28 INFO  : 'configparams force-mem-access 1' command is executed.
+14:58:28 INFO  : Context for 'APU' is selected.
+14:58:28 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+14:58:29 INFO  : 'ps7_init' command is executed.
+14:58:29 INFO  : 'ps7_post_config' command is executed.
+14:58:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:58:29 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:58:29 INFO  : 'configparams force-mem-access 0' command is executed.
+14:58:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:58:29 INFO  : Memory regions updated for context APU
+14:58:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:58:29 INFO  : 'con' command is executed.
+14:58:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:58:29 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+14:59:23 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+14:59:33 INFO  : Disconnected from the channel tcfchan#8.
+14:59:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:59:34 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+14:59:34 INFO  : 'jtag frequency' command is executed.
+14:59:34 INFO  : Context for 'APU' is selected.
+14:59:34 INFO  : System reset is completed.
+14:59:37 INFO  : 'after 3000' command is executed.
+14:59:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+14:59:39 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+14:59:39 INFO  : Context for 'APU' is selected.
+14:59:39 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+14:59:39 INFO  : 'configparams force-mem-access 1' command is executed.
+14:59:39 INFO  : Context for 'APU' is selected.
+14:59:39 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+14:59:39 INFO  : 'ps7_init' command is executed.
+14:59:39 INFO  : 'ps7_post_config' command is executed.
+14:59:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:59:39 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:59:39 INFO  : 'configparams force-mem-access 0' command is executed.
+14:59:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:59:39 INFO  : Memory regions updated for context APU
+14:59:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:59:39 INFO  : 'con' command is executed.
+14:59:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:59:39 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+15:00:17 INFO  : Disconnected from the channel tcfchan#9.
+15:00:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:19 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+15:00:19 INFO  : 'jtag frequency' command is executed.
+15:00:19 INFO  : Context for 'APU' is selected.
+15:00:19 INFO  : System reset is completed.
+15:00:22 INFO  : 'after 3000' command is executed.
+15:00:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+15:00:23 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+15:00:23 INFO  : Context for 'APU' is selected.
+15:00:23 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+15:00:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:00:23 INFO  : Context for 'APU' is selected.
+15:00:23 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+15:00:23 INFO  : 'ps7_init' command is executed.
+15:00:23 INFO  : 'ps7_post_config' command is executed.
+15:00:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:00:24 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:00:24 INFO  : 'configparams force-mem-access 0' command is executed.
+15:00:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:00:24 INFO  : Memory regions updated for context APU
+15:00:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:00:24 INFO  : 'con' command is executed.
+15:00:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:00:24 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+15:00:36 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:00:55 INFO  : Disconnected from the channel tcfchan#10.
+15:00:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:57 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+15:00:57 INFO  : 'jtag frequency' command is executed.
+15:00:57 INFO  : Context for 'APU' is selected.
+15:00:57 INFO  : System reset is completed.
+15:01:00 INFO  : 'after 3000' command is executed.
+15:01:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+15:01:01 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+15:01:01 INFO  : Context for 'APU' is selected.
+15:01:01 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+15:01:01 INFO  : 'configparams force-mem-access 1' command is executed.
+15:01:01 INFO  : Context for 'APU' is selected.
+15:01:01 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+15:01:01 INFO  : 'ps7_init' command is executed.
+15:01:01 INFO  : 'ps7_post_config' command is executed.
+15:01:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:02 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:01:02 INFO  : 'configparams force-mem-access 0' command is executed.
+15:01:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:01:02 INFO  : Memory regions updated for context APU
+15:01:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:02 INFO  : 'con' command is executed.
+15:01:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:01:02 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+15:01:54 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:02:09 INFO  : Disconnected from the channel tcfchan#11.
+15:02:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:02:10 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+15:02:10 INFO  : 'jtag frequency' command is executed.
+15:02:10 INFO  : Context for 'APU' is selected.
+15:02:10 INFO  : System reset is completed.
+15:02:13 INFO  : 'after 3000' command is executed.
+15:02:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+15:02:14 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+15:02:14 INFO  : Context for 'APU' is selected.
+15:02:14 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+15:02:14 INFO  : 'configparams force-mem-access 1' command is executed.
+15:02:14 INFO  : Context for 'APU' is selected.
+15:02:14 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+15:02:15 INFO  : 'ps7_init' command is executed.
+15:02:15 INFO  : 'ps7_post_config' command is executed.
+15:02:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:15 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:02:15 INFO  : 'configparams force-mem-access 0' command is executed.
+15:02:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:02:15 INFO  : Memory regions updated for context APU
+15:02:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:15 INFO  : 'con' command is executed.
+15:02:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:02:15 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+15:03:08 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:03:16 INFO  : Disconnected from the channel tcfchan#12.
+15:03:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:03:17 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+15:03:17 INFO  : 'jtag frequency' command is executed.
+15:03:17 INFO  : Context for 'APU' is selected.
+15:03:17 INFO  : System reset is completed.
+15:03:20 INFO  : 'after 3000' command is executed.
+15:03:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+15:03:22 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+15:03:22 INFO  : Context for 'APU' is selected.
+15:03:22 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+15:03:22 INFO  : 'configparams force-mem-access 1' command is executed.
+15:03:22 INFO  : Context for 'APU' is selected.
+15:03:22 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+15:03:22 INFO  : 'ps7_init' command is executed.
+15:03:22 INFO  : 'ps7_post_config' command is executed.
+15:03:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:22 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:03:22 INFO  : 'configparams force-mem-access 0' command is executed.
+15:03:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:03:22 INFO  : Memory regions updated for context APU
+15:03:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:23 INFO  : 'con' command is executed.
+15:03:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:03:23 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+15:46:15 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:46:48 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:47:24 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:49:53 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:54:17 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:55:34 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:55:46 INFO  : Disconnected from the channel tcfchan#13.
+15:55:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:55:47 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+15:55:47 INFO  : 'jtag frequency' command is executed.
+15:55:47 INFO  : Context for 'APU' is selected.
+15:55:47 INFO  : System reset is completed.
+15:55:50 INFO  : 'after 3000' command is executed.
+15:55:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+15:55:51 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+15:55:52 INFO  : Context for 'APU' is selected.
+15:55:52 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+15:55:52 INFO  : 'configparams force-mem-access 1' command is executed.
+15:55:52 INFO  : Context for 'APU' is selected.
+15:55:52 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+15:55:52 INFO  : 'ps7_init' command is executed.
+15:55:52 INFO  : 'ps7_post_config' command is executed.
+15:55:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:55:52 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:55:52 INFO  : 'configparams force-mem-access 0' command is executed.
+15:55:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:55:52 INFO  : Memory regions updated for context APU
+15:55:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:55:52 INFO  : 'con' command is executed.
+15:55:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:55:52 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+15:57:39 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+15:58:02 INFO  : Disconnected from the channel tcfchan#14.
+15:58:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:03 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+15:58:03 INFO  : 'jtag frequency' command is executed.
+15:58:04 INFO  : Context for 'APU' is selected.
+15:58:04 INFO  : System reset is completed.
+15:58:07 INFO  : 'after 3000' command is executed.
+15:58:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+15:58:08 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+15:58:08 INFO  : Context for 'APU' is selected.
+15:58:08 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+15:58:08 INFO  : 'configparams force-mem-access 1' command is executed.
+15:58:08 INFO  : Context for 'APU' is selected.
+15:58:08 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+15:58:08 INFO  : 'ps7_init' command is executed.
+15:58:08 INFO  : 'ps7_post_config' command is executed.
+15:58:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:58:08 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:58:09 INFO  : 'configparams force-mem-access 0' command is executed.
+15:58:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:58:09 INFO  : Memory regions updated for context APU
+15:58:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:58:09 INFO  : 'con' command is executed.
+15:58:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:58:09 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:08:02 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:08:16 INFO  : Disconnected from the channel tcfchan#15.
+16:08:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:08:17 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:08:17 INFO  : 'jtag frequency' command is executed.
+16:08:17 INFO  : Context for 'APU' is selected.
+16:08:17 INFO  : System reset is completed.
+16:08:20 INFO  : 'after 3000' command is executed.
+16:08:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:08:21 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:08:21 INFO  : Context for 'APU' is selected.
+16:08:21 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:08:21 INFO  : 'configparams force-mem-access 1' command is executed.
+16:08:21 INFO  : Context for 'APU' is selected.
+16:08:21 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+16:08:22 INFO  : 'ps7_init' command is executed.
+16:08:22 INFO  : 'ps7_post_config' command is executed.
+16:08:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:08:22 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:08:22 INFO  : 'configparams force-mem-access 0' command is executed.
+16:08:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:08:22 INFO  : Memory regions updated for context APU
+16:08:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:08:22 INFO  : 'con' command is executed.
+16:08:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:08:22 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:09:35 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:09:49 INFO  : Disconnected from the channel tcfchan#16.
+16:09:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:09:50 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:09:50 INFO  : 'jtag frequency' command is executed.
+16:09:50 INFO  : Context for 'APU' is selected.
+16:09:50 INFO  : System reset is completed.
+16:09:53 INFO  : 'after 3000' command is executed.
+16:09:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:09:55 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:09:55 INFO  : Context for 'APU' is selected.
+16:09:55 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:09:55 INFO  : 'configparams force-mem-access 1' command is executed.
+16:09:55 INFO  : Context for 'APU' is selected.
+16:09:55 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+16:09:55 INFO  : 'ps7_init' command is executed.
+16:09:55 INFO  : 'ps7_post_config' command is executed.
+16:09:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:55 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:09:55 INFO  : 'configparams force-mem-access 0' command is executed.
+16:09:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:09:55 INFO  : Memory regions updated for context APU
+16:09:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:55 INFO  : 'con' command is executed.
+16:09:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:09:55 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:11:01 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:11:09 INFO  : Disconnected from the channel tcfchan#17.
+16:11:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:11:10 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:11:10 INFO  : 'jtag frequency' command is executed.
+16:11:10 INFO  : Context for 'APU' is selected.
+16:11:10 INFO  : System reset is completed.
+16:11:13 INFO  : 'after 3000' command is executed.
+16:11:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:11:15 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:11:15 INFO  : Context for 'APU' is selected.
+16:11:15 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:11:15 INFO  : 'configparams force-mem-access 1' command is executed.
+16:11:15 INFO  : Context for 'APU' is selected.
+16:11:15 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+16:11:15 INFO  : 'ps7_init' command is executed.
+16:11:15 INFO  : 'ps7_post_config' command is executed.
+16:11:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:15 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:11:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:11:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:11:15 INFO  : Memory regions updated for context APU
+16:11:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:16 INFO  : 'con' command is executed.
+16:11:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:11:16 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:12:13 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:12:22 INFO  : Disconnected from the channel tcfchan#18.
+16:12:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:23 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:12:23 INFO  : 'jtag frequency' command is executed.
+16:12:23 INFO  : Context for 'APU' is selected.
+16:12:24 INFO  : System reset is completed.
+16:12:27 INFO  : 'after 3000' command is executed.
+16:12:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:12:28 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:12:28 INFO  : Context for 'APU' is selected.
+16:12:28 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:12:28 INFO  : 'configparams force-mem-access 1' command is executed.
+16:12:28 INFO  : Context for 'APU' is selected.
+16:12:28 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+16:12:28 INFO  : 'ps7_init' command is executed.
+16:12:28 INFO  : 'ps7_post_config' command is executed.
+16:12:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:28 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:12:28 INFO  : 'configparams force-mem-access 0' command is executed.
+16:12:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:12:29 INFO  : Memory regions updated for context APU
+16:12:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:29 INFO  : 'con' command is executed.
+16:12:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:12:29 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:12:51 INFO  : Disconnected from the channel tcfchan#19.
+16:12:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:52 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:12:52 INFO  : 'jtag frequency' command is executed.
+16:12:52 INFO  : Context for 'APU' is selected.
+16:12:52 INFO  : System reset is completed.
+16:12:55 INFO  : 'after 3000' command is executed.
+16:12:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:12:56 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:12:56 INFO  : Context for 'APU' is selected.
+16:12:56 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:12:56 INFO  : 'configparams force-mem-access 1' command is executed.
+16:12:56 INFO  : Context for 'APU' is selected.
+16:12:56 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+16:12:57 INFO  : 'ps7_init' command is executed.
+16:12:57 INFO  : 'ps7_post_config' command is executed.
+16:12:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:57 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:12:57 INFO  : 'configparams force-mem-access 0' command is executed.
+16:12:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:12:57 INFO  : Memory regions updated for context APU
+16:12:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:57 INFO  : 'con' command is executed.
+16:12:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:12:57 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:16:58 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:17:20 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:17:40 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:17:49 INFO  : Disconnected from the channel tcfchan#20.
+16:17:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:51 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:17:51 INFO  : 'jtag frequency' command is executed.
+16:17:51 INFO  : Context for 'APU' is selected.
+16:17:51 INFO  : System reset is completed.
+16:17:54 INFO  : 'after 3000' command is executed.
+16:17:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:17:55 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:17:55 INFO  : Context for 'APU' is selected.
+16:17:55 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:17:55 INFO  : 'configparams force-mem-access 1' command is executed.
+16:17:55 INFO  : Context for 'APU' is selected.
+16:17:55 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+16:17:55 INFO  : 'ps7_init' command is executed.
+16:17:55 INFO  : 'ps7_post_config' command is executed.
+16:17:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:56 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:17:56 INFO  : 'configparams force-mem-access 0' command is executed.
+16:17:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:17:56 INFO  : Memory regions updated for context APU
+16:17:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:56 INFO  : 'con' command is executed.
+16:17:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:17:56 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:20:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:20:32 INFO  : Disconnected from the channel tcfchan#21.
+16:20:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:33 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:20:33 INFO  : 'jtag frequency' command is executed.
+16:20:33 INFO  : Context for 'APU' is selected.
+16:20:33 INFO  : System reset is completed.
+16:20:36 INFO  : 'after 3000' command is executed.
+16:20:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:20:37 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:20:37 INFO  : Context for 'APU' is selected.
+16:20:37 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:20:37 INFO  : 'configparams force-mem-access 1' command is executed.
+16:20:37 INFO  : Context for 'APU' is selected.
+16:20:37 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+16:20:37 INFO  : 'ps7_init' command is executed.
+16:20:37 INFO  : 'ps7_post_config' command is executed.
+16:20:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:20:38 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:20:38 INFO  : 'configparams force-mem-access 0' command is executed.
+16:20:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:20:38 INFO  : Memory regions updated for context APU
+16:20:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:20:38 INFO  : 'con' command is executed.
+16:20:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:20:38 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:30:09 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:30:27 INFO  : Disconnected from the channel tcfchan#22.
+16:30:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:28 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:30:28 INFO  : 'jtag frequency' command is executed.
+16:30:28 INFO  : Context for 'APU' is selected.
+16:30:28 INFO  : System reset is completed.
+16:30:31 INFO  : 'after 3000' command is executed.
+16:30:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:30:32 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:30:32 INFO  : Context for 'APU' is selected.
+16:30:32 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:30:32 INFO  : 'configparams force-mem-access 1' command is executed.
+16:30:32 INFO  : Context for 'APU' is selected.
+16:30:32 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl' is done.
+16:30:33 INFO  : 'ps7_init' command is executed.
+16:30:33 INFO  : 'ps7_post_config' command is executed.
+16:30:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:33 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:30:33 INFO  : 'configparams force-mem-access 0' command is executed.
+16:30:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC_Application/Debug/eFPGA_Timers_DMA_GIC_Application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:30:33 INFO  : Memory regions updated for context APU
+16:30:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:33 INFO  : 'con' command is executed.
+16:30:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:30:33 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_timers_dma_gic_application-default.tcl'
+16:52:08 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Timers_DMA_GIC_Application'...
+16:57:47 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+16:57:47 INFO  : No changes in MSS file content so sources will not be generated.
+17:02:07 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+17:02:41 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+17:03:21 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+17:03:39 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+17:05:24 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+17:13:04 INFO  : Disconnected from the channel tcfchan#23.
+16:07:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\temp_xsdb_launch_script.tcl
+16:07:42 INFO  : Registering command handlers for Vitis TCF services
+16:07:43 INFO  : XSCT server has started successfully.
+16:07:48 INFO  : Successfully done setting XSCT server connection channel  
+16:07:48 INFO  : plnx-install-location is set to ''
+16:07:48 INFO  : Successfully done query RDI_DATADIR 
+16:07:48 INFO  : Successfully done setting workspace for the tool. 
+16:45:40 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+16:50:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+16:50:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:50 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:50:50 INFO  : 'jtag frequency' command is executed.
+16:50:50 INFO  : Context for 'APU' is selected.
+16:50:50 INFO  : System reset is completed.
+16:50:53 INFO  : 'after 3000' command is executed.
+16:50:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:50:54 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:50:54 INFO  : Context for 'APU' is selected.
+16:50:54 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:50:54 INFO  : 'configparams force-mem-access 1' command is executed.
+16:50:54 INFO  : Context for 'APU' is selected.
+16:50:54 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/psinit/ps7_init.tcl' is done.
+16:50:55 INFO  : 'ps7_init' command is executed.
+16:50:55 INFO  : 'ps7_post_config' command is executed.
+16:50:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:55 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/Debug/eFPGA_AXI_GPIO_Interrupt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:50:55 INFO  : 'configparams force-mem-access 0' command is executed.
+16:50:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/Debug/eFPGA_AXI_GPIO_Interrupt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:50:56 INFO  : Memory regions updated for context APU
+16:50:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:56 INFO  : 'con' command is executed.
+16:50:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:50:56 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_axi_gpio_interrupt-default.tcl'
+16:56:42 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+16:56:55 INFO  : Disconnected from the channel tcfchan#1.
+16:56:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:56 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:56:56 INFO  : 'jtag frequency' command is executed.
+16:56:56 INFO  : Context for 'APU' is selected.
+16:56:56 INFO  : System reset is completed.
+16:56:59 INFO  : 'after 3000' command is executed.
+16:56:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:57:00 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:57:00 INFO  : Context for 'APU' is selected.
+16:57:03 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:57:03 INFO  : 'configparams force-mem-access 1' command is executed.
+16:57:03 INFO  : Context for 'APU' is selected.
+16:57:03 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/psinit/ps7_init.tcl' is done.
+16:57:04 INFO  : 'ps7_init' command is executed.
+16:57:04 INFO  : 'ps7_post_config' command is executed.
+16:57:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:04 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/Debug/eFPGA_AXI_GPIO_Interrupt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:57:04 INFO  : 'configparams force-mem-access 0' command is executed.
+16:57:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/Debug/eFPGA_AXI_GPIO_Interrupt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:57:04 INFO  : Memory regions updated for context APU
+16:57:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:04 INFO  : 'con' command is executed.
+16:57:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:57:04 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_axi_gpio_interrupt-default.tcl'
+16:57:46 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_AXI_GPIO_Interrupt'...
+16:57:57 INFO  : Disconnected from the channel tcfchan#2.
+16:57:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:57:58 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+16:57:58 INFO  : 'jtag frequency' command is executed.
+16:57:58 INFO  : Context for 'APU' is selected.
+16:57:58 INFO  : System reset is completed.
+16:58:01 INFO  : 'after 3000' command is executed.
+16:58:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+16:58:02 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit"
+16:58:02 INFO  : Context for 'APU' is selected.
+16:58:05 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa'.
+16:58:05 INFO  : 'configparams force-mem-access 1' command is executed.
+16:58:05 INFO  : Context for 'APU' is selected.
+16:58:05 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/psinit/ps7_init.tcl' is done.
+16:58:06 INFO  : 'ps7_init' command is executed.
+16:58:06 INFO  : 'ps7_post_config' command is executed.
+16:58:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:58:06 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/Debug/eFPGA_AXI_GPIO_Interrupt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:58:06 INFO  : 'configparams force-mem-access 0' command is executed.
+16:58:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/bitstream/eFPGA_Timers_DMA_GIC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/hw/eFPGA_Timers_DMA_GIC.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt/Debug/eFPGA_AXI_GPIO_Interrupt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:58:06 INFO  : Memory regions updated for context APU
+16:58:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:58:06 INFO  : 'con' command is executed.
+16:58:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:58:06 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Timers_DMA_GIC\.sdk\launch_scripts\single_application_debug\debugger_efpga_axi_gpio_interrupt-default.tcl'
+17:02:48 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+17:02:49 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+17:21:24 INFO  : Disconnected from the channel tcfchan#3.

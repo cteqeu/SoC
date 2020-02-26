@@ -1,0 +1,80 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xscutimer.h"
+#include "xscugic.h"
+
+//static void timer2_interrupt_handler(void *CallBackRef);
+
+int InterruptCounter= 0;
+
+int main()
+{
+	int Status;
+	int Timer1_Value;
+	int counter = 0;
+
+	/**
+	 * The XScuTimer driver instance data. The user is required to allocate a
+	 * variable of this type for every timer device in the system.
+	 * A pointer to a variable of this type is then passed to the driver API
+	 * functions.
+	 */
+
+	XScuTimer Timer1, Timer2;
+
+	/**
+	 * This typedef contains configuration information for the device.
+	 */
+
+	XScuTimer_Config * Timer1_config ,* Timer2_config;
+
+	/**
+	* Lookup the device configuration based on the unique device ID. The table
+	* contains the configuration info for each device in the system.
+	**/
+
+	Timer1_config = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+	//Timer2_config = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+
+	/**
+	* CfgInitialize a specific interrupt controller instance/driver
+	**/
+	Status = XScuTimer_CfgInitialize(&Timer1, Timer1_config, Timer1_config->BaseAddr);
+
+	/** Write to the timer load register. This will also update the
+	* timer counter register with the new value. This macro can be used to
+	* change the time-out value.
+	**/
+
+	XScuTimer_LoadTimer(&Timer1,1000000000);
+
+	// Start The Timer
+
+	XScuTimer_Start(&Timer1);
+
+    init_platform();
+
+
+    printf("Timer Demo Application...\n\r");
+
+    while(1)
+    {
+    	sleep_A9(1);
+    	Timer1_Value = XScuTimer_GetCounterValue(&Timer1);
+    	if(Timer1_Value == 0)
+    	{
+    		printf("Timer end reached...\n\r");
+    		while(1);
+    	}
+    	else
+    	{
+    		printf("Timervalue: %d\n\r",Timer1_Value);
+
+    	}
+    	//sleep_A9(1);
+    }
+
+    cleanup_platform();
+    return 0;
+}

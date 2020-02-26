@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="eFPGA_AXI_GPIO_Interrupt" location="C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_AXI_GPIO_Interrupt" platform="C:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC.xpfm" platformUID="xilinx:minized::0.0(custom)" systemProject="eFPGA_AXI_GPIO_Interrupt_system" sysConfig="eFPGA_Timers_DMA_GIC" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="11708ea09582dc7273d1733ea80ac0a4">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.955412975">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1592567375" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
