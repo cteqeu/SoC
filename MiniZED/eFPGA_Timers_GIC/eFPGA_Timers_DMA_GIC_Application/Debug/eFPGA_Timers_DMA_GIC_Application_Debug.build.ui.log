@@ -1,0 +1,29 @@
+2020-02-24T16:52:08.983405800255-16:52:08 **** Incremental Build of configuration Debug for project eFPGA_Timers_DMA_GIC_Application ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-../src/helloworld.c: In function 'main':
+000/eFPGA_Timers_DMA_GIC_Application/src/helloworld.c21-1-1variable 'Status' set but not used [-Wunused-but-set-variable]1-../src/helloworld.c:21:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+000-  int Status;
+000-      ^~~~~~
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building target: eFPGA_Timers_DMA_GIC_Application.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_Timers_DMA_GIC/eFPGA_Timers_DMA_GIC/export/eFPGA_Timers_DMA_GIC/sw/eFPGA_Timers_DMA_GIC/standalone_domain/bsplib/lib -o "eFPGA_Timers_DMA_GIC_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: eFPGA_Timers_DMA_GIC_Application.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size eFPGA_Timers_DMA_GIC_Application.elf  |tee "eFPGA_Timers_DMA_GIC_Application.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  61124	   3368	  23360	  87852	  1572c	eFPGA_Timers_DMA_GIC_Application.elf
+000-'Finished building: eFPGA_Timers_DMA_GIC_Application.elf.size'
+000-' '
+00255-
+16:52:14 Build Finished (took 5s.916ms)
+
