@@ -1,0 +1,10 @@
+using namespace std;
+#include <stdio.h>
+#include <iostream>
+
+int main(int argc, char **argv)
+{
+
+	printf("Hello cpp world on Zynq PS\n\r");
+	return 0;
+}

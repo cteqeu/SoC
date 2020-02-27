@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move &apos;tensorflow&apos; to &apos;eFPGA_uTensor&apos;" description="Move &apos;tensorflow&apos; to &apos;eFPGA_uTensor&apos;" destination="/eFPGA_uTensor" element1="src/tensorflow" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1582792138981" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;third_party&apos; to &apos;eFPGA_uTensor&apos;" description="Move &apos;third_party&apos; to &apos;eFPGA_uTensor&apos;" destination="/eFPGA_uTensor" element1="src/third_party" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1582792165515" updateReferences="true"/>
+</session>

@@ -1,0 +1,1191 @@
+08:13:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\FPGA\eFPGA_uTensor\temp_xsdb_launch_script.tcl
+08:13:54 INFO  : XSCT server has started successfully.
+08:13:54 INFO  : Successfully done setting XSCT server connection channel  
+08:13:54 INFO  : Registering command handlers for Vitis TCF services
+08:13:56 INFO  : plnx-install-location is set to ''
+08:13:56 INFO  : Successfully done setting workspace for the tool. 
+08:13:56 INFO  : Successfully done query RDI_DATADIR 
+08:18:49 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+08:20:16 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+08:20:16 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+08:20:24 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+08:20:24 INFO  : No changes in MSS file content so sources will not be generated.
+08:20:36 INFO  : (SwPlaform) Successfully done setParamInSpec 
+08:20:37 INFO  : (SwPlaform) Successfully done setParamInSpec 
+08:20:51 INFO  : (SwPlatform) Successfully done update_mss 
+08:20:51 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+08:30:17 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+08:30:17 INFO  : No changes in MSS file content so sources will not be generated.
+08:32:32 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+08:32:32 INFO  : No changes in MSS file content so sources will not be generated.
+08:51:39 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+08:51:40 INFO  : Updating application flags with new BSP settings...
+08:51:40 INFO  : Successfully updated application flags for project eFPGA_uTensor.
+08:52:19 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+08:52:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:52:57 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+08:52:57 INFO  : 'jtag frequency' command is executed.
+08:52:57 INFO  : Context for 'APU' is selected.
+08:52:57 INFO  : System reset is completed.
+08:53:00 INFO  : 'after 3000' command is executed.
+08:53:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+08:53:02 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+08:53:02 INFO  : Context for 'APU' is selected.
+08:53:02 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+08:53:02 INFO  : 'configparams force-mem-access 1' command is executed.
+08:53:02 INFO  : Context for 'APU' is selected.
+08:53:02 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+08:53:02 INFO  : 'ps7_init' command is executed.
+08:53:02 INFO  : 'ps7_post_config' command is executed.
+08:53:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:53:03 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:53:03 INFO  : 'configparams force-mem-access 0' command is executed.
+08:53:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:53:04 INFO  : Memory regions updated for context APU
+08:53:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:53:04 INFO  : 'con' command is executed.
+08:53:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+08:53:04 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+09:26:41 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:29:32 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:31:21 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:31:56 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:40:31 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:41:04 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:41:45 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:42:24 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:43:13 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:56:10 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:56:59 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:58:14 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:58:41 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+09:59:48 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:00:22 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:01:47 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:02:16 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:03:15 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:04:29 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:05:06 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:05:51 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:06:46 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:07:18 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:07:51 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:08:29 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:09:03 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:09:35 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:15:23 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+10:15:23 INFO  : No changes in MSS file content so sources will not be generated.
+10:21:26 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:22:29 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:24:17 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:25:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:26:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:26:49 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:27:40 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:28:24 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:28:51 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:30:21 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:30:55 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:32:01 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:32:27 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:33:13 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:33:44 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:34:17 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:35:02 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:35:47 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:36:58 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:37:26 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:38:01 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:38:40 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:39:34 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:40:04 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:40:32 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:42:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:43:05 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:44:34 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:45:16 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:45:49 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:46:19 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:46:48 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:47:18 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:47:56 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:48:19 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:48:58 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:49:26 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:49:55 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:50:23 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:50:55 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:51:21 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:51:50 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:52:19 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:52:50 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:54:05 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:56:34 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:57:13 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:58:21 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+10:59:30 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:00:09 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:00:36 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:01:17 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:01:54 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:02:23 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:04:40 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:05:10 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:05:44 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:06:14 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:06:44 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:07:14 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:07:59 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:08:29 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:10:25 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:10:55 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:16:41 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:18:50 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:20:26 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:20:54 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:21:33 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:22:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:23:08 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:23:37 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:24:53 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:25:45 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:26:22 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:27:29 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:27:53 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:28:37 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:29:01 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:29:33 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:30:04 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:30:28 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:31:05 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:31:30 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:32:01 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:32:41 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:33:26 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:33:53 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:34:18 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:34:58 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:35:41 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:36:09 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:36:48 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:37:46 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:38:26 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:38:54 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:39:23 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:41:18 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:41:46 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:42:25 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:43:21 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:43:52 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:44:17 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:44:41 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:45:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:45:47 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:46:17 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:47:16 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:47:44 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:48:11 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:48:35 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:48:57 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:49:28 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:50:09 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:50:50 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:52:05 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:53:14 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:53:45 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:54:24 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:55:02 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:55:51 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:56:38 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:57:14 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:57:39 INFO  : Disconnected from the channel tcfchan#3.
+11:57:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:57:41 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+11:57:41 INFO  : 'jtag frequency' command is executed.
+11:57:41 INFO  : Context for 'APU' is selected.
+11:57:41 INFO  : System reset is completed.
+11:57:44 INFO  : 'after 3000' command is executed.
+11:57:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+11:57:45 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+11:57:45 INFO  : Context for 'APU' is selected.
+11:57:45 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+11:57:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:57:45 INFO  : Context for 'APU' is selected.
+11:57:45 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+11:57:46 INFO  : 'ps7_init' command is executed.
+11:57:46 INFO  : 'ps7_post_config' command is executed.
+11:57:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:57:48 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:57:48 INFO  : 'configparams force-mem-access 0' command is executed.
+11:57:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:57:48 INFO  : Memory regions updated for context APU
+11:57:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:57:48 INFO  : 'con' command is executed.
+11:57:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:57:48 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+11:58:56 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+11:59:33 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:00:27 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:07:12 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:09:13 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:09:35 INFO  : Disconnected from the channel tcfchan#4.
+12:09:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:09:36 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:09:36 INFO  : 'jtag frequency' command is executed.
+12:09:36 INFO  : Context for 'APU' is selected.
+12:09:36 INFO  : System reset is completed.
+12:09:39 INFO  : 'after 3000' command is executed.
+12:09:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:09:40 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:09:40 INFO  : Context for 'APU' is selected.
+12:09:40 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:09:40 INFO  : 'configparams force-mem-access 1' command is executed.
+12:09:40 INFO  : Context for 'APU' is selected.
+12:09:40 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:09:41 INFO  : 'ps7_init' command is executed.
+12:09:41 INFO  : 'ps7_post_config' command is executed.
+12:09:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:09:43 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:09:43 INFO  : 'configparams force-mem-access 0' command is executed.
+12:09:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:09:43 INFO  : Memory regions updated for context APU
+12:09:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:09:43 INFO  : 'con' command is executed.
+12:09:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:09:43 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:11:39 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:11:59 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:12:17 INFO  : Disconnected from the channel tcfchan#5.
+12:12:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:12:18 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:12:18 INFO  : 'jtag frequency' command is executed.
+12:12:18 INFO  : Context for 'APU' is selected.
+12:12:18 INFO  : System reset is completed.
+12:12:21 INFO  : 'after 3000' command is executed.
+12:12:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:12:23 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:12:23 INFO  : Context for 'APU' is selected.
+12:12:23 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:12:23 INFO  : 'configparams force-mem-access 1' command is executed.
+12:12:23 INFO  : Context for 'APU' is selected.
+12:12:23 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:12:23 INFO  : 'ps7_init' command is executed.
+12:12:23 INFO  : 'ps7_post_config' command is executed.
+12:12:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:12:25 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:12:25 INFO  : 'configparams force-mem-access 0' command is executed.
+12:12:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:12:26 INFO  : Memory regions updated for context APU
+12:12:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:12:26 INFO  : 'con' command is executed.
+12:12:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:12:26 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:18:00 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:18:23 INFO  : Disconnected from the channel tcfchan#6.
+12:18:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:18:24 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:18:24 INFO  : 'jtag frequency' command is executed.
+12:18:24 INFO  : Context for 'APU' is selected.
+12:18:25 INFO  : System reset is completed.
+12:18:28 INFO  : 'after 3000' command is executed.
+12:18:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:18:29 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:18:29 INFO  : Context for 'APU' is selected.
+12:18:29 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:18:29 INFO  : 'configparams force-mem-access 1' command is executed.
+12:18:29 INFO  : Context for 'APU' is selected.
+12:18:29 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:18:29 INFO  : 'ps7_init' command is executed.
+12:18:29 INFO  : 'ps7_post_config' command is executed.
+12:18:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:18:32 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:18:32 INFO  : 'configparams force-mem-access 0' command is executed.
+12:18:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:18:32 INFO  : Memory regions updated for context APU
+12:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:18:32 INFO  : 'con' command is executed.
+12:18:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:18:32 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:18:47 INFO  : Disconnected from the channel tcfchan#7.
+12:18:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:18:48 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:18:48 INFO  : 'jtag frequency' command is executed.
+12:18:48 INFO  : Context for 'APU' is selected.
+12:18:49 INFO  : System reset is completed.
+12:18:52 INFO  : 'after 3000' command is executed.
+12:18:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:18:53 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:18:53 INFO  : Context for 'APU' is selected.
+12:18:53 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:18:53 INFO  : 'configparams force-mem-access 1' command is executed.
+12:18:53 INFO  : Context for 'APU' is selected.
+12:18:53 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:18:53 INFO  : 'ps7_init' command is executed.
+12:18:53 INFO  : 'ps7_post_config' command is executed.
+12:18:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:18:56 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:18:56 INFO  : 'configparams force-mem-access 0' command is executed.
+12:18:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:18:56 INFO  : Memory regions updated for context APU
+12:18:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:18:56 INFO  : 'con' command is executed.
+12:18:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:18:56 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:19:52 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:20:19 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:20:40 INFO  : Disconnected from the channel tcfchan#8.
+12:20:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:20:41 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:20:41 INFO  : 'jtag frequency' command is executed.
+12:20:41 INFO  : Context for 'APU' is selected.
+12:20:41 INFO  : System reset is completed.
+12:20:44 INFO  : 'after 3000' command is executed.
+12:20:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:20:45 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:20:45 INFO  : Context for 'APU' is selected.
+12:20:45 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:20:45 INFO  : 'configparams force-mem-access 1' command is executed.
+12:20:45 INFO  : Context for 'APU' is selected.
+12:20:45 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:20:45 INFO  : 'ps7_init' command is executed.
+12:20:45 INFO  : 'ps7_post_config' command is executed.
+12:20:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:20:48 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:20:48 INFO  : 'configparams force-mem-access 0' command is executed.
+12:20:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:20:48 INFO  : Memory regions updated for context APU
+12:20:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:20:48 INFO  : 'con' command is executed.
+12:20:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:20:48 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:21:22 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:21:41 INFO  : Disconnected from the channel tcfchan#9.
+12:21:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:21:42 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:21:42 INFO  : 'jtag frequency' command is executed.
+12:21:42 INFO  : Context for 'APU' is selected.
+12:21:42 INFO  : System reset is completed.
+12:21:45 INFO  : 'after 3000' command is executed.
+12:21:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:21:47 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:21:47 INFO  : Context for 'APU' is selected.
+12:21:47 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:21:47 INFO  : 'configparams force-mem-access 1' command is executed.
+12:21:47 INFO  : Context for 'APU' is selected.
+12:21:47 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:21:47 INFO  : 'ps7_init' command is executed.
+12:21:47 INFO  : 'ps7_post_config' command is executed.
+12:21:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:21:50 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:21:50 INFO  : 'configparams force-mem-access 0' command is executed.
+12:21:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:21:50 INFO  : Memory regions updated for context APU
+12:21:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:21:50 INFO  : 'con' command is executed.
+12:21:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:21:50 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:22:31 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:22:49 INFO  : Disconnected from the channel tcfchan#10.
+12:22:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:22:50 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:22:50 INFO  : 'jtag frequency' command is executed.
+12:22:50 INFO  : Context for 'APU' is selected.
+12:22:50 INFO  : System reset is completed.
+12:22:53 INFO  : 'after 3000' command is executed.
+12:22:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:22:55 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:22:55 INFO  : Context for 'APU' is selected.
+12:22:55 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:22:55 INFO  : 'configparams force-mem-access 1' command is executed.
+12:22:55 INFO  : Context for 'APU' is selected.
+12:22:55 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:22:55 INFO  : 'ps7_init' command is executed.
+12:22:55 INFO  : 'ps7_post_config' command is executed.
+12:22:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:22:58 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:22:58 INFO  : 'configparams force-mem-access 0' command is executed.
+12:22:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:22:58 INFO  : Memory regions updated for context APU
+12:22:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:22:58 INFO  : 'con' command is executed.
+12:22:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:22:58 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:23:25 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:23:41 INFO  : Disconnected from the channel tcfchan#11.
+12:23:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:23:43 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:23:43 INFO  : 'jtag frequency' command is executed.
+12:23:43 INFO  : Context for 'APU' is selected.
+12:23:43 INFO  : System reset is completed.
+12:23:46 INFO  : 'after 3000' command is executed.
+12:23:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:23:47 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:23:47 INFO  : Context for 'APU' is selected.
+12:23:47 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:23:47 INFO  : 'configparams force-mem-access 1' command is executed.
+12:23:47 INFO  : Context for 'APU' is selected.
+12:23:47 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:23:47 INFO  : 'ps7_init' command is executed.
+12:23:47 INFO  : 'ps7_post_config' command is executed.
+12:23:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:23:50 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:23:50 INFO  : 'configparams force-mem-access 0' command is executed.
+12:23:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:23:50 INFO  : Memory regions updated for context APU
+12:23:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:23:50 INFO  : 'con' command is executed.
+12:23:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:23:50 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:24:31 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:25:26 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:25:44 INFO  : Disconnected from the channel tcfchan#12.
+12:25:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:25:45 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:25:45 INFO  : 'jtag frequency' command is executed.
+12:25:45 INFO  : Context for 'APU' is selected.
+12:25:45 INFO  : System reset is completed.
+12:25:48 INFO  : 'after 3000' command is executed.
+12:25:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:25:49 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:25:49 INFO  : Context for 'APU' is selected.
+12:25:49 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:25:49 INFO  : 'configparams force-mem-access 1' command is executed.
+12:25:49 INFO  : Context for 'APU' is selected.
+12:25:49 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:25:50 INFO  : 'ps7_init' command is executed.
+12:25:50 INFO  : 'ps7_post_config' command is executed.
+12:25:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:25:52 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:25:52 INFO  : 'configparams force-mem-access 0' command is executed.
+12:25:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:25:52 INFO  : Memory regions updated for context APU
+12:25:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:25:52 INFO  : 'con' command is executed.
+12:25:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:25:52 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:26:34 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:27:04 INFO  : Disconnected from the channel tcfchan#13.
+12:27:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:27:05 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:27:05 INFO  : 'jtag frequency' command is executed.
+12:27:05 INFO  : Context for 'APU' is selected.
+12:27:05 INFO  : System reset is completed.
+12:27:08 INFO  : 'after 3000' command is executed.
+12:27:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:27:10 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:27:10 INFO  : Context for 'APU' is selected.
+12:27:10 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:27:10 INFO  : 'configparams force-mem-access 1' command is executed.
+12:27:10 INFO  : Context for 'APU' is selected.
+12:27:10 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:27:10 INFO  : 'ps7_init' command is executed.
+12:27:10 INFO  : 'ps7_post_config' command is executed.
+12:27:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:27:12 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:27:13 INFO  : 'configparams force-mem-access 0' command is executed.
+12:27:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:27:13 INFO  : Memory regions updated for context APU
+12:27:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:27:13 INFO  : 'con' command is executed.
+12:27:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:27:13 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:28:36 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:29:11 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:35:13 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:37:23 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:39:17 INFO  : Disconnected from the channel tcfchan#14.
+12:39:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:39:18 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:39:18 INFO  : 'jtag frequency' command is executed.
+12:39:18 INFO  : Context for 'APU' is selected.
+12:39:18 INFO  : System reset is completed.
+12:39:21 INFO  : 'after 3000' command is executed.
+12:39:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:39:23 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:39:23 INFO  : Context for 'APU' is selected.
+12:39:23 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:39:23 INFO  : 'configparams force-mem-access 1' command is executed.
+12:39:23 INFO  : Context for 'APU' is selected.
+12:39:23 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:39:23 INFO  : 'ps7_init' command is executed.
+12:39:23 INFO  : 'ps7_post_config' command is executed.
+12:39:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:39:25 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:39:25 INFO  : 'configparams force-mem-access 0' command is executed.
+12:39:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:39:25 INFO  : Memory regions updated for context APU
+12:39:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:39:26 INFO  : 'con' command is executed.
+12:39:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:39:26 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:42:38 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:53:52 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:54:44 INFO  : Disconnected from the channel tcfchan#15.
+12:54:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:54:45 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:54:45 INFO  : 'jtag frequency' command is executed.
+12:54:45 INFO  : Context for 'APU' is selected.
+12:54:46 INFO  : System reset is completed.
+12:54:49 INFO  : 'after 3000' command is executed.
+12:54:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:54:50 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:54:50 INFO  : Context for 'APU' is selected.
+12:54:50 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:54:50 INFO  : 'configparams force-mem-access 1' command is executed.
+12:54:50 INFO  : Context for 'APU' is selected.
+12:54:50 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:54:50 INFO  : 'ps7_init' command is executed.
+12:54:50 INFO  : 'ps7_post_config' command is executed.
+12:54:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:53 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:54:53 INFO  : 'configparams force-mem-access 0' command is executed.
+12:54:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:54:53 INFO  : Memory regions updated for context APU
+12:54:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:53 INFO  : 'con' command is executed.
+12:54:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:54:53 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+12:55:53 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+12:56:38 INFO  : Disconnected from the channel tcfchan#17.
+12:56:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:39 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:56:39 INFO  : 'jtag frequency' command is executed.
+12:56:39 INFO  : Context for 'APU' is selected.
+12:56:39 INFO  : System reset is completed.
+12:56:42 INFO  : 'after 3000' command is executed.
+12:56:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:56:44 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+12:56:44 INFO  : Context for 'APU' is selected.
+12:56:44 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+12:56:44 INFO  : 'configparams force-mem-access 1' command is executed.
+12:56:44 INFO  : Context for 'APU' is selected.
+12:56:44 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+12:56:44 INFO  : 'ps7_init' command is executed.
+12:56:44 INFO  : 'ps7_post_config' command is executed.
+12:56:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:56:46 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:56:47 INFO  : 'configparams force-mem-access 0' command is executed.
+12:56:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:56:47 INFO  : Memory regions updated for context APU
+12:56:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:56:47 INFO  : 'con' command is executed.
+12:56:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:56:47 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+13:00:29 INFO  : Disconnected from the channel tcfchan#19.
+13:00:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:00:31 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:00:31 INFO  : 'jtag frequency' command is executed.
+13:00:31 INFO  : Context for 'APU' is selected.
+13:00:31 INFO  : System reset is completed.
+13:00:34 INFO  : 'after 3000' command is executed.
+13:00:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:00:35 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+13:00:35 INFO  : Context for 'APU' is selected.
+13:00:35 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+13:00:35 INFO  : 'configparams force-mem-access 1' command is executed.
+13:00:35 INFO  : Context for 'APU' is selected.
+13:00:35 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+13:00:36 INFO  : 'ps7_init' command is executed.
+13:00:36 INFO  : 'ps7_post_config' command is executed.
+13:00:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:38 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:00:38 INFO  : 'configparams force-mem-access 0' command is executed.
+13:00:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:00:38 INFO  : Memory regions updated for context APU
+13:00:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:38 INFO  : 'con' command is executed.
+13:00:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:00:38 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+13:02:11 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+13:02:35 INFO  : Disconnected from the channel tcfchan#20.
+13:02:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:36 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:02:36 INFO  : 'jtag frequency' command is executed.
+13:02:37 INFO  : Context for 'APU' is selected.
+13:02:37 INFO  : System reset is completed.
+13:02:40 INFO  : 'after 3000' command is executed.
+13:02:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:02:41 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+13:02:41 INFO  : Context for 'APU' is selected.
+13:02:41 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+13:02:41 INFO  : 'configparams force-mem-access 1' command is executed.
+13:02:41 INFO  : Context for 'APU' is selected.
+13:02:41 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+13:02:41 INFO  : 'ps7_init' command is executed.
+13:02:41 INFO  : 'ps7_post_config' command is executed.
+13:02:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:02:44 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:02:44 INFO  : 'configparams force-mem-access 0' command is executed.
+13:02:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:02:44 INFO  : Memory regions updated for context APU
+13:02:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:02:44 INFO  : 'con' command is executed.
+13:02:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:02:44 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+13:06:06 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+13:06:36 INFO  : Disconnected from the channel tcfchan#21.
+13:06:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:06:38 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:06:38 INFO  : 'jtag frequency' command is executed.
+13:06:38 INFO  : Context for 'APU' is selected.
+13:06:38 INFO  : System reset is completed.
+13:06:41 INFO  : 'after 3000' command is executed.
+13:06:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:06:42 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+13:06:42 INFO  : Context for 'APU' is selected.
+13:06:42 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+13:06:42 INFO  : 'configparams force-mem-access 1' command is executed.
+13:06:42 INFO  : Context for 'APU' is selected.
+13:06:42 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+13:06:43 INFO  : 'ps7_init' command is executed.
+13:06:43 INFO  : 'ps7_post_config' command is executed.
+13:06:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:06:45 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:06:45 INFO  : 'configparams force-mem-access 0' command is executed.
+13:06:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:06:45 INFO  : Memory regions updated for context APU
+13:06:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:06:46 INFO  : 'con' command is executed.
+13:06:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:06:46 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+13:09:06 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+13:09:27 INFO  : Disconnected from the channel tcfchan#22.
+13:09:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:29 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:09:29 INFO  : 'jtag frequency' command is executed.
+13:09:29 INFO  : Context for 'APU' is selected.
+13:09:29 INFO  : System reset is completed.
+13:09:32 INFO  : 'after 3000' command is executed.
+13:09:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:09:33 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+13:09:33 INFO  : Context for 'APU' is selected.
+13:09:33 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+13:09:33 INFO  : 'configparams force-mem-access 1' command is executed.
+13:09:33 INFO  : Context for 'APU' is selected.
+13:09:33 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+13:09:33 INFO  : 'ps7_init' command is executed.
+13:09:33 INFO  : 'ps7_post_config' command is executed.
+13:09:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:09:36 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:09:36 INFO  : 'configparams force-mem-access 0' command is executed.
+13:09:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:09:36 INFO  : Memory regions updated for context APU
+13:09:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:09:36 INFO  : 'con' command is executed.
+13:09:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:09:36 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+13:10:03 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+13:10:31 INFO  : Disconnected from the channel tcfchan#23.
+13:10:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:10:32 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:10:32 INFO  : 'jtag frequency' command is executed.
+13:10:32 INFO  : Context for 'APU' is selected.
+13:10:32 INFO  : System reset is completed.
+13:10:35 INFO  : 'after 3000' command is executed.
+13:10:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:10:37 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+13:10:37 INFO  : Context for 'APU' is selected.
+13:10:37 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+13:10:37 INFO  : 'configparams force-mem-access 1' command is executed.
+13:10:37 INFO  : Context for 'APU' is selected.
+13:10:37 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+13:10:37 INFO  : 'ps7_init' command is executed.
+13:10:37 INFO  : 'ps7_post_config' command is executed.
+13:10:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:10:39 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:10:40 INFO  : 'configparams force-mem-access 0' command is executed.
+13:10:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:10:40 INFO  : Memory regions updated for context APU
+13:10:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:10:40 INFO  : 'con' command is executed.
+13:10:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:10:40 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+13:11:06 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_uTensor'...
+13:11:30 INFO  : Disconnected from the channel tcfchan#24.
+13:11:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:11:31 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:11:31 INFO  : 'jtag frequency' command is executed.
+13:11:31 INFO  : Context for 'APU' is selected.
+13:11:31 INFO  : System reset is completed.
+13:11:34 INFO  : 'after 3000' command is executed.
+13:11:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:11:35 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit"
+13:11:35 INFO  : Context for 'APU' is selected.
+13:11:35 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa'.
+13:11:35 INFO  : 'configparams force-mem-access 1' command is executed.
+13:11:35 INFO  : Context for 'APU' is selected.
+13:11:35 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl' is done.
+13:11:36 INFO  : 'ps7_init' command is executed.
+13:11:36 INFO  : 'ps7_post_config' command is executed.
+13:11:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:11:38 INFO  : The application 'C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:11:38 INFO  : 'configparams force-mem-access 0' command is executed.
+13:11:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/bitstream/eFPGA_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor_1/export/eFPGA_uTensor_1/hw/eFPGA_uTensor.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/FPGA/eFPGA_uTensor/eFPGA_uTensor/Debug/eFPGA_uTensor.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:11:38 INFO  : Memory regions updated for context APU
+13:11:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:11:38 INFO  : 'con' command is executed.
+13:11:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:11:38 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_uTensor\.sdk\launch_scripts\single_application_debug\debugger_efpga_utensor-default.tcl'
+13:30:17 INFO  : Disconnected from the channel tcfchan#25.
