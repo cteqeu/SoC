@@ -1,0 +1,10 @@
+13:01:21 **** Incremental Build of configuration Debug for project eFPGA_Profiling ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+
+13:01:23 Build Finished (took 2s.24ms)
+

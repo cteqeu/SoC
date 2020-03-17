@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# 
+# Start of session at: Fri Mar 13 13:15:27 2020
+# Process ID: 141104
+# Current directory: C:/devWorks/FPGA/eFPGA_Profiling/webtalk
+# Command line: wbtcv.exe -mode batch -source vitis_webtalk.tcl
+# Log file: C:/devWorks/FPGA/eFPGA_Profiling/webtalk/webtalk.log
+# Journal file: C:/devWorks/FPGA/eFPGA_Profiling/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source vitis_webtalk.tcl

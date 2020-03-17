@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="eFPGA_Profiling" location="C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling" platform="C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/export/eFPGA_HelloWorld/eFPGA_HelloWorld.xpfm" platformUID="xilinx:minized::0.0(custom)" systemProject="eFPGA_Profiling_system" sysConfig="eFPGA_HelloWorld" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="6fe0fb0533609fa372a32c4085b9a69c">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.897835535">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1359828593" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

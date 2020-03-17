@@ -1,0 +1,238 @@
+12:20:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\FPGA\eFPGA_Profiling\temp_xsdb_launch_script.tcl
+12:20:13 INFO  : XSCT server has started successfully.
+12:20:14 INFO  : Registering command handlers for Vitis TCF services
+12:20:16 INFO  : Successfully done setting XSCT server connection channel  
+12:20:16 INFO  : plnx-install-location is set to ''
+12:20:16 INFO  : Successfully done query RDI_DATADIR 
+12:20:16 INFO  : Successfully done setting workspace for the tool. 
+12:22:21 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+12:22:22 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+12:23:04 INFO  : (SwPlaform) Successfully done setParamInSpec 
+12:23:11 INFO  : (SwPlaform) Successfully done setParamInSpec 
+12:24:07 INFO  : (SwPlaform) Successfully done setParamInSpec 
+12:24:42 INFO  : (SwPlatform) Successfully done update_mss 
+12:24:43 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+12:38:11 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Profiling'...
+12:38:11 INFO  : Updating application flags with new BSP settings...
+12:38:11 INFO  : Successfully updated application flags for project eFPGA_Profiling.
+12:38:45 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Profiling'...
+12:39:13 INFO  : (SwPlaform) Successfully done setParamInSpec 
+12:39:16 INFO  : (SwPlaform) Successfully done setParamInSpec 
+12:39:16 INFO  : (SwPlatform) Successfully done update_mss 
+12:39:16 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+12:41:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:41:53 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Profiling'...
+12:41:56 INFO  : Updating application flags with new BSP settings...
+12:41:56 INFO  : Successfully updated application flags for project eFPGA_Profiling.
+12:42:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:42:02 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:42:24 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Profiling'...
+12:42:43 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Profiling'...
+12:46:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:47:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:47:13 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:55:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:55:10 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:55:10 INFO  : 'jtag frequency' command is executed.
+12:55:10 INFO  : Context for 'APU' is selected.
+12:55:10 INFO  : System reset is completed.
+12:55:13 INFO  : 'after 3000' command is executed.
+12:55:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:55:15 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/bitstream/eFPGA_HelloWorld.bit"
+12:55:16 INFO  : Context for 'APU' is selected.
+12:55:16 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa'.
+12:55:16 INFO  : 'configparams force-mem-access 1' command is executed.
+12:55:16 INFO  : Context for 'APU' is selected.
+12:55:16 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/psinit/ps7_init.tcl' is done.
+12:55:17 INFO  : 'ps7_init' command is executed.
+12:55:17 INFO  : 'ps7_post_config' command is executed.
+12:55:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:55:17 INFO  : 'profile -freq 100000 -scratchaddr 0x10000000' command is executed.
+12:55:22 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/eFPGA_Profiling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:55:22 INFO  : 'configparams force-mem-access 0' command is executed.
+12:55:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/bitstream/eFPGA_HelloWorld.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+profile -freq 100000 -scratchaddr 0x10000000
+dow C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/eFPGA_Profiling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:55:23 INFO  : Memory regions updated for context APU
+12:55:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:55:24 INFO  : 'set bpid [bpadd -addr &_exit]' command is executed.
+12:55:41 INFO  : 'con -block' command is executed.
+12:55:42 INFO  : 'profile -out C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/gmon.out' command is executed.
+12:55:42 INFO  : 'bpremove $bpid' command is executed.
+12:55:42 INFO  : 'con' command is executed.
+12:55:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+set bpid [bpadd -addr &_exit]
+con -block
+profile -out C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/gmon.out
+bpremove $bpid
+con
+----------------End of Script----------------
+
+12:55:42 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Profiling\.sdk\launch_scripts\single_application_debug\debugger_efpga_profiling-default.tcl'
+12:58:23 INFO  : Disconnected from the channel tcfchan#3.
+12:58:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:58:24 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+12:58:24 INFO  : 'jtag frequency' command is executed.
+12:58:24 INFO  : Context for 'APU' is selected.
+12:58:24 INFO  : System reset is completed.
+12:58:27 INFO  : 'after 3000' command is executed.
+12:58:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+12:58:29 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/bitstream/eFPGA_HelloWorld.bit"
+12:58:29 INFO  : Context for 'APU' is selected.
+12:58:29 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa'.
+12:58:29 INFO  : 'configparams force-mem-access 1' command is executed.
+12:58:29 INFO  : Context for 'APU' is selected.
+12:58:29 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/psinit/ps7_init.tcl' is done.
+12:58:29 INFO  : 'ps7_init' command is executed.
+12:58:29 INFO  : 'ps7_post_config' command is executed.
+12:58:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:58:29 INFO  : 'profile -freq 1000000 -scratchaddr 0x10000000' command is executed.
+12:58:35 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/eFPGA_Profiling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:58:35 INFO  : 'configparams force-mem-access 0' command is executed.
+12:58:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/bitstream/eFPGA_HelloWorld.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+profile -freq 1000000 -scratchaddr 0x10000000
+dow C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/eFPGA_Profiling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:58:35 INFO  : Memory regions updated for context APU
+12:58:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:58:35 INFO  : 'set bpid [bpadd -addr &_exit]' command is executed.
+12:58:43 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Profiling'...
+12:58:52 INFO  : 'con -block' command is executed.
+12:58:54 INFO  : 'profile -out C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/gmon.out' command is executed.
+12:59:00 INFO  : 'bpremove $bpid' command is executed.
+12:59:00 INFO  : 'con' command is executed.
+12:59:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+set bpid [bpadd -addr &_exit]
+con -block
+profile -out C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/gmon.out
+bpremove $bpid
+con
+----------------End of Script----------------
+
+12:59:00 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Profiling\.sdk\launch_scripts\single_application_debug\debugger_efpga_profiling-default.tcl'
+13:00:41 INFO  : Disconnected from the channel tcfchan#4.
+13:00:42 ERROR : Invalid hardware project 'No hardware platforms exists' in launch configuration 'Debugger_-Performance-Analysis'.
+13:01:21 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_Profiling'...
+13:03:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:58 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:03:58 INFO  : 'jtag frequency' command is executed.
+13:03:59 INFO  : Context for 'APU' is selected.
+13:03:59 INFO  : System reset is completed.
+13:04:02 INFO  : 'after 3000' command is executed.
+13:04:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1' command is executed.
+13:04:04 INFO  : FPGA configured successfully with bitstream "C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/bitstream/eFPGA_HelloWorld.bit"
+13:04:04 INFO  : Context for 'APU' is selected.
+13:04:04 INFO  : Hardware design information is loaded from 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa'.
+13:04:04 INFO  : 'configparams force-mem-access 1' command is executed.
+13:04:04 INFO  : Context for 'APU' is selected.
+13:04:04 INFO  : Sourcing of 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/psinit/ps7_init.tcl' is done.
+13:04:05 INFO  : 'ps7_init' command is executed.
+13:04:05 INFO  : 'ps7_post_config' command is executed.
+13:04:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:04:05 INFO  : 'profile -freq 1000000 -scratchaddr 0x10000000' command is executed.
+13:04:11 INFO  : The application 'C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/eFPGA_Profiling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:04:11 INFO  : 'configparams force-mem-access 0' command is executed.
+13:04:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0} -index 1
+fpga -file C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/bitstream/eFPGA_HelloWorld.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_HelloWorld/export/eFPGA_HelloWorld/hw/eFPGA_HelloWorld.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+profile -freq 1000000 -scratchaddr 0x10000000
+dow C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/eFPGA_Profiling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:04:11 INFO  : Memory regions updated for context APU
+13:04:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:04:12 INFO  : 'set bpid [bpadd -addr &_exit]' command is executed.
+13:04:29 INFO  : 'con -block' command is executed.
+13:04:30 INFO  : 'profile -out C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/gmon.out' command is executed.
+13:04:30 INFO  : 'bpremove $bpid' command is executed.
+13:04:30 INFO  : 'con' command is executed.
+13:04:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+set bpid [bpadd -addr &_exit]
+con -block
+profile -out C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling/Debug/gmon.out
+bpremove $bpid
+con
+----------------End of Script----------------
+
+13:04:30 INFO  : Launch script is exported to file 'C:\devWorks\FPGA\eFPGA_Profiling\.sdk\launch_scripts\single_application_debug\debugger_efpga_profiling-default.tcl'
+13:04:31 INFO  : Performance data for 'PS' will be exported to the file 'C:\devWorks\FPGA\eFPGA_Profiling\eFPGA_Profiling_Traces\Traces\Run_mrt.-13_13-04\PS_Trace_mrt.-13_13-04\trace'
+13:04:31 INFO  : Created tracing project 'eFPGA_Profiling_Traces'
+13:04:31 INFO  : Added tracing folder 'C:\devWorks\FPGA\eFPGA_Profiling\eFPGA_Profiling_Traces\Traces\Run_mrt.-13_13-04\PS_Trace_mrt.-13_13-04' into  'eFPGA_Profiling_Traces'
+13:04:31 INFO  : Attempting to open tracing file 'PS_Trace_mrt.-13_13-04'
+13:06:28 INFO  : Performance data for 'PS' has been exported to the file 'C:\devWorks\FPGA\eFPGA_Profiling\eFPGA_Profiling_Traces\Traces\Run_mrt.-13_13-04\PS_Trace_mrt.-13_13-04\trace'
+13:06:28 INFO  : Disconnected from the channel tcfchan#6.

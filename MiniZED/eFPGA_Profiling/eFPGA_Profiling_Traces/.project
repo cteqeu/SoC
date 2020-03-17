@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>eFPGA_Profiling_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_mrt.-13_13-04/PS_Trace_mrt.-13_13-04/PS_Trace_mrt.-13_13-04_</name>
+			<type>1</type>
+			<location>C:/devWorks/FPGA/eFPGA_Profiling/eFPGA_Profiling_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>
