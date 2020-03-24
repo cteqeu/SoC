@@ -1,0 +1,30 @@
+2020-03-23T22:15:47.462799300255-22:15:48 **** Incremental Build of configuration Debug for project eFPGA_BRAM ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/export/eFPGA_BRAM_1/sw/eFPGA_BRAM_1/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building file: ../src/platform.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/export/eFPGA_BRAM_1/sw/eFPGA_BRAM_1/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-'Finished building: ../src/platform.c'
+000-' '
+000-'Building target: eFPGA_BRAM.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/export/eFPGA_BRAM_1/sw/eFPGA_BRAM_1/standalone_domain/bsplib/lib -o "eFPGA_BRAM.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: eFPGA_BRAM.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size eFPGA_BRAM.elf  |tee "eFPGA_BRAM.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  19064	   1144	   8232	  28440	   6f18	eFPGA_BRAM.elf
+000-'Finished building: eFPGA_BRAM.elf.size'
+000-' '
+00255-
+22:15:55 Build Finished (took 6s.552ms)
+

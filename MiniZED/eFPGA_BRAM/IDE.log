@@ -1,0 +1,46 @@
+21:42:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\FPGA\eFPGA_BRAM\temp_xsdb_launch_script.tcl
+21:42:44 INFO  : XSCT server has started successfully.
+21:42:44 INFO  : Successfully done setting XSCT server connection channel  
+21:42:44 INFO  : plnx-install-location is set to ''
+21:42:44 INFO  : Registering command handlers for Vitis TCF services
+21:42:47 INFO  : Successfully done setting workspace for the tool. 
+21:42:47 INFO  : Successfully done query RDI_DATADIR 
+21:47:31 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+21:47:31 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:47:44 INFO  : (SwPlaform) Successfully done setParamInSpec 
+21:47:47 INFO  : (SwPlaform) Successfully done setParamInSpec 
+21:47:47 INFO  : (SwPlatform) Successfully done update_mss 
+21:47:48 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:55:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\FPGA\eFPGA_BRAM\temp_xsdb_launch_script.tcl
+21:55:15 INFO  : Registering command handlers for Vitis TCF services
+21:55:16 INFO  : XSCT server has started successfully.
+21:55:20 INFO  : plnx-install-location is set to ''
+21:55:20 INFO  : Successfully done setting XSCT server connection channel  
+21:55:20 INFO  : Successfully done query RDI_DATADIR 
+21:55:20 INFO  : Successfully done setting workspace for the tool. 
+21:56:00 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_BRAM'...
+21:56:04 INFO  : Updating application flags with new BSP settings...
+21:56:06 INFO  : Successfully updated application flags for project eFPGA_BRAM.
+22:02:51 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+22:02:52 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+22:03:01 INFO  : Successfully done sdx_reload_mss "C:/devWorks/FPGA/eFPGA_BRAM/eFPGA_BRAM_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+22:03:01 INFO  : No changes in MSS file content so sources will not be generated.
+22:10:16 INFO  : Inferring section assignments and sizes from elf file: C:\devWorks\FPGA\eFPGA_BRAM\eFPGA_BRAM\Debug\eFPGA_BRAM.elf
+22:11:54 INFO  : Inferring section assignments and sizes from elf file: C:\devWorks\FPGA\eFPGA_BRAM\eFPGA_BRAM\Debug\eFPGA_BRAM.elf
+22:12:45 INFO  : Successfully generated C:\devWorks\FPGA\eFPGA_BRAM\eFPGA_BRAM\src\lscript.ld.
+22:12:45 INFO  : Applying linker script to all configurations of project eFPGA_BRAM.
+22:12:45 INFO  : Setting rebuild state to true for all configurations of project eFPGA_BRAM.
+22:12:52 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_BRAM'...
+22:14:30 INFO  : Successfully generated C:\devWorks\FPGA\eFPGA_BRAM\eFPGA_BRAM\src\lscript.ld.
+22:14:30 INFO  : Applying linker script to all configurations of project eFPGA_BRAM.
+22:14:30 INFO  : Setting rebuild state to true for all configurations of project eFPGA_BRAM.
+22:14:34 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_BRAM'...
+22:15:07 INFO  : Successfully generated C:\devWorks\FPGA\eFPGA_BRAM\eFPGA_BRAM\src\lscript.ld.
+22:15:07 INFO  : Applying linker script to all configurations of project eFPGA_BRAM.
+22:15:07 INFO  : Setting rebuild state to true for all configurations of project eFPGA_BRAM.
+22:15:11 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_BRAM'...
+22:15:44 INFO  : Successfully generated C:\devWorks\FPGA\eFPGA_BRAM\eFPGA_BRAM\src\lscript.ld.
+22:15:44 INFO  : Applying linker script to all configurations of project eFPGA_BRAM.
+22:15:44 INFO  : Setting rebuild state to true for all configurations of project eFPGA_BRAM.
+22:15:48 INFO  : Checking for BSP changes to sync application flags for project 'eFPGA_BRAM'...
+22:16:02 INFO  : Inferring section assignments and sizes from elf file: C:\devWorks\FPGA\eFPGA_BRAM\eFPGA_BRAM\Debug\eFPGA_BRAM.elf
