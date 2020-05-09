@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../VHDL_74hc595_Matrix.srcs/sources_1/imports/DigitaleSystemenVHDL/vhdlnoclock.vhd" \
+"../../../../VHDL_74hc595_Matrix.srcs/sources_1/new/VHDL_74HC595_Matrix.vhd" \
+"../../../../VHDL_74hc595_Matrix.ip_user_files/bd/design_1/ip/design_1_vhdlnoclk_0_0/sim/design_1_vhdlnoclk_0_0.vhd" \
+"../../../../VHDL_74hc595_Matrix.ip_user_files/bd/design_1/ip/design_1_VHDL_74HC595_Matrix_0_2/sim/design_1_VHDL_74HC595_Matrix_0_2.vhd" \
+"../../../../VHDL_74hc595_Matrix.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../VHDL_74hc595_Matrix.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

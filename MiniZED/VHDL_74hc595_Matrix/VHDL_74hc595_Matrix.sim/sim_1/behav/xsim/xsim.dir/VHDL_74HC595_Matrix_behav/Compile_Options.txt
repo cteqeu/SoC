@@ -1,0 +1,1 @@
+-wto "5d8486f2ff234b42a51649d6aab5e973" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "VHDL_74HC595_Matrix_behav" "xil_defaultlib.VHDL_74HC595_Matrix" -log "elaborate.log" 

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May  7 23:37:25 2020
+# Process ID: 17376
+# Current directory: C:/devWorks/FPGA/VHDL_74hc595_Matrix/VHDL_74hc595_Matrix.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/devWorks/FPGA/VHDL_74hc595_Matrix/VHDL_74hc595_Matrix.sim/sim_1/impl/timing/xsim/xsim.dir/design_1_wrapper_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/devWorks/FPGA/VHDL_74hc595_Matrix/VHDL_74hc595_Matrix.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: C:/devWorks/FPGA/VHDL_74hc595_Matrix/VHDL_74hc595_Matrix.sim/sim_1/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/devWorks/FPGA/VHDL_74hc595_Matrix/VHDL_74hc595_Matrix.sim/sim_1/impl/timing/xsim/xsim.dir/design_1_wrapper_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/devWorks/FPGA/VHDL_74hc595_Matrix/VHDL_74hc595_Matrix.sim/sim_1/impl/timing/xsim/xsim.dir/design_1_wrapper_time_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu May  7 23:37:29 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu May  7 23:37:29 2020...

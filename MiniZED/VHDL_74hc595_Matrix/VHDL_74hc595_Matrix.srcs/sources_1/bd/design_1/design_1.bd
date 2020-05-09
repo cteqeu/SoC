@@ -1,0 +1,202 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xECFDCF5DECFDCF5D",
+      "device": "xc7z007sclg225-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "vhdlnoclk_0": "",
+      "vio_0": "",
+      "VHDL_74HC595_Matrix_0": ""
+    },
+    "ports": {
+      "sh_cp_0": {
+        "direction": "O"
+      },
+      "st_cp_0": {
+        "direction": "O"
+      },
+      "ds_0": {
+        "direction": "O"
+      },
+      "st_led": {
+        "direction": "O"
+      },
+      "sh_led": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "153.84"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "327.011"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "139.555"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "5"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "9.750"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "15.385"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "126.750"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "65.000"
+          },
+          "USE_LOCKED": {
+            "value": "true"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "vhdlnoclk_0": {
+        "vlnv": "xilinx.com:module_ref:vhdlnoclk:1.0",
+        "xci_name": "design_1_vhdlnoclk_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vhdlnoclk",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk65MHz": {
+            "type": "clk",
+            "direction": "O",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "65000000",
+                "value_src": "constant"
+              }
+            }
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "VHDL_74HC595_Matrix_0": {
+        "vlnv": "xilinx.com:module_ref:VHDL_74HC595_Matrix:1.0",
+        "xci_name": "design_1_VHDL_74HC595_Matrix_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VHDL_74HC595_Matrix",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_10MHz": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sh_cp": {
+            "direction": "O"
+          },
+          "st_cp": {
+            "direction": "O"
+          },
+          "ds": {
+            "direction": "O"
+          },
+          "data": {
+            "direction": "I",
+            "left": "0",
+            "right": "15"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "nets": {
+      "vhdlnoclk_0_clk65MHz": {
+        "ports": [
+          "vhdlnoclk_0/clk65MHz",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "VHDL_74HC595_Matrix_0/reset"
+        ]
+      },
+      "VHDL_74HC595_Matrix_0_sh_cp": {
+        "ports": [
+          "VHDL_74HC595_Matrix_0/sh_cp",
+          "sh_cp_0",
+          "sh_led"
+        ]
+      },
+      "VHDL_74HC595_Matrix_0_st_cp": {
+        "ports": [
+          "VHDL_74HC595_Matrix_0/st_cp",
+          "st_cp_0",
+          "st_led"
+        ]
+      },
+      "VHDL_74HC595_Matrix_0_ds": {
+        "ports": [
+          "VHDL_74HC595_Matrix_0/ds",
+          "ds_0"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "vio_0/clk",
+          "VHDL_74HC595_Matrix_0/clk_10MHz"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "VHDL_74HC595_Matrix_0/data"
+        ]
+      }
+    }
+  }
+}

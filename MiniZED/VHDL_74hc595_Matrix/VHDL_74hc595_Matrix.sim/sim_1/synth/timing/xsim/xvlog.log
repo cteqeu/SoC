@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/devWorks/FPGA/VHDL_74hc595_Matrix/VHDL_74hc595_Matrix.sim/sim_1/synth/timing/xsim/design_1_wrapper_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbg_hub_CV
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_VHDL_74HC595_Matrix_0_2
+INFO: [VRFC 10-311] analyzing module design_1_VHDL_74HC595_Matrix_0_2_VHDL_74HC595_Matrix
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0__design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module design_1_vhdlnoclk_0_0
+INFO: [VRFC 10-311] analyzing module design_1_vhdlnoclk_0_0_vhdlnoclk
+INFO: [VRFC 10-311] analyzing module design_1_vio_0_0
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-311] analyzing module design_1_vio_0_0_vio_v3_0_19_decoder
+INFO: [VRFC 10-311] analyzing module design_1_vio_0_0_vio_v3_0_19_probe_out_all
+INFO: [VRFC 10-311] analyzing module design_1_vio_0_0_vio_v3_0_19_probe_out_one
+INFO: [VRFC 10-311] analyzing module design_1_vio_0_0_vio_v3_0_19_vio
+INFO: [VRFC 10-311] analyzing module design_1_vio_0_0_xsdbs_v1_0_2_xsdbs
+INFO: [VRFC 10-311] analyzing module glbl

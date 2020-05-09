@@ -4,9 +4,9 @@ const int latchClockPin = 11;  //ST
 const int serialInputPin = 10; //DS
 
 //K5 K3 K6 R4 K8 R6 R7 K7
-byte bericht1 = 0b10000000;
+byte bericht1 = 0b00000000;
 //R1 R2 K2 R8 K4 R3 R5 K1
-byte bericht2 = 0b10010000;
+byte bericht2 = 0b00000001;
 boolean shiftLeftRight = false;
 
 void setup() {

@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/devWorks/FPGA/VHDL_74hc595_Matrix/VHDL_74hc595_Matrix.sim/sim_1/synth/func/xsim/design_1_wrapper_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_VHDL_74HC595_Matrix_0_2_VHDL_74HC595_Matrix'
+INFO: [VRFC 10-3107] analyzing entity '\design_1_clk_wiz_0_0__design_1_clk_wiz_0_0_clk_wiz\'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_vhdlnoclk_0_0_vhdlnoclk'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_VHDL_74HC595_Matrix_0_2'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_vhdlnoclk_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
