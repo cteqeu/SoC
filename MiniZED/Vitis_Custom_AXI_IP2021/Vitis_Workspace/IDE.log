@@ -1,0 +1,83 @@
+09:09:59 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\Vitis_Custom_AXI_IP\Vitis_Workspace\temp_xsdb_launch_script.tcl
+09:10:13 INFO  : Registering command handlers for Vitis TCF services
+09:10:23 INFO  : XSCT server has started successfully.
+09:10:29 INFO  : Platform repository initialization has completed.
+09:10:29 INFO  : plnx-install-location is set to ''
+09:10:29 INFO  : Successfully done query RDI_DATADIR 
+09:10:29 INFO  : Successfully done setting XSCT server connection channel  
+09:10:29 INFO  : Successfully done setting workspace for the tool. 
+11:48:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\Vitis_Custom_AXI_IP\Vitis_Workspace\temp_xsdb_launch_script.tcl
+11:48:04 INFO  : Registering command handlers for Vitis TCF services
+11:48:10 INFO  : XSCT server has started successfully.
+11:48:12 INFO  : Platform repository initialization has completed.
+11:48:14 INFO  : plnx-install-location is set to ''
+11:48:14 INFO  : Successfully done setting XSCT server connection channel  
+11:48:14 INFO  : Successfully done query RDI_DATADIR 
+11:48:14 INFO  : Successfully done setting workspace for the tool. 
+11:49:25 INFO  : Result from executing command 'getProjects': Vitis_Custom_AXI_IP_MATH
+11:49:25 INFO  : Result from executing command 'getPlatforms': 
+11:49:26 INFO  : Platform 'Vitis_Custom_AXI_IP_MATH' is added to custom repositories.
+11:49:48 INFO  : Platform 'Vitis_Custom_AXI_IP_MATH' is added to custom repositories.
+11:50:10 INFO  : Successfully done sdx_reload_mss "C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Vitis_Custom_AXI_IP_MATH/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss"
+11:50:53 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:50:53 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:50:56 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:50:57 INFO  : (SwPlatform) Successfully done update_mss 
+11:50:58 INFO  : Successfully done sdx_reload_mss "C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Vitis_Custom_AXI_IP_MATH/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/system.mss"
+11:54:27 INFO  : Result from executing command 'getProjects': Vitis_Custom_AXI_IP_MATH
+11:54:27 INFO  : Result from executing command 'getPlatforms': Vitis_Custom_AXI_IP_MATH|C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Vitis_Custom_AXI_IP_MATH/export/Vitis_Custom_AXI_IP_MATH/Vitis_Custom_AXI_IP_MATH.xpfm
+12:08:20 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+12:08:20 INFO  : Updating application flags with new BSP settings...
+12:08:20 INFO  : Successfully updated application flags for project Custom_AXI_IP.
+12:21:06 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+12:21:26 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+12:21:58 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+12:23:44 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+12:24:01 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+12:24:19 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+13:19:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:19:52 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+13:19:52 INFO  : 'jtag frequency' command is executed.
+13:19:53 INFO  : Context for 'APU' is selected.
+13:19:53 INFO  : System reset is completed.
+13:19:56 INFO  : 'after 3000' command is executed.
+13:19:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}' command is executed.
+13:19:58 INFO  : FPGA configured successfully with bitstream "C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Custom_AXI_IP/_ide/bitstream/Vitis_Custom_AXI_IP_MATH.bit"
+13:19:58 INFO  : Context for 'APU' is selected.
+13:19:58 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Vitis_Custom_AXI_IP_MATH/export/Vitis_Custom_AXI_IP_MATH/hw/Vitis_Custom_AXI_IP_MATH.xsa'.
+13:19:58 INFO  : 'configparams force-mem-access 1' command is executed.
+13:19:58 INFO  : Context for 'APU' is selected.
+13:19:58 INFO  : Sourcing of 'C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+13:19:59 INFO  : 'ps7_init' command is executed.
+13:19:59 INFO  : 'ps7_post_config' command is executed.
+13:20:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:00 INFO  : The application 'C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:20:00 INFO  : 'configparams force-mem-access 0' command is executed.
+13:20:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}
+fpga -file C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Custom_AXI_IP/_ide/bitstream/Vitis_Custom_AXI_IP_MATH.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Vitis_Custom_AXI_IP_MATH/export/Vitis_Custom_AXI_IP_MATH/hw/Vitis_Custom_AXI_IP_MATH.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:20:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:01 INFO  : 'con' command is executed.
+13:20:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:20:01 INFO  : Launch script is exported to file 'C:\devWorks\Vitis_Custom_AXI_IP\Vitis_Workspace\.sdk\launch_scripts\single_application_debug\debugger_custom_axi_ip-default.tcl'
+14:45:51 INFO  : Disconnected from the channel tcfchan#2.

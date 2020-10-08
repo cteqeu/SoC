@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "custom_axi_driver.h"
+
+
+int main()
+{
+    init_platform();
+
+    xil_printf("Custom AXI IP Demo");
+
+    cleanup_platform();
+    return 0;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Custom_AXI_IP" location="C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Custom_AXI_IP" platform="C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Workspace/Vitis_Custom_AXI_IP_MATH/export/Vitis_Custom_AXI_IP_MATH/Vitis_Custom_AXI_IP_MATH.xpfm" platformUID="xilinx:minized::0.0(custom)" systemProject="Custom_AXI_IP_system" sysConfig="Vitis_Custom_AXI_IP_MATH" runtime="cpp" cpu="domain_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="aa1982c4d90b9077a76855e4ea6b82cc">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.458356399" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.359027782" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

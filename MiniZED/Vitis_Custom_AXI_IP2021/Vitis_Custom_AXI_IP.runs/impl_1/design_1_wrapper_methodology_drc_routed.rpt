@@ -1,0 +1,195 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Oct  6 21:30:26 2020
+| Host         : PF1K6K4W running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z007sclg225-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 32
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 32         |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -71.012 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[1]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -71.126 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[7]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -71.167 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[2]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -71.327 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[5]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -71.330 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[4]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -71.454 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[3]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -71.533 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[14]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -71.728 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[31]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[0]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -71.732 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[13]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -71.816 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[12]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -71.844 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[11]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -71.849 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[10]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -71.906 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[9]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -71.940 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[6]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -71.976 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[15]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -71.981 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[8]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -72.027 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[23]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -72.087 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[22]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -72.226 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[18]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -72.245 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[27]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -72.273 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[19]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -72.304 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[30]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -72.312 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[17]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -72.331 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[29]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -72.337 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[21]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -72.436 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[20]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -72.437 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg0_reg[0]_replica_1/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[16]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -72.474 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[28]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -72.545 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[31]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -72.550 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[25]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -72.672 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[26]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -72.794 ns between design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/slv_reg1_reg[0]/C (clocked by clk_fpga_0) and design_1_i/Math_IP_0/U0/Math_IP_v1_0_S00_AXI_inst/axi_rdata_reg[24]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+

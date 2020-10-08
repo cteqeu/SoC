@@ -1,0 +1,16 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Oct  6 21:15:40 2020
+| Host         : PF1K6K4W running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Math_IP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Math_IP_0_0 (PXL.LOCAL:user:Math_IP:1.0) from (Rev. 2) to (Rev. 3)
+

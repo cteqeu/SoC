@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Oct  6 21:21:51 2020
+# Process ID: 21608
+# Current directory: C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Custom_AXI_IP.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Custom_AXI_IP.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/devWorks/Vitis_Custom_AXI_IP/Vitis_Custom_AXI_IP.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

@@ -1,0 +1,7 @@
+/*Vitis_Custom_AXI_IP_MATH*/
+the_ROM_image:
+{
+  [bootloader]<Vitis_Custom_AXI_IP_MATH/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

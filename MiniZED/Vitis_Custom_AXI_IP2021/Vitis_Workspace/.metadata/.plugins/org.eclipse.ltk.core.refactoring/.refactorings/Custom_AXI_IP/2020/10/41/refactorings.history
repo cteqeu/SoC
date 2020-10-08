@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Custom_AXI_IP/src/custom_axi_driver&apos; to &apos;custom_axi_driver.h&apos;" description="Rename resource &apos;custom_axi_driver&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/custom_axi_driver" name="custom_axi_driver.h" stamp="1602151515188" updateReferences="true"/>
+</session>
