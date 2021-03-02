@@ -1,0 +1,58 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xsysmon.h"
+#include "xparameters.h"
+#include "xstatus.h"
+
+#define SYSMON_DEVICE_ID 	XPAR_SYSMON_0_DEVICE_ID
+
+static int SysMonFractionToInt(float FloatNum);
+
+static XSysMon SysMonInst;      /* System Monitor driver instance */
+
+int main()
+{
+	int Status;
+	init_platform();
+
+	int Status;
+		XSysMon_Config *ConfigPtr;
+		u32 TempRawData;
+		u32 VccAuxRawData;
+		u32 VccIntRawData;
+		float TempData;
+		float VccAuxData;
+		float VccIntData;
+		float MaxData;
+		float MinData;
+		XSysMon *SysMonInstPtr = &SysMonInst;
+		u16 SysMonDeviceId = SYSMON_DEVICE_ID;
+
+
+		ConfigPtr = XSysMon_LookupConfig(SysMonDeviceId);
+			if (ConfigPtr == NULL) {
+				return XST_FAILURE;
+			}
+			XSysMon_CfgInitialize(SysMonInstPtr, ConfigPtr, ConfigPtr->BaseAddress);
+
+    cleanup_platform();
+    return 0;
+}
+
+
+
+int SysMonFractionToInt(float FloatNum)
+{
+	float Temp;
+
+	Temp = FloatNum;
+	if (FloatNum < 0) {
+		Temp = -(FloatNum);
+	}
+
+	return( ((int)((Temp -(float)((int)Temp)) * (1000.0f))));
+}
+

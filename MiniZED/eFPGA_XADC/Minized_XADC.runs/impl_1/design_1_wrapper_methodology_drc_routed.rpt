@@ -1,0 +1,54 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Mar  2 08:45:49 2021
+| Host         : PF1K6K4W running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z007sclg225-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 1
++---------+----------+------------------------------+------------+
+| Rule    | Severity | Description                  | Violations |
++---------+----------+------------------------------+------------+
+| LUTAR-1 | Warning  | LUT drives async reset alert | 1          |
++---------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/Inst_drp_arbiter/XADC_INST_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/FSM_onehot_state_reg[1]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/FSM_onehot_state_reg[2]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/FSM_onehot_state_reg[3]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/busy_o_reg/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/den_o_reg/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[0]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[10]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[11]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[12]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[13]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[14]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[15]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[1]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[2]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/temperature_update_inst/timer_cntr_reg[3]/CLR (the first 15 of 94 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+

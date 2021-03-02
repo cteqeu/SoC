@@ -1,0 +1,10 @@
+2021-03-02T10:55:26.163557200255-10:55:26 **** Build of configuration Debug for project MiniZED_XADC_Temp_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 51377 C:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC/export/MiniZED_XADC/MiniZED_XADC.xpfm domain_ps7_cortexa9_0 C:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC_Temp_system/Debug/system.bif
+000-sdcard_gen --xpfm C:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC/export/MiniZED_XADC/MiniZED_XADC.xpfm --sys_config MiniZED_XADC --bif C:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC_Temp_system/Debug/system.bif --bitstream C:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC_Temp/_ide/bitstream/MiniZED_XADC.bit --elf C:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC_Temp/Debug/MiniZED_XADC_Temp.elf,ps7_cortexa9_0
+000-ELF does not exist: C:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC_Temp/Debug/MiniZED_XADC_Temp.elf
+000/MiniZED_XADC_Temp_system/Debug0-1-1make: *** [makefile:39: package] Error 12-make: *** [makefile:39: package] Error 1
+00255-
+10:55:34 Build Finished (took 7s.831ms)
+

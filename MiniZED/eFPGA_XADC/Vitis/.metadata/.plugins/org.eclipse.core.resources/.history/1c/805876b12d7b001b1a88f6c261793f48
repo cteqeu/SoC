@@ -1,0 +1,31 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application");
+    cleanup_platform();
+    return 0;
+}
+
+
+
+int SysMonFractionToInt(float FloatNum)
+{
+	float Temp;
+
+	Temp = FloatNum;
+	if (FloatNum < 0) {
+		Temp = -(FloatNum);
+	}
+
+	return( ((int)((Temp -(float)((int)Temp)) * (1000.0f))));
+}
+

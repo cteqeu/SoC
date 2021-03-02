@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Mar  2 08:42:41 2021
+# Process ID: 12824
+# Current directory: C:/Users/20002890/Minized_XADC/Minized_XADC.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/Users/20002890/Minized_XADC/Minized_XADC.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/Users/20002890/Minized_XADC/Minized_XADC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

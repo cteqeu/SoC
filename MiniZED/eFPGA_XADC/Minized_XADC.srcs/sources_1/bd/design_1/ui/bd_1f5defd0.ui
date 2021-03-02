@@ -1,0 +1,54 @@
+{
+   "ActiveEmotionalView":"Reduced Jogs",
+   "Addressing View_Layers":"/processing_system7_0_FCLK_RESET0_N:false|/processing_system7_0_FCLK_CLK0:false|/xadc_wiz_0_ip2intc_irpt:false|/rst_ps7_0_50M_peripheral_aresetn:false|",
+   "Addressing View_ScaleFactor":"1.0",
+   "Addressing View_TopLeft":"-453,-347",
+   "Color Coded_ScaleFactor":"1.0",
+   "Color Coded_TopLeft":"-190,-181",
+   "Default View_Layers":"/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/xadc_wiz_0_ip2intc_irpt:true|/rst_ps7_0_50M_peripheral_aresetn:true|",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-175,-472",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeInterrupt":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"1.0",
+   "Grouping and No Loops_TopLeft":"-242,-101",
+   "Interfaces View_Layers":"/processing_system7_0_FCLK_RESET0_N:false|/processing_system7_0_FCLK_CLK0:false|/xadc_wiz_0_ip2intc_irpt:false|/rst_ps7_0_50M_peripheral_aresetn:false|",
+   "Interfaces View_ScaleFactor":"1.0",
+   "Interfaces View_TopLeft":"-460,-277",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-215,-61",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layers":"/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/xadc_wiz_0_ip2intc_irpt:true|/rst_ps7_0_50M_peripheral_aresetn:true|",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1440 -y 130 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1440 -y 150 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 560 -y 130 -swap {27 1 2 3 0 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 4 21 22 23 24 25 26 36 28 29 30 31 32 33 34 35 43 37 38 39 40 41 42 57 44 45 46 47 48 49 50 51 52 53 54 55 56 61 58 59 60 20 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 104 103} -defaultsOSRD -pinY GPIO_0 100R -pinY DDR 0R -pinY FIXED_IO 20R -pinY UART_0 120R -pinY IIC_0 140R -pinY SDIO_0 160R -pinY USBIND_0 180R -pinY M_AXI_GP0 80R -pinY M_AXI_GP0_ACLK 0L -pinBusY IRQ_F2P 20L -pinY FCLK_CLK0 200R -pinY FCLK_CLK1 260R -pinY FCLK_RESET0_N 240R
+preplace inst xadc_wiz_0 -pg 1 -lvl 1 -x 210 -y 110 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 22 21 24 23 25 26 27 28 29 30 31 32 33 34 35 36} -defaultsOSRD -pinY s_axi_lite 0L -pinY Vp_Vn 20L -pinY s_axi_aclk 60L -pinY s_axi_aresetn 40L -pinY ip2intc_irpt 40R -pinY user_temp_alarm_out 0R -pinY vccint_alarm_out 60R -pinY vccaux_alarm_out 80R -pinY vccpint_alarm_out 100R -pinY vccpaux_alarm_out 120R -pinY vccddro_alarm_out 140R -pinY ot_out 160R -pinBusY channel_out 180R -pinY eoc_out 200R -pinY alarm_out 220R -pinY eos_out 240R -pinY busy_out 260R -pinBusY temp_out 280R
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1270 -y 210 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 81 78 82 79 83 80} -defaultsOSRD -pinY S00_AXI 0L -pinY M00_AXI 0R -pinY ACLK 80L -pinY ARESETN 20L -pinY S00_ACLK 100L -pinY S00_ARESETN 40L -pinY M00_ACLK 120L -pinY M00_ARESETN 60L
+preplace inst rst_ps7_0_50M -pg 1 -lvl 3 -x 930 -y 290 -swap {0 4 1 2 3 6 7 8 9 5} -defaultsOSRD -pinY slowest_sync_clk 0L -pinY ext_reset_in 80L -pinY aux_reset_in 20L -pinY mb_debug_sys_rst 40L -pinY dcm_locked 60L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 0R
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 30 360 70 760 230 1100
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 N 370
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 4 60 50 NJ 50 NJ 50 1120
+preplace netloc xadc_wiz_0_ip2intc_irpt 1 1 1 N 150
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 130 NJ 130 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 150 NJ 150 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 NJ 210 N
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 5 40 10 NJ 10 NJ 10 NJ 10 1420
+levelinfo -pg 1 0 210 560 930 1270 1440
+pagesize -pg 1 -db -bbox -sgen 0 0 1560 450
+",
+   "Reduced Jogs_ScaleFactor":"1.0",
+   "Reduced Jogs_TopLeft":"-165,-186",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+levelinfo -pg 1 0 10
+pagesize -pg 1 -db -bbox -sgen 0 0 10 10
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_ps7_cnt":"1"
+}

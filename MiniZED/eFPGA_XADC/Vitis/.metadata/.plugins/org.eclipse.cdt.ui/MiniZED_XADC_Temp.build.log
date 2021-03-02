@@ -1,0 +1,29 @@
+11:05:55 **** Incremental Build of configuration Debug for project MiniZED_XADC_Temp ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC/export/MiniZED_XADC/sw/MiniZED_XADC/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:158:5: warning: implicit declaration of function 'sleep_A9' [-Wimplicit-function-declaration]
+  158 |     sleep_A9(5);
+      |     ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZED_XADC_Temp.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/20002890/Minized_XADC/Vitis/MiniZED_XADC/export/MiniZED_XADC/sw/MiniZED_XADC/domain_ps7_cortexa9_0/bsplib/lib -o "MiniZED_XADC_Temp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZED_XADC_Temp.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZED_XADC_Temp.elf  |tee "MiniZED_XADC_Temp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48383	   2564	  22672	  73619	  11f93	MiniZED_XADC_Temp.elf
+'Finished building: MiniZED_XADC_Temp.elf.size'
+' '
+
+11:06:00 Build Finished (took 4s.948ms)
+
