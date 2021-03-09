@@ -182,3 +182,15 @@ con
 
 11:06:12 INFO  : Launch script is exported to file 'C:\Users\20002890\Minized_XADC\Vitis\.sdk\launch_scripts\single_application_debug\debugger_minized_xadc_temp-default.tcl'
 11:12:44 INFO  : Disconnected from the channel tcfchan#6.
+11:55:06 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Github\Own\Embedded-FPGA\MiniZED\eFPGA_XADC\Vitis\temp_xsdb_launch_script.tcl
+11:55:12 INFO  : XSCT server has started successfully.
+11:55:12 INFO  : Successfully done setting XSCT server connection channel  
+11:55:12 INFO  : plnx-install-location is set to ''
+11:55:12 INFO  : Successfully done setting workspace for the tool. 
+11:55:23 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+11:55:23 INFO  : Platform repository initialization has completed.
+11:55:26 INFO  : Registering command handlers for Vitis TCF services
+11:55:28 INFO  : Successfully done query RDI_DATADIR 

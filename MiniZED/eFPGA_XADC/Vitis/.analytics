@@ -13,3 +13,6 @@ timestamp=[2021-03-02 10:59:32], mode=BUILD, duration=0:00:00.724, duration_ms=7
 timestamp=[2021-03-02 10:59:58], mode=BUILD, duration=0:00:05.606, duration_ms=5606, data={name=MiniZED_XADC_Temp, configuration=Debug, clean_build=false}
 timestamp=[2021-03-02 11:05:24], mode=BUILD, duration=0:00:02.511, duration_ms=2511, data={name=MiniZED_XADC_Temp, configuration=Debug, clean_build=false}
 timestamp=[2021-03-02 11:06:00], mode=BUILD, duration=0:00:04.987, duration_ms=4987, data={name=MiniZED_XADC_Temp, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 11:55:20], mode=WORKBENCH_START, duration=0:00:25.993, duration_ms=25993, data={}
+timestamp=[2021-03-02 11:55:23], mode=WORKBENCH_UI_INIT, duration=0:00:02.897, duration_ms=2897, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MiniZED_XADC,MiniZED_XADC_Temp,MiniZED_XADC_Temp_system,RemoteSystemsTempFiles}
+timestamp=[2021-03-02 11:55:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.082, duration_ms=82, data={}
