@@ -1,0 +1,68 @@
+// Developed by cteq.eu
+// 25/05/2021
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xstatus.h"
+#include "sleep.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+
+
+//		XPAR_AXI_GPIO_0_DEVICE_ID
+//		XPAR_AXI_GPIO_1_DEVICE_ID
+
+//		XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+//		XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR
+
+#define GPIO_0_INT	XGPIO_IR_MASK 	// all bits
+#define GPIO_1_INT	XPGIO_IR_MASK	// all bits
+
+XGpio GPIO_0, GPIO_1;
+
+static void GPIO0_Intr_Handler(void *baseaddr_p);
+static void GPIO1_Intr_Handler(void *baseaddr_p);
+static int InterruptSystemSetup(XScuGic *XScuGicInstancePtr);
+static int IntcInitFunction(u16 DeviceId,XGpio *GpioInstancePtr0, XGpio *GpioInstancePtr1);
+
+int main()
+{
+	init_platform();
+    printf("SoC Multiple IRQ F2P Example by cteq.eu\n\r");
+    printf("=======================================\n\r");
+    printf("Use PIN L15 and P13 as Interrup input pins\n\r");
+
+
+
+    return 0;
+}
+
+
+void GPIO0_Intr_Handler(void *InstancePtr)
+{
+	XGpio_InterruptDisable(&GPIO_0, GPIO_0_INT);
+	if ((XGpio_InterruptGetStatus(&GPIO_0) & GPIO_0_INT) != GPIO_0_INT) {
+			return;
+	}
+
+	printf("GPIO 0 Interrupt...\n\r");
+
+    (void)XGpio_InterruptClear(&GPIO_0, GPIO_0_INT);
+    XGpio_InterruptEnable(&GPIO_0, GPIO_0_INT);
+}
+
+void GPIO1_Intr_Handler(void *InstancePtr)
+{
+	XGpio_InterruptDisable(&GPIO_1, GPIO_1_INT);
+	if ((XGpio_InterruptGetStatus(&GPIO_1) & GPIO_1_INT) != GPIO_1_INT) {
+			return;
+	}
+
+	printf("GPIO 1 Interrupt...\n\r");
+
+    (void)XGpio_InterruptClear(&GPIO_1, GPIO_1_INT);
+    XGpio_InterruptEnable(&GPIO_1, GPIO_1_INT);
+}

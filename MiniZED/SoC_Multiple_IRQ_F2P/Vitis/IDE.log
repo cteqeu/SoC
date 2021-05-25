@@ -1,0 +1,352 @@
+14:17:17 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\20002890\SoC_Multiple_IRQ_F2P\Vitis\temp_xsdb_launch_script.tcl
+14:17:18 INFO  : Registering command handlers for Vitis TCF services
+14:17:24 INFO  : XSCT server has started successfully.
+14:17:25 INFO  : Platform repository initialization has completed.
+14:17:28 INFO  : Successfully done setting XSCT server connection channel  
+14:17:28 INFO  : plnx-install-location is set to ''
+14:17:28 INFO  : Successfully done query RDI_DATADIR 
+14:17:28 INFO  : Successfully done setting workspace for the tool. 
+14:20:56 INFO  : Result from executing command 'getProjects': SoC_Multiple_IRQ_F2P
+14:20:56 INFO  : Result from executing command 'getPlatforms': 
+14:20:56 WARN  : An unexpected exception occurred in the module 'platform project logging'
+14:20:57 INFO  : Platform 'SoC_Multiple_IRQ_F2P' is added to custom repositories.
+14:21:02 ERROR : 
+org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at org.eclipse.cdt.internal.core.settings.model.ExceptionFactory.createCoreException(ExceptionFactory.java:26)
+	at org.eclipse.cdt.core.CCorePlugin.mapCProjectOwner(CCorePlugin.java:890)
+	at org.eclipse.cdt.core.CCorePlugin$1.run(CCorePlugin.java:945)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.cdt.core.CCorePlugin.createCProject(CCorePlugin.java:930)
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createCProject(AppCreationHandler.java:92)
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:67)
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79)
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69)
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75)
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66)
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:235)
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:374)
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:98)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at org.eclipse.cdt.internal.core.CConfigBasedDescriptorManager.configure(CConfigBasedDescriptorManager.java:160)
+	at org.eclipse.cdt.core.CCorePlugin.mapCProjectOwner(CCorePlugin.java:885)
+	... 20 more
+14:21:04 ERROR : Failed to create application project
+org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:150)
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79)
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69)
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75)
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66)
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:235)
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:374)
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:98)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+14:24:34 INFO  : Result from executing command 'getProjects': SoC_Multiple_IRQ_F2P
+14:24:34 INFO  : Result from executing command 'getPlatforms': 
+14:24:35 INFO  : Platform 'SoC_Multiple_IRQ_F2P' is added to custom repositories.
+14:24:49 INFO  : Platform 'SoC_Multiple_IRQ_F2P' is added to custom repositories.
+14:28:48 INFO  : Result from executing command 'getProjects': SoC_Multiple_IRQ_F2P
+14:28:48 INFO  : Result from executing command 'getPlatforms': SoC_Multiple_IRQ_F2P|C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/SoC_Multiple_IRQ_F2P.xpfm
+15:05:45 INFO  : Result from executing command 'getProjects': SoC_Multiple_IRQ_F2P
+15:05:45 INFO  : Result from executing command 'getPlatforms': SoC_Multiple_IRQ_F2P|C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/SoC_Multiple_IRQ_F2P.xpfm
+15:05:46 INFO  : Checking for BSP changes to sync application flags for project 'MultipleIRQ'...
+15:05:47 INFO  : Updating application flags with new BSP settings...
+15:05:47 INFO  : Successfully updated application flags for project MultipleIRQ.
+21:12:25 INFO  : Checking for BSP changes to sync application flags for project 'MultipleIRQ'...
+21:12:42 INFO  : Checking for BSP changes to sync application flags for project 'MultipleIRQ'...
+21:13:49 INFO  : Checking for BSP changes to sync application flags for project 'MultipleIRQ'...
+21:14:14 INFO  : Checking for BSP changes to sync application flags for project 'MultipleIRQ'...
+21:16:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:53 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+21:16:53 INFO  : 'jtag frequency' command is executed.
+21:16:53 INFO  : Context for 'APU' is selected.
+21:16:53 INFO  : System reset is completed.
+21:16:56 INFO  : 'after 3000' command is executed.
+21:16:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}' command is executed.
+21:16:59 INFO  : Device configured successfully with "C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit"
+21:16:59 INFO  : Context for 'APU' is selected.
+21:16:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa'.
+21:16:59 INFO  : 'configparams force-mem-access 1' command is executed.
+21:16:59 INFO  : Context for 'APU' is selected.
+21:16:59 INFO  : Sourcing of 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl' is done.
+21:17:00 INFO  : 'ps7_init' command is executed.
+21:17:00 INFO  : 'ps7_post_config' command is executed.
+21:17:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:17:01 INFO  : The application 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:17:01 INFO  : 'configparams force-mem-access 0' command is executed.
+21:17:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}
+fpga -file C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:17:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:17:01 INFO  : 'con' command is executed.
+21:17:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:17:01 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_Multiple_IRQ_F2P\Vitis\MultipleIRQ_system\_ide\scripts\debugger_multipleirq-default.tcl'
+21:18:42 INFO  : Disconnected from the channel tcfchan#8.
+21:18:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:18:44 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+21:18:44 INFO  : 'jtag frequency' command is executed.
+21:18:44 INFO  : Context for 'APU' is selected.
+21:18:44 INFO  : System reset is completed.
+21:18:47 INFO  : 'after 3000' command is executed.
+21:18:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}' command is executed.
+21:18:48 INFO  : Device configured successfully with "C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit"
+21:18:48 INFO  : Context for 'APU' is selected.
+21:18:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa'.
+21:18:54 INFO  : 'configparams force-mem-access 1' command is executed.
+21:18:54 INFO  : Context for 'APU' is selected.
+21:18:54 INFO  : Sourcing of 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl' is done.
+21:18:55 INFO  : 'ps7_init' command is executed.
+21:18:55 INFO  : 'ps7_post_config' command is executed.
+21:18:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:18:56 INFO  : The application 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:18:56 INFO  : 'configparams force-mem-access 0' command is executed.
+21:18:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}
+fpga -file C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:18:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:18:56 INFO  : 'con' command is executed.
+21:18:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:18:56 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_Multiple_IRQ_F2P\Vitis\MultipleIRQ_system\_ide\scripts\debugger_multipleirq-default.tcl'
+21:20:53 INFO  : Disconnected from the channel tcfchan#9.
+21:20:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:20:54 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+21:20:54 INFO  : 'jtag frequency' command is executed.
+21:20:55 INFO  : Context for 'APU' is selected.
+21:20:55 INFO  : System reset is completed.
+21:20:58 INFO  : 'after 3000' command is executed.
+21:20:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}' command is executed.
+21:20:59 INFO  : Device configured successfully with "C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit"
+21:20:59 INFO  : Context for 'APU' is selected.
+21:20:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa'.
+21:20:59 INFO  : 'configparams force-mem-access 1' command is executed.
+21:20:59 INFO  : Context for 'APU' is selected.
+21:20:59 INFO  : Sourcing of 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl' is done.
+21:21:00 INFO  : 'ps7_init' command is executed.
+21:21:00 INFO  : 'ps7_post_config' command is executed.
+21:21:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:21:01 INFO  : The application 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:21:01 INFO  : 'configparams force-mem-access 0' command is executed.
+21:21:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}
+fpga -file C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:21:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:21:01 INFO  : 'con' command is executed.
+21:21:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:21:01 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_Multiple_IRQ_F2P\Vitis\MultipleIRQ_system\_ide\scripts\debugger_multipleirq-default.tcl'
+21:27:53 INFO  : Disconnected from the channel tcfchan#10.
+21:27:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:27:55 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+21:27:55 INFO  : 'jtag frequency' command is executed.
+21:27:55 INFO  : Context for 'APU' is selected.
+21:27:55 INFO  : System reset is completed.
+21:27:58 INFO  : 'after 3000' command is executed.
+21:27:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}' command is executed.
+21:27:59 INFO  : Device configured successfully with "C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit"
+21:27:59 INFO  : Context for 'APU' is selected.
+21:27:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa'.
+21:27:59 INFO  : 'configparams force-mem-access 1' command is executed.
+21:27:59 INFO  : Context for 'APU' is selected.
+21:27:59 INFO  : Sourcing of 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl' is done.
+21:28:00 INFO  : 'ps7_init' command is executed.
+21:28:00 INFO  : 'ps7_post_config' command is executed.
+21:28:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:28:01 INFO  : The application 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:28:01 INFO  : 'configparams force-mem-access 0' command is executed.
+21:28:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}
+fpga -file C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:28:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:28:01 INFO  : 'con' command is executed.
+21:28:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:28:01 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_Multiple_IRQ_F2P\Vitis\MultipleIRQ_system\_ide\scripts\debugger_multipleirq-default.tcl'
+21:34:36 INFO  : Checking for BSP changes to sync application flags for project 'MultipleIRQ'...
+21:41:40 INFO  : Checking for BSP changes to sync application flags for project 'MultipleIRQ'...
+21:42:06 INFO  : Disconnected from the channel tcfchan#11.
+21:42:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:42:07 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+21:42:07 INFO  : 'jtag frequency' command is executed.
+21:42:07 INFO  : Context for 'APU' is selected.
+21:42:07 INFO  : System reset is completed.
+21:42:10 INFO  : 'after 3000' command is executed.
+21:42:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}' command is executed.
+21:42:12 INFO  : Device configured successfully with "C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit"
+21:42:12 INFO  : Context for 'APU' is selected.
+21:42:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa'.
+21:42:12 INFO  : 'configparams force-mem-access 1' command is executed.
+21:42:12 INFO  : Context for 'APU' is selected.
+21:42:12 INFO  : Sourcing of 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl' is done.
+21:42:13 INFO  : 'ps7_init' command is executed.
+21:42:13 INFO  : 'ps7_post_config' command is executed.
+21:42:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:42:13 INFO  : The application 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:42:13 INFO  : 'configparams force-mem-access 0' command is executed.
+21:42:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}
+fpga -file C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:42:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:42:13 INFO  : 'con' command is executed.
+21:42:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:42:13 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_Multiple_IRQ_F2P\Vitis\MultipleIRQ_system\_ide\scripts\debugger_multipleirq-default.tcl'
+21:44:01 INFO  : Disconnected from the channel tcfchan#13.
+21:44:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:44:15 INFO  : Jtag cable 'Avnet MiniZed V1 1234-oj1A' is selected.
+21:44:15 INFO  : 'jtag frequency' command is executed.
+21:44:15 INFO  : Context for 'APU' is selected.
+21:44:15 INFO  : System reset is completed.
+21:44:18 INFO  : 'after 3000' command is executed.
+21:44:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}' command is executed.
+21:44:19 INFO  : Device configured successfully with "C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit"
+21:44:19 INFO  : Context for 'APU' is selected.
+21:44:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa'.
+21:44:19 INFO  : 'configparams force-mem-access 1' command is executed.
+21:44:19 INFO  : Context for 'APU' is selected.
+21:44:19 INFO  : Sourcing of 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl' is done.
+21:44:20 INFO  : 'ps7_init' command is executed.
+21:44:20 INFO  : 'ps7_post_config' command is executed.
+21:44:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:21 INFO  : The application 'C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:44:21 INFO  : 'configparams force-mem-access 0' command is executed.
+21:44:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet MiniZed V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-MiniZed V1-1234-oj1A-13723093-0"}
+fpga -file C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/hw/SoC_Multiple_IRQ_F2P.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:44:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:21 INFO  : 'con' command is executed.
+21:44:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:44:21 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_Multiple_IRQ_F2P\Vitis\MultipleIRQ_system\_ide\scripts\debugger_multipleirq-default.tcl'
+21:45:27 INFO  : Projects exported to 'C:\Users\20002890\SoC_Multiple_IRQ_F2P\vitis_export_archive.ide.zip'
+21:45:52 INFO  : Disconnected from the channel tcfchan#14.

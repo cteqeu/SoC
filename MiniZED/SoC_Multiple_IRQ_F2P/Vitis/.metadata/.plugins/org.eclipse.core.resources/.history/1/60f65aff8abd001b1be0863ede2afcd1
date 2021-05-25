@@ -1,0 +1,25 @@
+// Developed by cteq.eu
+// 25/05/2021
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xstatus.h"
+#include "sleep.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+
+
+int main()
+{
+	init_platform();
+    printf("SoC Multiple IRQ F2P Example by cteq.eu\n\r");
+    printf("=======================================\n\r");
+    printf("Use PIN L15 and P13 as Interrup input pins\n\r");
+
+
+
+    return 0;
+}

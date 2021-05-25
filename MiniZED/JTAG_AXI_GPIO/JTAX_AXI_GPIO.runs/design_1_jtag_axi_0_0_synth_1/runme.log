@@ -1,0 +1,87 @@
+
+*** Running vivado
+    with args -log design_1_jtag_axi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_jtag_axi_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_jtag_axi_0_0.tcl -notrace
+CRITICAL WARNING: [Common 17-1355] You are suppressing all messages of type 'WARNING'. You may potentially disregard important DRC, CDC, and implementation messages that can negatively impact your design.  If this is not desired, please run 'reset_msg_config -suppress -severity {WARNING}' to undo this change.
+CRITICAL WARNING: [Common 17-1355] You are suppressing all messages of type 'CRITICAL WARNING'. You may potentially disregard important DRC, CDC, and implementation messages that can negatively impact your design.  If this is not desired, please run 'reset_msg_config -suppress -severity {CRITICAL WARNING}' to undo this change.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1102.020 ; gain = 0.000
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:01:00 . Memory (MB): peak = 1102.020 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:21 ; elapsed = 00:04:52 . Memory (MB): peak = 1464.387 ; gain = 362.367
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:24 ; elapsed = 00:04:56 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:24 ; elapsed = 00:04:56 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.939 . Memory (MB): peak = 1464.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1464.387 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.469 . Memory (MB): peak = 1464.387 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:03:04 ; elapsed = 00:05:45 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:04 ; elapsed = 00:05:45 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/20002890/JTAX_AXI_GPIO/JTAX_AXI_GPIO.runs/design_1_jtag_axi_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:04 ; elapsed = 00:05:46 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:11 ; elapsed = 00:05:54 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:31 ; elapsed = 00:06:15 . Memory (MB): peak = 1464.387 ; gain = 362.367
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------+
+|Module Name | RTL Object                                                                                                | Inference      | Size (Depth x Width) | Primitives                | 
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------+
+|U0          | jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 256 x 32             | RAM64X1D x 8	RAM64M x 40	 | 
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:58 ; elapsed = 00:06:45 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Timing Optimization : Time (s): cpu = 00:04:00 ; elapsed = 00:06:46 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Technology Mapping : Time (s): cpu = 00:04:03 ; elapsed = 00:06:50 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished IO Insertion : Time (s): cpu = 00:04:20 ; elapsed = 00:07:08 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:20 ; elapsed = 00:07:08 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:21 ; elapsed = 00:07:09 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:21 ; elapsed = 00:07:09 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:21 ; elapsed = 00:07:09 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:22 ; elapsed = 00:07:09 . Memory (MB): peak = 1464.387 ; gain = 362.367
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    18|
+|2     |LUT2     |   118|
+|3     |LUT3     |   120|
+|4     |LUT4     |   103|
+|5     |LUT5     |    85|
+|6     |LUT6     |   194|
+|7     |RAM64M   |    40|
+|8     |RAM64X1D |     8|
+|9     |RAMB18E1 |     1|
+|10    |RAMB36E1 |     2|
+|11    |SRL16E   |     2|
+|12    |FDRE     |  1704|
+|13    |FDSE     |    12|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:22 ; elapsed = 00:07:10 . Memory (MB): peak = 1464.387 ; gain = 362.367
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.489 . Memory (MB): peak = 1464.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1464.387 ; gain = 0.000
+synth_design: Time (s): cpu = 00:04:49 ; elapsed = 00:08:17 . Memory (MB): peak = 1464.387 ; gain = 362.367

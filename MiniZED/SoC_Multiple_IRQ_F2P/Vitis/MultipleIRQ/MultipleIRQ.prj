@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="MultipleIRQ" location="C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ" platform="C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/SoC_Multiple_IRQ_F2P.xpfm" platformUID="xilinx:minized::0.0(custom)" systemProject="MultipleIRQ_system" sysConfig="SoC_Multiple_IRQ_F2P" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="8ca1701618a26dd54a5af821d02564ac">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1320019967">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1651523712" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

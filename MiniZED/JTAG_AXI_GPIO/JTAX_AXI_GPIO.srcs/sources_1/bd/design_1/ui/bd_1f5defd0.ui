@@ -1,0 +1,28 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.959152",
+   "Default View_TopLeft":"0,-42",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port pl_led_g -pg 1 -lvl 6 -x 1170 -y 220 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1040 -y 220 -defaultsOSRD
+preplace inst jtag_axi_0 -pg 1 -lvl 3 -x 510 -y 140 -defaultsOSRD
+preplace inst jtag_axi_0_axi_periph -pg 1 -lvl 4 -x 770 -y 200 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 2 -x 310 -y 150 -defaultsOSRD
+preplace inst vhdlnoclk_0 -pg 1 -lvl 1 -x 120 -y 160 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 1 -x 120 -y 60 -defaultsOSRD
+preplace netloc clk_wiz_clk_out1 1 0 5 20 220 NJ 220 400 220 610 320 920J
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 2 3 410 210 620 330 930J
+preplace netloc vhdlnoclk_0_clk65MHz 1 1 1 NJ 160
+preplace netloc vio_0_probe_out0 1 1 1 220J 60n
+preplace netloc axi_gpio_0_GPIO 1 5 1 N 220
+preplace netloc jtag_axi_0_M_AXI 1 3 1 N 140
+preplace netloc jtag_axi_0_axi_periph_M00_AXI 1 4 1 N 200
+levelinfo -pg 1 0 120 310 510 770 1040 1170
+pagesize -pg 1 -db -bbox -sgen 0 0 1280 340
+"
+}
+{
+   "da_axi4_cnt":"1"
+}

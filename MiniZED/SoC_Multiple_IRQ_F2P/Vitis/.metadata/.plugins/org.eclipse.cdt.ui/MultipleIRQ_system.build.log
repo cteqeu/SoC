@@ -1,0 +1,10 @@
+21:34:43 **** Incremental Build of configuration Debug for project MultipleIRQ_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 52255 C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/SoC_Multiple_IRQ_F2P.xpfm standalone_ps7_cortexa9_0 C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/SoC_Multiple_IRQ_F2P/export/SoC_Multiple_IRQ_F2P/SoC_Multiple_IRQ_F2P.xpfm --sys_config SoC_Multiple_IRQ_F2P --bif C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ_system/Debug/system.bif --bitstream C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit --elf C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/Debug/MultipleIRQ.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ/_ide/bitstream/SoC_Multiple_IRQ_F2P.bit
+Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/20002890/SoC_Multiple_IRQ_F2P/Vitis/MultipleIRQ_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+21:35:10 Build Finished (took 26s.867ms)
+

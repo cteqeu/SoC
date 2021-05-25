@@ -1,0 +1,7 @@
+/*SoC_Multiple_IRQ_F2P*/
+the_ROM_image:
+{
+  [bootloader]<SoC_Multiple_IRQ_F2P/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

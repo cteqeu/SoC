@@ -1,0 +1,125 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon May 10 21:12:21 2021
+| Host         : PF1K6K4W running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z007sclg225-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 16
++----------+------------------+-------------------------------------------------+------------+
+| Rule     | Severity         | Description                                     | Violations |
++----------+------------------+-------------------------------------------------+------------+
+| TIMING-2 | Critical Warning | Invalid primary clock source pin                | 1          |
+| LUTAR-1  | Warning          | LUT drives async reset alert                    | 4          |
+| PDRC-190 | Warning          | Suboptimally placed synchronized register chain | 11         |
++----------+------------------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-2#1 Critical Warning
+Invalid primary clock source pin  
+A primary clock design_1_i/clk_wiz/inst/clk_in1 is created on an inappropriate pin design_1_i/clk_wiz/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X21Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X19Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X15Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X18Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X17Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X17Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X16Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X17Y74 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X20Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X19Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X18Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+

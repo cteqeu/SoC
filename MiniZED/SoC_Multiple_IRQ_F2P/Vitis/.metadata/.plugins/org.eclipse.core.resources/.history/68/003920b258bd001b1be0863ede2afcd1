@@ -1,0 +1,117 @@
+// Developed by cteq.eu
+// 25/05/2021
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xstatus.h"
+#include "sleep.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+
+#define INTC_GPIO_INTERRUPT_ID	XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+#define INTC_DEVICE_ID	XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define GPIO_INTERRUPT_ID0	XPAR_GPIO_0_DEVICE_ID
+#define GPIO_INTERRUPT_ID1  XPAR_GPIO_1_DEVICE_ID
+
+#define INTC			XScuGic
+#define INTC_HANDLER	XScuGic_InterruptHandler
+
+#define GPIO_ALL_INPUTS	0xFFFF
+#define INTERRUPT_CONTROL_VALUE 0x1
+#define INTR_DELAY	0x00FFFFFF
+
+static XGpio 	Gpio0;
+static XGpio	Gpio1;
+static XScuGic 	Intc;
+
+static void SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio, u16 GpioIntrId);
+static void DisableInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio, u16 GpioIntrId);
+static void IntrHandler0(void *CallBackRef, u32 Bank, u32 Status);
+static void IntrHandler1(void *CallBackRef, u32 Bank, u32 Status);
+
+static u16 GlobalIntrMask;
+static volatile u32 IntrFlag;
+
+int main()
+{
+	int Status;
+	int Result;
+	u32 DataRead;
+	u32 Delay;
+	init_platform();
+    printf("SoC Multiple IRQ F2P Example by cteq.eu\n\r");
+    printf("=======================================\n\r");
+    printf("Use PIN L15 and P13 as Interrup input pins\n\r");
+
+    Status= XGpio_Initialize(&Gpio0, GPIO_INTERRUPT_ID0);
+    if (Status != XST_SUCCESS) {
+    		return XST_FAILURE;
+    }
+    Status= XGpio_Initialize(&Gpio1, GPIO_INTERRUPT_ID1);
+    if (Status != XST_SUCCESS) {
+    		return XST_FAILURE;
+    }
+
+    XScuGic_Config *IntcConfig;
+
+    IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+    if (NULL == IntcConfig) {
+    	return XST_FAILURE;
+    }
+
+    Result = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+    if (Result != XST_SUCCESS) {
+    		return XST_FAILURE;
+    }
+
+    XScuGic_SetPriorityTriggerType(IntcInstancePtr, IntrId,0xA0, 0x3);
+    Result = XScuGic_Connect(IntcInstancePtr, IntrId,(Xil_ExceptionHandler)GpioHandler, InstancePtr);
+    if (Result != XST_SUCCESS) {
+    		return Result;
+    }
+    XScuGic_Enable(IntcInstancePtr, IntrId);
+    XGpio_InterruptEnable(InstancePtr, IntrMask);
+    XGpio_InterruptGlobalEnable(InstancePtr);
+
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)INTC_HANDLER, IntcInstancePtr);
+
+    /* Enable non-critical exceptions */
+    Xil_ExceptionEnable();
+
+    while(1)
+    {
+    	usleep_A9(10);
+    }
+    cleanup_platform();
+    return 0;
+}
+
+
+static void SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio, u16 GpioIntrId)
+{
+		XScuGic_Config *IntcConfig;
+		Xil_ExceptionInit();
+
+		IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+
+		XScuGic_CfgInitialize(GicInstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+
+		Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, GicInstancePtr);
+
+		XScuGic_Connect(GicInstancePtr, GpioIntrId, (Xil_ExceptionHandler)XGpioPs_IntrHandler, (void *)Gpio);
+
+		XGpioPs_SetIntrTypePin(Gpio, Input_Pin, XGPIOPS_IRQ_TYPE_EDGE_RISING);
+
+		XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+
+		XGpioPs_IntrEnablePin(Gpio, Input_Pin);
+
+		XGpioPs_IntrDisable(Gpio,0x01,0xFFFFFFFF);
+		XScuGic_Enable(GicInstancePtr, GpioIntrId);
+
+		Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
+}

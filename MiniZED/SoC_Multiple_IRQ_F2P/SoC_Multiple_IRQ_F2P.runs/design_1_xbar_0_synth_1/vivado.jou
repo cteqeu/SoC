@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 25 13:59:30 2021
+# Process ID: 3348
+# Current directory: C:/Users/20002890/SoC_Multiple_IRQ_F2P/SoC_Multiple_IRQ_F2P.runs/design_1_xbar_0_synth_1
+# Command line: vivado.exe -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+# Log file: C:/Users/20002890/SoC_Multiple_IRQ_F2P/SoC_Multiple_IRQ_F2P.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds
+# Journal file: C:/Users/20002890/SoC_Multiple_IRQ_F2P/SoC_Multiple_IRQ_F2P.runs/design_1_xbar_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_xbar_0.tcl -notrace

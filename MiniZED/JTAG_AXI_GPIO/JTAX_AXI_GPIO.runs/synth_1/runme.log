@@ -1,0 +1,65 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+CRITICAL WARNING: [Common 17-1355] You are suppressing all messages of type 'WARNING'. You may potentially disregard important DRC, CDC, and implementation messages that can negatively impact your design.  If this is not desired, please run 'reset_msg_config -suppress -severity {WARNING}' to undo this change.
+CRITICAL WARNING: [Common 17-1355] You are suppressing all messages of type 'CRITICAL WARNING'. You may potentially disregard important DRC, CDC, and implementation messages that can negatively impact your design.  If this is not desired, please run 'reset_msg_config -suppress -severity {CRITICAL WARNING}' to undo this change.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1083.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1083.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1083.707 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1083.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1083.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1108.434 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1108.434 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1108.434 ; gain = 24.727
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1108.434 ; gain = 24.727
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/jtag_axi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/jtag_axi_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/jtag_axi_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vhdlnoclk_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vio_0. (constraint file  auto generated constraint).
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1108.434 ; gain = 24.727
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1108.434 ; gain = 24.727
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1108.434 ; gain = 24.727
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1152.188 ; gain = 68.480
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1152.336 ; gain = 68.629
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1171.457 ; gain = 87.750
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1177.207 ; gain = 93.500
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1177.207 ; gain = 93.500
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1177.207 ; gain = 93.500
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1177.207 ; gain = 93.500
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1177.207 ; gain = 93.500
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1177.207 ; gain = 93.500
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |design_1_auto_pc_0_bbox     |     1|
+|2     |design_1_axi_gpio_0_0_bbox  |     1|
+|3     |design_1_clk_wiz_0_bbox     |     1|
+|4     |design_1_jtag_axi_0_0_bbox  |     1|
+|5     |design_1_vhdlnoclk_0_0_bbox |     1|
+|6     |design_1_vio_0_0_bbox       |     1|
+|7     |OBUF                        |     1|
++------+----------------------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1177.207 ; gain = 93.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1189.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1196.172 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 1196.172 ; gain = 112.465

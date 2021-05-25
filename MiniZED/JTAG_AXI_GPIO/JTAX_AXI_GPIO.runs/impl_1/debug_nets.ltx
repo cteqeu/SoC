@@ -1,0 +1,62 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "99997504"
+                    },
+                    {
+                        "type": "XSDBS_V2",
+                        "name": "design_1_i/jtag_axi_0",
+                        "spec": "labtools_xsdbslavelib_v2",
+                        "ipName": "jtag_axi",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "53E5F1C310B952D3BB10986C3375587A"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "design_1_i/vio_0",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "01A4B5947C445FA6BD66F70F5F031273",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/vio_0_probe_out0",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2020.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z007s_1" gui_info="dashboard1=hw_vios[xc7z007s_1/hw_vio_1=VIO_PROBES_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z007s_1" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/design_1_wrapper.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/design_1_wrapper.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/design_1_wrapper.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="design_1_i/vio_0_probe_out0" gui_info="hw_vios/hw_vio_1=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/vio_0_probe_out0"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

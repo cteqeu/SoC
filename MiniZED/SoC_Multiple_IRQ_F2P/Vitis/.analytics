@@ -1,0 +1,20 @@
+timestamp=[2021-05-25 14:17:14], mode=WORKBENCH_START, duration=0:00:11.887, duration_ms=11887, data={}
+timestamp=[2021-05-25 14:17:16], mode=WORKBENCH_UI_INIT, duration=0:00:01.542, duration_ms=1542, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-05-25 14:17:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:07.332, duration_ms=7332, data={}
+timestamp=[2021-05-25 14:21:04], mode=APP_CREATION, duration=0:00:38.409, duration_ms=38409, data={name=SoC_Multiple_IRQ_F2P, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=C:\Users\20002890\SoC_Multiple_IRQ_F2P\Vitis\SoC_Multiple_IRQ_F2P\export\SoC_Multiple_IRQ_F2P\SoC_Multiple_IRQ_F2P.xpfm, application_type=application}
+timestamp=[2021-05-25 14:24:48], mode=APP_CREATION, duration=0:00:36.461, duration_ms=36461, data={name=MultipleIRQ, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=SoC_Multiple_IRQ_F2P, application_type=application}
+timestamp=[2021-05-25 14:28:49], mode=PLATFORM_GENERATION, duration=0:01:22.690, duration_ms=82690, data={name=SoC_Multiple_IRQ_F2P}
+timestamp=[2021-05-25 15:05:46], mode=PLATFORM_GENERATION, duration=0:00:08.585, duration_ms=8585, data={name=SoC_Multiple_IRQ_F2P}
+timestamp=[2021-05-25 15:05:50], mode=BUILD, duration=0:00:02.626, duration_ms=2626, data={name=MultipleIRQ, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 15:06:00], mode=BUILD, duration=0:00:09.047, duration_ms=9047, data={name=MultipleIRQ_system, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:12:27], mode=BUILD, duration=0:00:02.420, duration_ms=2420, data={name=MultipleIRQ, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:12:39], mode=BUILD, duration=0:00:10.172, duration_ms=10172, data={name=MultipleIRQ_system, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:12:45], mode=BUILD, duration=0:00:02.109, duration_ms=2109, data={name=MultipleIRQ, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:12:55], mode=BUILD, duration=0:00:09.516, duration_ms=9516, data={name=MultipleIRQ_system, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:13:52], mode=BUILD, duration=0:00:02.025, duration_ms=2025, data={name=MultipleIRQ, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:14:02], mode=BUILD, duration=0:00:09.274, duration_ms=9274, data={name=MultipleIRQ_system, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:14:18], mode=BUILD, duration=0:00:04.758, duration_ms=4758, data={name=MultipleIRQ, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:14:41], mode=BUILD, duration=0:00:21.921, duration_ms=21921, data={name=MultipleIRQ_system, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:34:41], mode=BUILD, duration=0:00:05.299, duration_ms=5299, data={name=MultipleIRQ, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:35:10], mode=BUILD, duration=0:00:26.898, duration_ms=26898, data={name=MultipleIRQ_system, configuration=Debug, clean_build=false}
+timestamp=[2021-05-25 21:41:45], mode=BUILD, duration=0:00:04.683, duration_ms=4683, data={name=MultipleIRQ, configuration=Debug, clean_build=false}
