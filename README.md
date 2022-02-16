@@ -1,6 +1,9 @@
+# Pynq-Z2 (Starting from 2021-2022)
+Xilinx 2021.2
+- SoC_5_HelloWorld.....	=> Vivado Hardware with only Zynq Processing System and Vitis project running "Hello World" C Application
+
 # MiniZED
 MiniZED Examples's by Vincent Claes
-
 Xilinx Vivado 2018.2
 
 - GPIO PL 		            => AXI GPIO + C Application
@@ -16,5 +19,3 @@ Xilinx Vivado 2018.2
 - ZYNQ BRAM				  => Example Project for Implementing AXI BRAM Controller in Xiling ZYNQ FPGA
 
 
-# Pynq-Z2 (Starting from 2021-2022)
-- SoC_5_HelloWorld.....	=> Vivado Hardware with only Zynq Processing System and Vitis project running "Hello World" C Application
