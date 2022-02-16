@@ -1,0 +1,109 @@
+11:25:14 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\20002890\SoC_5_HelloWorld\Vitis\temp_xsdb_launch_script.tcl
+11:25:18 INFO  : Registering command handlers for Vitis TCF services
+11:25:18 INFO  : Platform repository initialization has completed.
+11:25:30 INFO  : XSCT server has started successfully.
+11:25:43 INFO  : plnx-install-location is set to ''
+11:25:43 INFO  : Successfully done setting XSCT server connection channel  
+11:25:44 INFO  : Successfully done query RDI_DATADIR 
+11:25:44 INFO  : Successfully done setting workspace for the tool. 
+11:31:35 INFO  : Result from executing command 'getProjects': SoC_5_HelloWorld
+11:31:35 INFO  : Result from executing command 'getPlatforms': 
+11:31:35 WARN  : An unexpected exception occurred in the module 'platform project logging'
+11:31:36 INFO  : Platform 'SoC_5_HelloWorld' is added to custom repositories.
+11:32:05 INFO  : Platform 'SoC_5_HelloWorld' is added to custom repositories.
+11:37:24 INFO  : Result from executing command 'getProjects': SoC_5_HelloWorld
+11:37:24 INFO  : Result from executing command 'getPlatforms': SoC_5_HelloWorld|C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld/export/SoC_5_HelloWorld/SoC_5_HelloWorld.xpfm
+11:37:25 INFO  : Checking for BSP changes to sync application flags for project 'SoC_5_HelloWorld_App'...
+11:38:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:59 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:38:59 INFO  : 'jtag frequency' command is executed.
+11:38:59 INFO  : Context for 'APU' is selected.
+11:38:59 INFO  : System reset is completed.
+11:39:02 INFO  : 'after 3000' command is executed.
+11:39:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:39:05 INFO  : Device configured successfully with "C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/_ide/bitstream/SoC_5_HelloWorld.bit"
+11:39:05 INFO  : Context for 'APU' is selected.
+11:39:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld/export/SoC_5_HelloWorld/hw/SoC_5_HelloWorld.xsa'.
+11:39:05 INFO  : 'configparams force-mem-access 1' command is executed.
+11:39:05 INFO  : Context for 'APU' is selected.
+11:39:05 INFO  : Sourcing of 'C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/_ide/psinit/ps7_init.tcl' is done.
+11:39:06 INFO  : 'ps7_init' command is executed.
+11:39:06 INFO  : 'ps7_post_config' command is executed.
+11:39:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:07 INFO  : The application 'C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/Debug/SoC_5_HelloWorld_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:39:07 INFO  : 'configparams force-mem-access 0' command is executed.
+11:39:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/_ide/bitstream/SoC_5_HelloWorld.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld/export/SoC_5_HelloWorld/hw/SoC_5_HelloWorld.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/Debug/SoC_5_HelloWorld_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:39:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:07 INFO  : 'con' command is executed.
+11:39:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:39:07 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_5_HelloWorld\Vitis\SoC_5_HelloWorld_App_system\_ide\scripts\debugger_soc_5_helloworld_app-default.tcl'
+11:43:16 INFO  : Disconnected from the channel tcfchan#2.
+11:43:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:18 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:43:18 INFO  : 'jtag frequency' command is executed.
+11:43:18 INFO  : Context for 'APU' is selected.
+11:43:18 INFO  : System reset is completed.
+11:43:21 INFO  : 'after 3000' command is executed.
+11:43:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:43:23 INFO  : Device configured successfully with "C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/_ide/bitstream/SoC_5_HelloWorld.bit"
+11:43:23 INFO  : Context for 'APU' is selected.
+11:43:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld/export/SoC_5_HelloWorld/hw/SoC_5_HelloWorld.xsa'.
+11:43:23 INFO  : 'configparams force-mem-access 1' command is executed.
+11:43:23 INFO  : Context for 'APU' is selected.
+11:43:23 INFO  : Sourcing of 'C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/_ide/psinit/ps7_init.tcl' is done.
+11:43:25 INFO  : 'ps7_init' command is executed.
+11:43:25 INFO  : 'ps7_post_config' command is executed.
+11:43:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:26 INFO  : The application 'C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/Debug/SoC_5_HelloWorld_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:26 INFO  : 'configparams force-mem-access 0' command is executed.
+11:43:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/_ide/bitstream/SoC_5_HelloWorld.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld/export/SoC_5_HelloWorld/hw/SoC_5_HelloWorld.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_5_HelloWorld/Vitis/SoC_5_HelloWorld_App/Debug/SoC_5_HelloWorld_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:43:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:26 INFO  : 'con' command is executed.
+11:43:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:43:26 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_5_HelloWorld\Vitis\SoC_5_HelloWorld_App_system\_ide\scripts\debugger_soc_5_helloworld_app-default.tcl'
+15:02:40 INFO  : No changes in MSS file content so sources will not be generated.
+15:20:03 INFO  : Disconnected from the channel tcfchan#3.
