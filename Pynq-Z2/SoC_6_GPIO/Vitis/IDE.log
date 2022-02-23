@@ -1,0 +1,1276 @@
+14:42:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\20002890\SoC_6_GPIO\Vitis\temp_xsdb_launch_script.tcl
+14:42:02 INFO  : Registering command handlers for Vitis TCF services
+14:42:02 INFO  : Platform repository initialization has completed.
+14:42:12 INFO  : XSCT server has started successfully.
+14:42:12 INFO  : Successfully done setting XSCT server connection channel  
+14:42:12 INFO  : plnx-install-location is set to ''
+14:42:26 INFO  : Successfully done setting workspace for the tool. 
+14:42:32 INFO  : Successfully done query RDI_DATADIR 
+14:44:13 INFO  : Result from executing command 'getProjects': SoC_6_GPIO
+14:44:13 INFO  : Result from executing command 'getPlatforms': 
+14:44:13 WARN  : An unexpected exception occurred in the module 'platform project logging'
+14:44:14 INFO  : Platform 'SoC_6_GPIO' is added to custom repositories.
+14:44:41 INFO  : Platform 'SoC_6_GPIO' is added to custom repositories.
+15:04:00 INFO  : Result from executing command 'getProjects': SoC_6_GPIO
+15:04:00 INFO  : Result from executing command 'getPlatforms': SoC_6_GPIO|C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/SoC_6_GPIO.xpfm
+15:04:01 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:06:10 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:06:28 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:07:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:03 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:07:03 INFO  : 'jtag frequency' command is executed.
+15:07:03 INFO  : Context for 'APU' is selected.
+15:07:03 INFO  : System reset is completed.
+15:07:06 INFO  : 'after 3000' command is executed.
+15:07:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:07:09 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:07:09 INFO  : Context for 'APU' is selected.
+15:07:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:07:10 INFO  : 'configparams force-mem-access 1' command is executed.
+15:07:10 INFO  : Context for 'APU' is selected.
+15:07:10 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:07:11 INFO  : 'ps7_init' command is executed.
+15:07:11 INFO  : 'ps7_post_config' command is executed.
+15:07:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:11 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:07:12 INFO  : 'configparams force-mem-access 0' command is executed.
+15:07:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:07:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:12 INFO  : 'con' command is executed.
+15:07:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:07:12 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:07:35 INFO  : Disconnected from the channel tcfchan#2.
+15:07:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:37 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:07:37 INFO  : 'jtag frequency' command is executed.
+15:07:37 INFO  : Context for 'APU' is selected.
+15:07:37 INFO  : System reset is completed.
+15:07:40 INFO  : 'after 3000' command is executed.
+15:07:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:07:43 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:07:43 INFO  : Context for 'APU' is selected.
+15:07:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:07:43 INFO  : 'configparams force-mem-access 1' command is executed.
+15:07:43 INFO  : Context for 'APU' is selected.
+15:07:43 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:07:44 INFO  : 'ps7_init' command is executed.
+15:07:44 INFO  : 'ps7_post_config' command is executed.
+15:07:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:44 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:07:44 INFO  : 'configparams force-mem-access 0' command is executed.
+15:07:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:07:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:45 INFO  : 'con' command is executed.
+15:07:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:07:45 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:09:53 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:10:09 INFO  : Disconnected from the channel tcfchan#3.
+15:10:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:11 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:10:11 INFO  : 'jtag frequency' command is executed.
+15:10:11 INFO  : Context for 'APU' is selected.
+15:10:11 INFO  : System reset is completed.
+15:10:14 INFO  : 'after 3000' command is executed.
+15:10:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:10:16 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:10:16 INFO  : Context for 'APU' is selected.
+15:10:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:10:16 INFO  : 'configparams force-mem-access 1' command is executed.
+15:10:16 INFO  : Context for 'APU' is selected.
+15:10:16 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:10:18 INFO  : 'ps7_init' command is executed.
+15:10:18 INFO  : 'ps7_post_config' command is executed.
+15:10:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:18 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:10:18 INFO  : 'configparams force-mem-access 0' command is executed.
+15:10:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:10:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:19 INFO  : 'con' command is executed.
+15:10:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:10:19 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:12:33 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:12:41 INFO  : Disconnected from the channel tcfchan#4.
+15:12:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:45 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:12:45 INFO  : 'jtag frequency' command is executed.
+15:12:45 INFO  : Context for 'APU' is selected.
+15:12:45 INFO  : System reset is completed.
+15:12:48 INFO  : 'after 3000' command is executed.
+15:12:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:12:50 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:12:50 INFO  : Context for 'APU' is selected.
+15:12:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:12:50 INFO  : 'configparams force-mem-access 1' command is executed.
+15:12:50 INFO  : Context for 'APU' is selected.
+15:12:50 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:12:51 INFO  : 'ps7_init' command is executed.
+15:12:52 INFO  : 'ps7_post_config' command is executed.
+15:12:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:52 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:12:52 INFO  : 'configparams force-mem-access 0' command is executed.
+15:12:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:12:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:52 INFO  : 'con' command is executed.
+15:12:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:12:52 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:16:55 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:17:04 INFO  : Disconnected from the channel tcfchan#5.
+15:17:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:17:14 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:17:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:21 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:17:21 INFO  : 'jtag frequency' command is executed.
+15:17:21 INFO  : Context for 'APU' is selected.
+15:17:21 INFO  : System reset is completed.
+15:17:24 INFO  : 'after 3000' command is executed.
+15:17:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:17:27 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:17:27 INFO  : Context for 'APU' is selected.
+15:17:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:17:27 INFO  : 'configparams force-mem-access 1' command is executed.
+15:17:27 INFO  : Context for 'APU' is selected.
+15:17:27 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:17:28 INFO  : 'ps7_init' command is executed.
+15:17:28 INFO  : 'ps7_post_config' command is executed.
+15:17:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:28 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:17:28 INFO  : 'configparams force-mem-access 0' command is executed.
+15:17:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:17:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:29 INFO  : 'con' command is executed.
+15:17:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:17:29 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:18:05 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:18:22 INFO  : Disconnected from the channel tcfchan#6.
+15:18:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:18:32 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:18:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:37 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:18:37 INFO  : 'jtag frequency' command is executed.
+15:18:37 INFO  : Context for 'APU' is selected.
+15:18:37 INFO  : System reset is completed.
+15:18:40 INFO  : 'after 3000' command is executed.
+15:18:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:18:43 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:18:43 INFO  : Context for 'APU' is selected.
+15:18:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:18:43 INFO  : 'configparams force-mem-access 1' command is executed.
+15:18:43 INFO  : Context for 'APU' is selected.
+15:18:43 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:18:45 INFO  : 'ps7_init' command is executed.
+15:18:45 INFO  : 'ps7_post_config' command is executed.
+15:18:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:18:46 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:18:46 INFO  : 'configparams force-mem-access 0' command is executed.
+15:18:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:18:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:18:46 INFO  : 'con' command is executed.
+15:18:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:18:46 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:36:35 INFO  : Disconnected from the channel tcfchan#7.
+15:36:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:36:37 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:36:37 INFO  : 'jtag frequency' command is executed.
+15:36:37 INFO  : Context for 'APU' is selected.
+15:36:37 INFO  : System reset is completed.
+15:36:40 INFO  : 'after 3000' command is executed.
+15:36:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:36:43 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:36:43 INFO  : Context for 'APU' is selected.
+15:36:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:36:43 INFO  : 'configparams force-mem-access 1' command is executed.
+15:36:43 INFO  : Context for 'APU' is selected.
+15:36:43 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:36:44 INFO  : 'ps7_init' command is executed.
+15:36:44 INFO  : 'ps7_post_config' command is executed.
+15:36:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:36:44 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:36:44 INFO  : 'configparams force-mem-access 0' command is executed.
+15:36:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:36:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:36:45 INFO  : 'con' command is executed.
+15:36:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:36:45 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:37:31 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:37:41 INFO  : Disconnected from the channel tcfchan#8.
+15:37:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:43 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:37:43 INFO  : 'jtag frequency' command is executed.
+15:37:43 INFO  : Context for 'APU' is selected.
+15:37:43 INFO  : System reset is completed.
+15:37:46 INFO  : 'after 3000' command is executed.
+15:37:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:37:48 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:37:48 INFO  : Context for 'APU' is selected.
+15:37:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:37:48 INFO  : 'configparams force-mem-access 1' command is executed.
+15:37:48 INFO  : Context for 'APU' is selected.
+15:37:48 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:37:50 INFO  : 'ps7_init' command is executed.
+15:37:50 INFO  : 'ps7_post_config' command is executed.
+15:37:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:37:50 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:37:50 INFO  : 'configparams force-mem-access 0' command is executed.
+15:37:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:37:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:37:50 INFO  : 'con' command is executed.
+15:37:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:37:50 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:50:35 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:50:54 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:51:44 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+15:51:57 INFO  : Disconnected from the channel tcfchan#9.
+15:51:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:52:01 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:52:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:20 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:52:20 INFO  : 'jtag frequency' command is executed.
+15:52:20 INFO  : Context for 'APU' is selected.
+15:52:20 INFO  : System reset is completed.
+15:52:23 INFO  : 'after 3000' command is executed.
+15:52:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:52:26 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:52:26 INFO  : Context for 'APU' is selected.
+15:52:26 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:52:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:52:26 INFO  : Context for 'APU' is selected.
+15:52:26 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:52:27 INFO  : 'ps7_init' command is executed.
+15:52:27 INFO  : 'ps7_post_config' command is executed.
+15:52:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:52:27 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:52:28 INFO  : 'configparams force-mem-access 0' command is executed.
+15:52:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:52:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:52:28 INFO  : 'con' command is executed.
+15:52:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:52:28 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+15:58:39 INFO  : Disconnected from the channel tcfchan#10.
+15:58:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:58:49 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:59:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:23 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:59:23 INFO  : 'jtag frequency' command is executed.
+15:59:23 INFO  : Context for 'APU' is selected.
+15:59:23 INFO  : System reset is completed.
+15:59:26 INFO  : 'after 3000' command is executed.
+15:59:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:59:28 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+15:59:28 INFO  : Context for 'APU' is selected.
+15:59:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+15:59:29 INFO  : 'configparams force-mem-access 1' command is executed.
+15:59:29 INFO  : Context for 'APU' is selected.
+15:59:29 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+15:59:30 INFO  : 'ps7_init' command is executed.
+15:59:30 INFO  : 'ps7_post_config' command is executed.
+15:59:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:30 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:59:30 INFO  : 'configparams force-mem-access 0' command is executed.
+15:59:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:59:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:30 INFO  : 'con' command is executed.
+15:59:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:59:30 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:18:22 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:18:37 INFO  : Disconnected from the channel tcfchan#11.
+16:18:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:18:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:18:47 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:18:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:18:58 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:18:58 INFO  : 'jtag frequency' command is executed.
+16:18:58 INFO  : Context for 'APU' is selected.
+16:18:58 INFO  : System reset is completed.
+16:19:01 INFO  : 'after 3000' command is executed.
+16:19:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:19:03 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+16:19:03 INFO  : Context for 'APU' is selected.
+16:19:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+16:19:03 INFO  : 'configparams force-mem-access 1' command is executed.
+16:19:04 INFO  : Context for 'APU' is selected.
+16:19:04 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+16:19:05 INFO  : 'ps7_init' command is executed.
+16:19:05 INFO  : 'ps7_post_config' command is executed.
+16:19:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:05 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:19:05 INFO  : 'configparams force-mem-access 0' command is executed.
+16:19:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:19:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:06 INFO  : 'con' command is executed.
+16:19:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:19:06 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:22:27 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:23:39 INFO  : Disconnected from the channel tcfchan#12.
+16:23:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:41 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:23:41 INFO  : 'jtag frequency' command is executed.
+16:23:41 INFO  : Context for 'APU' is selected.
+16:23:42 INFO  : System reset is completed.
+16:23:45 INFO  : 'after 3000' command is executed.
+16:23:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:23:47 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+16:23:47 INFO  : Context for 'APU' is selected.
+16:23:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+16:23:47 INFO  : 'configparams force-mem-access 1' command is executed.
+16:23:47 INFO  : Context for 'APU' is selected.
+16:23:47 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+16:23:49 INFO  : 'ps7_init' command is executed.
+16:23:49 INFO  : 'ps7_post_config' command is executed.
+16:23:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:49 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:23:50 INFO  : 'configparams force-mem-access 0' command is executed.
+16:23:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:23:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:50 INFO  : 'con' command is executed.
+16:23:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:23:50 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:39:15 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:39:21 INFO  : Disconnected from the channel tcfchan#13.
+16:46:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:46:24 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:46:24 INFO  : 'jtag frequency' command is executed.
+16:46:25 INFO  : Context for 'APU' is selected.
+16:46:25 INFO  : System reset is completed.
+16:46:28 INFO  : 'after 3000' command is executed.
+16:46:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:46:31 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+16:46:31 INFO  : Context for 'APU' is selected.
+16:46:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+16:46:31 INFO  : 'configparams force-mem-access 1' command is executed.
+16:46:31 INFO  : Context for 'APU' is selected.
+16:46:31 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+16:46:33 INFO  : 'ps7_init' command is executed.
+16:46:33 INFO  : 'ps7_post_config' command is executed.
+16:46:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:46:34 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:46:34 INFO  : 'configparams force-mem-access 0' command is executed.
+16:46:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:46:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:46:34 INFO  : 'con' command is executed.
+16:46:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:46:34 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:50:25 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:50:28 INFO  : Disconnected from the channel tcfchan#14.
+16:50:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:43 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:50:43 INFO  : 'jtag frequency' command is executed.
+16:50:43 INFO  : Context for 'APU' is selected.
+16:50:43 INFO  : System reset is completed.
+16:50:46 INFO  : 'after 3000' command is executed.
+16:50:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:50:49 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+16:50:49 INFO  : Context for 'APU' is selected.
+16:50:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+16:50:49 INFO  : 'configparams force-mem-access 1' command is executed.
+16:50:49 INFO  : Context for 'APU' is selected.
+16:50:49 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+16:50:50 INFO  : 'ps7_init' command is executed.
+16:50:50 INFO  : 'ps7_post_config' command is executed.
+16:50:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:51 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:50:51 INFO  : 'configparams force-mem-access 0' command is executed.
+16:50:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:50:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:51 INFO  : 'con' command is executed.
+16:50:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:50:51 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:51:50 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:51:52 INFO  : Disconnected from the channel tcfchan#15.
+16:52:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:09 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:52:09 INFO  : 'jtag frequency' command is executed.
+16:52:09 INFO  : Context for 'APU' is selected.
+16:52:09 INFO  : System reset is completed.
+16:52:12 INFO  : 'after 3000' command is executed.
+16:52:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:52:15 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+16:52:15 INFO  : Context for 'APU' is selected.
+16:52:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+16:52:15 INFO  : 'configparams force-mem-access 1' command is executed.
+16:52:15 INFO  : Context for 'APU' is selected.
+16:52:15 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+16:52:17 INFO  : 'ps7_init' command is executed.
+16:52:17 INFO  : 'ps7_post_config' command is executed.
+16:52:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:17 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:52:17 INFO  : 'configparams force-mem-access 0' command is executed.
+16:52:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:52:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:18 INFO  : 'con' command is executed.
+16:52:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:52:18 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:54:12 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:54:22 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:54:32 INFO  : Disconnected from the channel tcfchan#16.
+16:54:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:54:42 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:54:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:50 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:54:50 INFO  : 'jtag frequency' command is executed.
+16:54:50 INFO  : Context for 'APU' is selected.
+16:54:50 INFO  : System reset is completed.
+16:54:53 INFO  : 'after 3000' command is executed.
+16:54:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:54:55 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+16:54:56 INFO  : Context for 'APU' is selected.
+16:54:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+16:54:56 INFO  : 'configparams force-mem-access 1' command is executed.
+16:54:56 INFO  : Context for 'APU' is selected.
+16:54:56 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+16:54:57 INFO  : 'ps7_init' command is executed.
+16:54:57 INFO  : 'ps7_post_config' command is executed.
+16:54:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:57 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:54:57 INFO  : 'configparams force-mem-access 0' command is executed.
+16:54:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:54:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:58 INFO  : 'con' command is executed.
+16:54:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:54:58 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:55:18 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:55:27 INFO  : Disconnected from the channel tcfchan#17.
+16:55:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:29 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:55:29 INFO  : 'jtag frequency' command is executed.
+16:55:29 INFO  : Context for 'APU' is selected.
+16:55:29 INFO  : System reset is completed.
+16:55:32 INFO  : 'after 3000' command is executed.
+16:55:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:55:35 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+16:55:35 INFO  : Context for 'APU' is selected.
+16:55:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+16:55:35 INFO  : 'configparams force-mem-access 1' command is executed.
+16:55:35 INFO  : Context for 'APU' is selected.
+16:55:35 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+16:55:38 INFO  : 'ps7_init' command is executed.
+16:55:39 INFO  : 'ps7_post_config' command is executed.
+16:55:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:39 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:55:39 INFO  : 'configparams force-mem-access 0' command is executed.
+16:55:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:55:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:40 INFO  : 'con' command is executed.
+16:55:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:55:40 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:56:02 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:56:16 INFO  : Disconnected from the channel tcfchan#18.
+16:56:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:56:26 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:56:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:32 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:56:32 INFO  : 'jtag frequency' command is executed.
+16:56:32 INFO  : Context for 'APU' is selected.
+16:56:32 INFO  : System reset is completed.
+16:56:35 INFO  : 'after 3000' command is executed.
+16:56:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:56:39 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+16:56:39 INFO  : Context for 'APU' is selected.
+16:56:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+16:56:39 INFO  : 'configparams force-mem-access 1' command is executed.
+16:56:40 INFO  : Context for 'APU' is selected.
+16:56:40 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+16:56:42 INFO  : 'ps7_init' command is executed.
+16:56:42 INFO  : 'ps7_post_config' command is executed.
+16:56:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:56:42 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:56:43 INFO  : 'configparams force-mem-access 0' command is executed.
+16:56:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:56:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:56:43 INFO  : 'con' command is executed.
+16:56:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:56:43 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+16:57:50 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:58:18 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:58:35 INFO  : Disconnected from the channel tcfchan#19.
+16:58:45 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:59:01 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:59:17 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+16:59:42 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+17:00:10 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+17:00:55 INFO  : Result from executing command 'removePlatformRepo': 
+17:01:45 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_GPIO_App-Default'. 
+Make sure that the application 'GPIO_App' is built properly for configuration 'Debug' before launching.
+17:03:14 INFO  : Result from executing command 'getProjects': SoC_6_GPIO
+17:03:14 INFO  : Result from executing command 'getPlatforms': 
+17:03:16 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+17:03:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:03:33 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:03:33 INFO  : 'jtag frequency' command is executed.
+17:03:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:03:36 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+17:03:36 INFO  : Context for 'APU' is selected.
+17:03:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+17:03:36 INFO  : 'configparams force-mem-access 1' command is executed.
+17:03:36 INFO  : Context for 'APU' is selected.
+17:03:36 INFO  : 'stop' command is executed.
+17:03:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:03:37 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/sw/SoC_6_GPIO/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:03:38 INFO  : 'set bp_3_37_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:04:39 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+17:04:39 INFO  : 'bpremove $bp_3_37_fsbl_bp' command is executed.
+17:04:51 INFO  : 'configparams force-mem-access 0' command is executed.
+17:04:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/sw/SoC_6_GPIO/boot/fsbl.elf
+set bp_3_37_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_3_37_fsbl_bp
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:04:51 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+17:05:07 INFO  : Disconnected from the channel tcfchan#22.
+17:05:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:08 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:05:08 INFO  : 'jtag frequency' command is executed.
+17:05:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:05:11 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+17:05:11 INFO  : Context for 'APU' is selected.
+17:05:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+17:05:11 INFO  : 'configparams force-mem-access 1' command is executed.
+17:05:11 INFO  : Context for 'APU' is selected.
+17:05:11 INFO  : 'stop' command is executed.
+17:05:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:05:12 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/sw/SoC_6_GPIO/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:05:12 INFO  : 'set bp_5_12_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:06:14 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+17:06:14 INFO  : 'bpremove $bp_5_12_fsbl_bp' command is executed.
+20:35:49 INFO  : 'configparams force-mem-access 0' command is executed.
+20:35:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/sw/SoC_6_GPIO/boot/fsbl.elf
+set bp_5_12_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_5_12_fsbl_bp
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:35:50 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+20:35:54 INFO  : Disconnected from the channel tcfchan#23.
+20:37:10 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\20002890\SoC_6_GPIO\Vitis\temp_xsdb_launch_script.tcl
+20:37:21 INFO  : Registering command handlers for Vitis TCF services
+20:37:22 INFO  : Platform repository initialization has completed.
+20:37:24 INFO  : XSCT server has started successfully.
+20:37:24 INFO  : Successfully done setting XSCT server connection channel  
+20:37:34 INFO  : plnx-install-location is set to ''
+20:37:34 INFO  : Successfully done setting workspace for the tool. 
+20:37:34 INFO  : Successfully done query RDI_DATADIR 
+20:38:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:38:19 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:38:19 INFO  : 'jtag frequency' command is executed.
+20:38:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:38:22 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+20:38:22 INFO  : Context for 'APU' is selected.
+20:38:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+20:38:22 INFO  : 'configparams force-mem-access 1' command is executed.
+20:38:22 INFO  : Context for 'APU' is selected.
+20:38:22 INFO  : 'stop' command is executed.
+20:38:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:38:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:38:23 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/sw/SoC_6_GPIO/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:38:23 INFO  : 'set bp_38_23_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:39:25 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+20:39:25 INFO  : 'bpremove $bp_38_23_fsbl_bp' command is executed.
+20:39:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/sw/SoC_6_GPIO/boot/fsbl.elf
+set bp_38_23_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_38_23_fsbl_bp
+----------------End of Script----------------
+
+20:40:44 INFO  : Result from executing command 'getProjects': SoC_6_GPIO
+20:40:44 INFO  : Result from executing command 'getPlatforms': SoC_6_GPIO|C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/SoC_6_GPIO.xpfm
+20:40:45 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+20:41:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:41:00 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:41:00 INFO  : 'jtag frequency' command is executed.
+20:41:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:41:03 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+20:41:03 INFO  : Context for 'APU' is selected.
+20:41:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+20:41:03 INFO  : 'configparams force-mem-access 1' command is executed.
+20:41:03 INFO  : Context for 'APU' is selected.
+20:41:03 INFO  : 'stop' command is executed.
+20:41:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:41:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:41:04 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/sw/SoC_6_GPIO/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:41:04 INFO  : 'set bp_41_4_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:42:06 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+20:42:06 INFO  : 'bpremove $bp_41_4_fsbl_bp' command is executed.
+20:42:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/sw/SoC_6_GPIO/boot/fsbl.elf
+set bp_41_4_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_41_4_fsbl_bp
+----------------End of Script----------------
+
+20:42:23 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+20:43:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:43:51 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:43:51 INFO  : 'jtag frequency' command is executed.
+20:43:51 INFO  : Context for 'APU' is selected.
+20:43:51 INFO  : System reset is completed.
+20:43:54 INFO  : 'after 3000' command is executed.
+20:43:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:43:57 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+20:43:57 INFO  : Context for 'APU' is selected.
+20:43:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+20:43:57 INFO  : 'configparams force-mem-access 1' command is executed.
+20:43:57 INFO  : Context for 'APU' is selected.
+20:43:57 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+20:43:58 INFO  : 'ps7_init' command is executed.
+20:43:58 INFO  : 'ps7_post_config' command is executed.
+20:43:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:43:58 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:43:58 INFO  : 'configparams force-mem-access 0' command is executed.
+20:43:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:43:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:43:59 INFO  : 'con' command is executed.
+20:43:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:43:59 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+20:44:23 INFO  : Disconnected from the channel tcfchan#1.
+20:44:49 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+20:45:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:45:07 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:45:07 INFO  : 'jtag frequency' command is executed.
+20:45:07 INFO  : Context for 'APU' is selected.
+20:45:07 INFO  : System reset is completed.
+20:45:10 INFO  : 'after 3000' command is executed.
+20:45:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:45:13 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+20:45:13 INFO  : Context for 'APU' is selected.
+20:45:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+20:45:13 INFO  : 'configparams force-mem-access 1' command is executed.
+20:45:13 INFO  : Context for 'APU' is selected.
+20:45:13 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+20:45:14 INFO  : 'ps7_init' command is executed.
+20:45:14 INFO  : 'ps7_post_config' command is executed.
+20:45:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:45:15 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:45:15 INFO  : 'configparams force-mem-access 0' command is executed.
+20:45:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:45:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:45:15 INFO  : 'con' command is executed.
+20:45:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:45:15 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+20:45:54 INFO  : Disconnected from the channel tcfchan#3.
+20:46:42 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_App'...
+20:46:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:46:52 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:46:52 INFO  : 'jtag frequency' command is executed.
+20:46:52 INFO  : Context for 'APU' is selected.
+20:46:52 INFO  : System reset is completed.
+20:46:55 INFO  : 'after 3000' command is executed.
+20:46:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:46:58 INFO  : Device configured successfully with "C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit"
+20:46:58 INFO  : Context for 'APU' is selected.
+20:46:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa'.
+20:46:58 INFO  : 'configparams force-mem-access 1' command is executed.
+20:46:58 INFO  : Context for 'APU' is selected.
+20:46:58 INFO  : Sourcing of 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl' is done.
+20:46:59 INFO  : 'ps7_init' command is executed.
+20:46:59 INFO  : 'ps7_post_config' command is executed.
+20:46:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:47:00 INFO  : The application 'C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:47:00 INFO  : 'configparams force-mem-access 0' command is executed.
+20:47:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/bitstream/SoC_6_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/20002890/SoC_6_GPIO/Vitis/SoC_6_GPIO/export/SoC_6_GPIO/hw/SoC_6_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/20002890/SoC_6_GPIO/Vitis/GPIO_App/Debug/GPIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:47:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:47:00 INFO  : 'con' command is executed.
+20:47:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:47:00 INFO  : Launch script is exported to file 'C:\Users\20002890\SoC_6_GPIO\Vitis\GPIO_App_system\_ide\scripts\debugger_gpio_app-default.tcl'
+20:56:26 INFO  : Disconnected from the channel tcfchan#4.

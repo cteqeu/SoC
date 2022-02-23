@@ -1,0 +1,55 @@
+// dev by cteq.eu
+// R14 => GPIO2 Outputs	LED0
+// P14 => GPIO2 Outputs	LED1
+// D19 => GPIO Inputs	BTN0
+// D20 => GPIO Inputs	BTN1
+// L19 => GPIOPS 		BTN3
+// L20 => GPIOPS		BTN2
+// M14 => GPIOPS		LED3
+// N16 => GPIOPSS		LED2
+
+// GPIO2 is Channel 2 van AXI GPIO
+// GPIO is Channel 0 van AXI GPIO
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xgpio.h"
+#include "sleep.h"
+
+#define LED_CHANNEL 1
+#define BTN_CHANNEL 0
+
+#define LEDS 0x03
+#define BTNS 0X03
+
+XGpio Gpio;
+
+
+int main()
+{
+    init_platform();
+    u32	ReadValue=0;
+
+    /* Initialize the GPIO driver */
+    	Status = XGpio_Initialize(&Gpio, XPAR_GPIO_0_DEVICE_ID);
+    	if (Status != XST_SUCCESS) {
+    		xil_printf("Gpio Initialization Failed\r\n");
+    		return XST_FAILURE;
+    	}
+    XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LEDS);
+    XGpio_SetDataDirection(Gpio, BTN_CHANNEL, BTNS);
+
+    while (1) {
+    		XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, LEDS);
+    		usleep_A9(500);
+    		XGpio_DiscreteClear(&Gpio, LED_CHANNEL, LEDS);
+    		usleep_A9(500);
+    }
+
+
+
+    cleanup_platform();
+    return 0;
+}
