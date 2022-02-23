@@ -1,0 +1,358 @@
+
+*** Running vivado
+    with args -log design_1_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_xbar_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.445 ; gain = 0.000
+Command: synth_design -top design_1_xbar_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15876
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:01:17 . Memory (MB): peak = 1216.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_axi_crossbar' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_crossbar_sasd' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_addr_decoder' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_decoder' (3#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_decerr_slave' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_decerr_slave' (4#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_addr_arbiter_sasd' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_arbiter_sasd' (5#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_splitter' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_splitter' (6#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_splitter__parameterized0' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_splitter__parameterized0' (6#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice' (8#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_crossbar_sasd' (9#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_axi_crossbar' (10#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+WARNING: [Synth 8-7129] Port S[0] in module generic_baseblocks_v2_1_0_mux_enc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[7] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[6] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[5] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[4] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[3] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[2] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_26_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_26_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[1] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:52 ; elapsed = 00:01:45 . Memory (MB): peak = 1259.070 ; gain = 42.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:48 . Memory (MB): peak = 1259.070 ; gain = 42.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:48 . Memory (MB): peak = 1259.070 ; gain = 42.625
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1259.070 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1259.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 1263.418 ; gain = 4.348
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:25 ; elapsed = 00:02:27 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:25 ; elapsed = 00:02:27 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:02:27 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:26 ; elapsed = 00:02:29 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.gen/sources_1/bd/design_1/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:02:40 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:01 ; elapsed = 00:03:09 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:03:11 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:03 ; elapsed = 00:03:12 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:24 ; elapsed = 00:03:36 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:24 ; elapsed = 00:03:36 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:24 ; elapsed = 00:03:37 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:24 ; elapsed = 00:03:37 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:25 ; elapsed = 00:03:37 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:25 ; elapsed = 00:03:37 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     9|
+|3     |LUT3 |     5|
+|4     |LUT4 |    49|
+|5     |LUT5 |    16|
+|6     |LUT6 |    54|
+|7     |FDRE |   130|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:25 ; elapsed = 00:03:37 . Memory (MB): peak = 1263.418 ; gain = 46.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:03:23 . Memory (MB): peak = 1263.418 ; gain = 42.625
+Synthesis Optimization Complete : Time (s): cpu = 00:02:25 ; elapsed = 00:03:37 . Memory (MB): peak = 1263.418 ; gain = 46.973
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1272.141 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1282.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 192539f0
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:42 ; elapsed = 00:04:04 . Memory (MB): peak = 1282.773 ; gain = 66.328
+INFO: [Common 17-1381] The checkpoint 'C:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = ac403647ae213152
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/20002890/SoC_7_Timers_GIC/SoC_7_Timers_GIC.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 23 21:28:56 2022...

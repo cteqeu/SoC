@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="TimersGICApp" location="C:/Users/20002890/SoC_7_Timers_GIC/Vitis/TimersGICApp" platform="C:/Users/20002890/SoC_7_Timers_GIC/Vitis/SoC_7_Timers_GIC/export/SoC_7_Timers_GIC/SoC_7_Timers_GIC.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="TimersGICApp_system" sysConfig="SoC_7_Timers_GIC" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="9ca35ef0a3508ddd70f5f65c627e0b08">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.2034762634">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1042590144" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

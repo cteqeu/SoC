@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="TimersGICApp_system" platform="C:/Users/20002890/SoC_7_Timers_GIC/Vitis/SoC_7_Timers_GIC/export/SoC_7_Timers_GIC/SoC_7_Timers_GIC.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" sysConfig="SoC_7_Timers_GIC" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.228207824">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="TimersGICApp" domainName="standalone_ps7_cortexa9_0" domainPrettyName="standalone_ps7_cortexa9_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.2079763995">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="TimersGICApp" domainName="standalone_ps7_cortexa9_0" domainPrettyName="standalone_ps7_cortexa9_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>
