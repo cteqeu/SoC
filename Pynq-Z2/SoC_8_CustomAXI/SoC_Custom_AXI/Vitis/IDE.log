@@ -1,0 +1,64 @@
+20:22:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\8_SoC_AXI\SoC_Custom_AXI\Vitis\temp_xsdb_launch_script.tcl
+20:22:08 INFO  : Registering command handlers for Vitis TCF services
+20:22:08 INFO  : Platform repository initialization has completed.
+20:22:14 INFO  : XSCT server has started successfully.
+20:22:18 INFO  : plnx-install-location is set to ''
+20:22:18 INFO  : Successfully done setting XSCT server connection channel  
+20:22:18 INFO  : Successfully done query RDI_DATADIR 
+20:22:18 INFO  : Successfully done setting workspace for the tool. 
+20:24:53 INFO  : Result from executing command 'getProjects': SoC_Custom_AXI
+20:24:53 INFO  : Result from executing command 'getPlatforms': 
+20:24:53 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:24:54 INFO  : Platform 'SoC_Custom_AXI' is added to custom repositories.
+20:25:17 INFO  : Platform 'SoC_Custom_AXI' is added to custom repositories.
+20:33:12 INFO  : Result from executing command 'getProjects': SoC_Custom_AXI
+20:33:12 INFO  : Result from executing command 'getPlatforms': SoC_Custom_AXI|C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/SoC_Custom_AXI/export/SoC_Custom_AXI/SoC_Custom_AXI.xpfm
+20:34:25 INFO  : Checking for BSP changes to sync application flags for project 'Soc_CustomAXI_App'...
+20:36:05 INFO  : Checking for BSP changes to sync application flags for project 'Soc_CustomAXI_App'...
+20:36:58 INFO  : Checking for BSP changes to sync application flags for project 'Soc_CustomAXI_App'...
+20:37:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:37:33 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:37:33 INFO  : 'jtag frequency' command is executed.
+20:37:33 INFO  : Context for 'APU' is selected.
+20:37:33 INFO  : System reset is completed.
+20:37:36 INFO  : 'after 3000' command is executed.
+20:37:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:37:39 INFO  : Device configured successfully with "C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/Soc_CustomAXI_App/_ide/bitstream/SoC_Custom_AXI.bit"
+20:37:39 INFO  : Context for 'APU' is selected.
+20:37:39 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/SoC_Custom_AXI/export/SoC_Custom_AXI/hw/SoC_Custom_AXI.xsa'.
+20:37:39 INFO  : 'configparams force-mem-access 1' command is executed.
+20:37:39 INFO  : Context for 'APU' is selected.
+20:37:39 INFO  : Sourcing of 'C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/Soc_CustomAXI_App/_ide/psinit/ps7_init.tcl' is done.
+20:37:41 INFO  : 'ps7_init' command is executed.
+20:37:41 INFO  : 'ps7_post_config' command is executed.
+20:37:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:37:41 INFO  : The application 'C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/Soc_CustomAXI_App/Debug/Soc_CustomAXI_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:37:41 INFO  : 'configparams force-mem-access 0' command is executed.
+20:37:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/Soc_CustomAXI_App/_ide/bitstream/SoC_Custom_AXI.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/SoC_Custom_AXI/export/SoC_Custom_AXI/hw/SoC_Custom_AXI.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/Soc_CustomAXI_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/8_SoC_AXI/SoC_Custom_AXI/Vitis/Soc_CustomAXI_App/Debug/Soc_CustomAXI_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:37:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:37:42 INFO  : 'con' command is executed.
+20:37:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:37:42 INFO  : Launch script is exported to file 'C:\devWorks\8_SoC_AXI\SoC_Custom_AXI\Vitis\Soc_CustomAXI_App_system\_ide\scripts\debugger_soc_customaxi_app-default.tcl'
+20:41:47 INFO  : Disconnected from the channel tcfchan#4.
