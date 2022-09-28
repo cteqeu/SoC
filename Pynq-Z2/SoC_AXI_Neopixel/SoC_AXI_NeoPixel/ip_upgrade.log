@@ -1,0 +1,37 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Wed Jun  8 15:45:27 2022
+| Host         : PF1K6K4W running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_AXI_NeoPixel_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_AXI_NeoPixel_0_0 (cteq:PXL:AXI_NeoPixel:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Tue Jun  7 16:06:04 2022
+| Host         : PF1K6K4W running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_AXI_NeoPixel_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_AXI_NeoPixel_0_0 (cteq:PXL:AXI_NeoPixel:1.0) from (Rev. 3) to (Rev. 4)
+

@@ -1,0 +1,632 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5DC717D185DF3331",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../XTRA_SoC_Neopixel.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "xtra_cteq_neopixel_0": "",
+      "vio_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "dout_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "143.688"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "96.948"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50"
+          },
+          "CLKOUT1_USED": {
+            "value": "true"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "8.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "20.000"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "xtra_cteq_neopixel_0": {
+        "vlnv": "xilinx.com:module_ref:xtra_cteq_neopixel:1.0",
+        "xci_name": "design_1_xtra_cteq_neopixel_0_0",
+        "xci_path": "ip\\design_1_xtra_cteq_neopixel_0_0\\design_1_xtra_cteq_neopixel_0_0.xci",
+        "inst_hier_path": "xtra_cteq_neopixel_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xtra_cteq_neopixel",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "LEDS_0": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_1": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_2": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_3": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_4": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_5": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_6": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_7": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_8": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_9": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_10": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_11": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_12": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_13": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_14": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_15": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_16": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_17": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_18": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_19": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_20": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_21": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_22": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_23": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_24": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_25": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_26": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_27": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_28": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_29": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_30": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_31": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_32": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_33": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_34": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_35": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_36": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_37": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_38": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_39": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_40": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_41": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_42": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_43": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_44": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_45": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_46": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_47": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_48": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_49": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_50": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_51": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_52": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_53": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_54": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_55": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_56": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_57": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_58": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_59": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_60": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_61": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_62": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "LEDS_63": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "d_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_0",
+        "xci_path": "ip\\design_1_vio_0_0\\design_1_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "8"
+          },
+          "C_PROBE_OUT0_INIT_VAL": {
+            "value": "0x00FF00"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE_OUT1_INIT_VAL": {
+            "value": "0x00FF00"
+          },
+          "C_PROBE_OUT1_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE_OUT2_INIT_VAL": {
+            "value": "0x00FF00"
+          },
+          "C_PROBE_OUT2_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE_OUT3_INIT_VAL": {
+            "value": "0x0000FF"
+          },
+          "C_PROBE_OUT3_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE_OUT4_INIT_VAL": {
+            "value": "0x0000FF"
+          },
+          "C_PROBE_OUT4_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE_OUT5_INIT_VAL": {
+            "value": "0x0000FF"
+          },
+          "C_PROBE_OUT5_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE_OUT6_INIT_VAL": {
+            "value": "0x0FF000"
+          },
+          "C_PROBE_OUT6_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE_OUT7_INIT_VAL": {
+            "value": "0x0FF000"
+          },
+          "C_PROBE_OUT7_WIDTH": {
+            "value": "24"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "vio_0/probe_out4",
+          "xtra_cteq_neopixel_0/LEDS_32",
+          "xtra_cteq_neopixel_0/LEDS_33",
+          "xtra_cteq_neopixel_0/LEDS_34",
+          "xtra_cteq_neopixel_0/LEDS_35",
+          "xtra_cteq_neopixel_0/LEDS_36",
+          "xtra_cteq_neopixel_0/LEDS_37",
+          "xtra_cteq_neopixel_0/LEDS_38",
+          "xtra_cteq_neopixel_0/LEDS_39"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "vio_0/probe_out5",
+          "xtra_cteq_neopixel_0/LEDS_40",
+          "xtra_cteq_neopixel_0/LEDS_41",
+          "xtra_cteq_neopixel_0/LEDS_42",
+          "xtra_cteq_neopixel_0/LEDS_43",
+          "xtra_cteq_neopixel_0/LEDS_44",
+          "xtra_cteq_neopixel_0/LEDS_45",
+          "xtra_cteq_neopixel_0/LEDS_46",
+          "xtra_cteq_neopixel_0/LEDS_47"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "vio_0/probe_out7",
+          "xtra_cteq_neopixel_0/LEDS_63",
+          "xtra_cteq_neopixel_0/LEDS_62",
+          "xtra_cteq_neopixel_0/LEDS_61",
+          "xtra_cteq_neopixel_0/LEDS_60",
+          "xtra_cteq_neopixel_0/LEDS_59",
+          "xtra_cteq_neopixel_0/LEDS_58",
+          "xtra_cteq_neopixel_0/LEDS_57",
+          "xtra_cteq_neopixel_0/LEDS_56"
+        ]
+      },
+      "Net3": {
+        "ports": [
+          "vio_0/probe_out6",
+          "xtra_cteq_neopixel_0/LEDS_48",
+          "xtra_cteq_neopixel_0/LEDS_49",
+          "xtra_cteq_neopixel_0/LEDS_50",
+          "xtra_cteq_neopixel_0/LEDS_51",
+          "xtra_cteq_neopixel_0/LEDS_52",
+          "xtra_cteq_neopixel_0/LEDS_53",
+          "xtra_cteq_neopixel_0/LEDS_54",
+          "xtra_cteq_neopixel_0/LEDS_55"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "xtra_cteq_neopixel_0/clk"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1",
+          "vio_0/clk"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "xtra_cteq_neopixel_0/LEDS_0",
+          "xtra_cteq_neopixel_0/LEDS_1",
+          "xtra_cteq_neopixel_0/LEDS_2",
+          "xtra_cteq_neopixel_0/LEDS_3",
+          "xtra_cteq_neopixel_0/LEDS_4",
+          "xtra_cteq_neopixel_0/LEDS_5",
+          "xtra_cteq_neopixel_0/LEDS_6",
+          "xtra_cteq_neopixel_0/LEDS_7"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "xtra_cteq_neopixel_0/LEDS_8",
+          "xtra_cteq_neopixel_0/LEDS_9",
+          "xtra_cteq_neopixel_0/LEDS_10",
+          "xtra_cteq_neopixel_0/LEDS_11",
+          "xtra_cteq_neopixel_0/LEDS_12",
+          "xtra_cteq_neopixel_0/LEDS_13",
+          "xtra_cteq_neopixel_0/LEDS_14",
+          "xtra_cteq_neopixel_0/LEDS_15"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "xtra_cteq_neopixel_0/LEDS_16",
+          "xtra_cteq_neopixel_0/LEDS_17",
+          "xtra_cteq_neopixel_0/LEDS_18",
+          "xtra_cteq_neopixel_0/LEDS_19",
+          "xtra_cteq_neopixel_0/LEDS_20",
+          "xtra_cteq_neopixel_0/LEDS_21",
+          "xtra_cteq_neopixel_0/LEDS_22",
+          "xtra_cteq_neopixel_0/LEDS_23"
+        ]
+      },
+      "vio_0_probe_out3": {
+        "ports": [
+          "vio_0/probe_out3",
+          "xtra_cteq_neopixel_0/LEDS_24",
+          "xtra_cteq_neopixel_0/LEDS_25",
+          "xtra_cteq_neopixel_0/LEDS_26",
+          "xtra_cteq_neopixel_0/LEDS_27",
+          "xtra_cteq_neopixel_0/LEDS_28",
+          "xtra_cteq_neopixel_0/LEDS_29",
+          "xtra_cteq_neopixel_0/LEDS_30",
+          "xtra_cteq_neopixel_0/LEDS_31"
+        ]
+      },
+      "xtra_cteq_neopixel_0_d_out": {
+        "ports": [
+          "xtra_cteq_neopixel_0/d_out",
+          "dout_0"
+        ]
+      }
+    }
+  }
+}

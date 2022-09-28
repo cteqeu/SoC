@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="NeoPixel_App" location="C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App" platform="C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/SoC_AXI_NeoPixel.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="NeoPixel_App_system" sysConfig="SoC_AXI_NeoPixel" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="f74a1c3d09fa409e6361f9a27740aca4">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1316777336">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.82267060" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

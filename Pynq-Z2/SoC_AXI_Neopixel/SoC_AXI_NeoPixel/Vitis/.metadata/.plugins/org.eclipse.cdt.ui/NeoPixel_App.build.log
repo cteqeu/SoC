@@ -1,0 +1,32 @@
+22:07:02 **** Incremental Build of configuration Debug for project NeoPixel_App ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/sw/SoC_AXI_NeoPixel/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   63 |     printf("\n\r%d\n\r",AXI_NEOPIXEL_mReadReg(XPAR_AXI_NEOPIXEL_0_S00_AXI_BASEADDR, AXI_NEOPIXEL_S00_AXI_SLV_REG0_OFFSET));
+      |                 ~^
+      |                  |
+      |                  int
+      |                 %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: NeoPixel_App.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/sw/SoC_AXI_NeoPixel/standalone_ps7_cortexa9_0/bsplib/lib -o "NeoPixel_App.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: NeoPixel_App.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size NeoPixel_App.elf  |tee "NeoPixel_App.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50743	   2548	  22640	  75931	  1289b	NeoPixel_App.elf
+'Finished building: NeoPixel_App.elf.size'
+' '
+
+22:07:05 Build Finished (took 3s.207ms)
+

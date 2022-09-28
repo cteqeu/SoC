@@ -1,0 +1,514 @@
+16:08:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\temp_xsdb_launch_script.tcl
+16:08:34 INFO  : Registering command handlers for Vitis TCF services
+16:08:34 INFO  : Platform repository initialization has completed.
+16:08:40 INFO  : XSCT server has started successfully.
+16:08:40 INFO  : Successfully done setting XSCT server connection channel  
+16:08:42 INFO  : plnx-install-location is set to ''
+16:08:42 INFO  : Successfully done setting workspace for the tool. 
+16:08:42 INFO  : Successfully done query RDI_DATADIR 
+16:11:30 INFO  : Result from executing command 'getProjects': SoC_AXI_NeoPixel2
+16:11:30 INFO  : Result from executing command 'getPlatforms': 
+16:11:30 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:11:31 INFO  : Platform 'SoC_AXI_NeoPixel2' is added to custom repositories.
+16:11:59 INFO  : Platform 'SoC_AXI_NeoPixel2' is added to custom repositories.
+16:58:23 INFO  : Result from executing command 'getProjects': SoC_AXI_NeoPixel2
+16:58:23 INFO  : Result from executing command 'getPlatforms': SoC_AXI_NeoPixel2|C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/SoC_AXI_NeoPixel2.xpfm
+16:59:20 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+17:00:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:00:38 INFO  : 'jtag frequency' command is executed.
+17:00:38 INFO  : Context for 'APU' is selected.
+17:00:38 INFO  : System reset is completed.
+17:00:41 INFO  : 'after 3000' command is executed.
+17:00:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:00:44 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+17:00:44 INFO  : Context for 'APU' is selected.
+17:00:44 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+17:00:44 INFO  : 'configparams force-mem-access 1' command is executed.
+17:00:44 INFO  : Context for 'APU' is selected.
+17:00:44 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+17:00:45 INFO  : 'ps7_init' command is executed.
+17:00:45 INFO  : 'ps7_post_config' command is executed.
+17:00:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:00:46 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:00:46 INFO  : 'configparams force-mem-access 0' command is executed.
+17:00:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:00:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:00:47 INFO  : 'con' command is executed.
+17:00:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:00:47 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+17:01:13 INFO  : Disconnected from the channel tcfchan#2.
+17:01:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:15 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:01:15 INFO  : 'jtag frequency' command is executed.
+17:01:16 INFO  : Context for 'APU' is selected.
+17:01:16 INFO  : System reset is completed.
+17:01:19 INFO  : 'after 3000' command is executed.
+17:01:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:01:22 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+17:01:22 INFO  : Context for 'APU' is selected.
+17:01:22 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+17:01:22 INFO  : 'configparams force-mem-access 1' command is executed.
+17:01:22 INFO  : Context for 'APU' is selected.
+17:01:22 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+17:01:24 INFO  : 'ps7_init' command is executed.
+17:01:24 INFO  : 'ps7_post_config' command is executed.
+17:01:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:25 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:01:25 INFO  : 'configparams force-mem-access 0' command is executed.
+17:01:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:01:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:25 INFO  : 'con' command is executed.
+17:01:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:01:25 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+17:02:16 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+17:02:26 INFO  : Disconnected from the channel tcfchan#3.
+17:02:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:27 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:02:27 INFO  : 'jtag frequency' command is executed.
+17:02:29 INFO  : Context for 'APU' is selected.
+17:02:29 INFO  : System reset is completed.
+17:02:32 INFO  : 'after 3000' command is executed.
+17:02:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:02:35 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+17:02:35 INFO  : Context for 'APU' is selected.
+17:02:35 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+17:02:35 INFO  : 'configparams force-mem-access 1' command is executed.
+17:02:35 INFO  : Context for 'APU' is selected.
+17:02:35 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+17:02:36 INFO  : 'ps7_init' command is executed.
+17:02:37 INFO  : 'ps7_post_config' command is executed.
+17:02:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:37 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:02:37 INFO  : 'configparams force-mem-access 0' command is executed.
+17:02:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:02:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:38 INFO  : 'con' command is executed.
+17:02:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:02:38 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+17:03:02 INFO  : Disconnected from the channel tcfchan#4.
+21:35:06 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\temp_xsdb_launch_script.tcl
+21:35:16 INFO  : XSCT server has started successfully.
+21:35:16 INFO  : plnx-install-location is set to ''
+21:35:16 INFO  : Successfully done setting XSCT server connection channel  
+21:35:16 INFO  : Successfully done setting workspace for the tool. 
+21:35:19 INFO  : Registering command handlers for Vitis TCF services
+21:35:19 INFO  : Platform repository initialization has completed.
+21:35:22 INFO  : Successfully done query RDI_DATADIR 
+21:35:55 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+21:36:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:36:16 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:36:16 INFO  : 'jtag frequency' command is executed.
+21:36:16 INFO  : Context for 'APU' is selected.
+21:36:16 INFO  : System reset is completed.
+21:36:19 INFO  : 'after 3000' command is executed.
+21:36:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:36:22 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+21:36:22 INFO  : Context for 'APU' is selected.
+21:36:22 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+21:36:22 INFO  : 'configparams force-mem-access 1' command is executed.
+21:36:22 INFO  : Context for 'APU' is selected.
+21:36:22 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+21:36:23 INFO  : 'ps7_init' command is executed.
+21:36:23 INFO  : 'ps7_post_config' command is executed.
+21:36:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:36:24 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:36:24 INFO  : 'configparams force-mem-access 0' command is executed.
+21:36:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:36:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:36:24 INFO  : 'con' command is executed.
+21:36:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:36:24 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+21:37:34 INFO  : Disconnected from the channel tcfchan#1.
+21:37:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:37:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:37:45 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:37:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:37:58 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:37:58 INFO  : 'jtag frequency' command is executed.
+21:37:58 INFO  : Context for 'APU' is selected.
+21:37:58 INFO  : System reset is completed.
+21:38:01 INFO  : 'after 3000' command is executed.
+21:38:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:38:03 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+21:38:04 INFO  : Context for 'APU' is selected.
+21:38:10 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+21:38:10 INFO  : 'configparams force-mem-access 1' command is executed.
+21:38:10 INFO  : Context for 'APU' is selected.
+21:38:10 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+21:38:12 INFO  : 'ps7_init' command is executed.
+21:38:12 INFO  : 'ps7_post_config' command is executed.
+21:38:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:38:12 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:38:12 INFO  : 'configparams force-mem-access 0' command is executed.
+21:38:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:38:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:38:13 INFO  : 'con' command is executed.
+21:38:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:38:13 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+21:39:38 INFO  : Disconnected from the channel tcfchan#2.
+21:39:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:39:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:39:49 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:44:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:44:46 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:44:46 INFO  : 'jtag frequency' command is executed.
+21:44:46 INFO  : Context for 'APU' is selected.
+21:44:46 INFO  : System reset is completed.
+21:44:49 INFO  : 'after 3000' command is executed.
+21:44:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:44:51 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+21:44:51 INFO  : Context for 'APU' is selected.
+21:44:57 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+21:44:57 INFO  : 'configparams force-mem-access 1' command is executed.
+21:44:57 INFO  : Context for 'APU' is selected.
+21:44:57 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+21:44:59 INFO  : 'ps7_init' command is executed.
+21:44:59 INFO  : 'ps7_post_config' command is executed.
+21:44:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:59 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:44:59 INFO  : 'configparams force-mem-access 0' command is executed.
+21:44:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:44:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:45:00 INFO  : 'con' command is executed.
+21:45:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:45:00 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+21:47:27 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+21:47:43 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+21:47:52 INFO  : Disconnected from the channel tcfchan#3.
+21:47:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:48:02 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:48:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:09 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:48:09 INFO  : 'jtag frequency' command is executed.
+21:48:09 INFO  : Context for 'APU' is selected.
+21:48:09 INFO  : System reset is completed.
+21:48:13 INFO  : 'after 3000' command is executed.
+21:48:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:48:15 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+21:48:16 INFO  : Context for 'APU' is selected.
+21:48:22 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+21:48:22 INFO  : 'configparams force-mem-access 1' command is executed.
+21:48:22 INFO  : Context for 'APU' is selected.
+21:48:22 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+21:48:23 INFO  : 'ps7_init' command is executed.
+21:48:24 INFO  : 'ps7_post_config' command is executed.
+21:48:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:48:24 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:48:24 INFO  : 'configparams force-mem-access 0' command is executed.
+21:48:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:48:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:48:24 INFO  : 'con' command is executed.
+21:48:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:48:24 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+21:51:12 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+21:51:21 INFO  : Disconnected from the channel tcfchan#4.
+21:51:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:51:31 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:51:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:51:38 INFO  : 'jtag frequency' command is executed.
+21:51:38 INFO  : Context for 'APU' is selected.
+21:51:38 INFO  : System reset is completed.
+21:51:41 INFO  : 'after 3000' command is executed.
+21:51:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:51:44 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+21:51:44 INFO  : Context for 'APU' is selected.
+21:51:50 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+21:51:50 INFO  : 'configparams force-mem-access 1' command is executed.
+21:51:50 INFO  : Context for 'APU' is selected.
+21:51:50 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+21:51:51 INFO  : 'ps7_init' command is executed.
+21:51:51 INFO  : 'ps7_post_config' command is executed.
+21:51:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:51:51 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:51:51 INFO  : 'configparams force-mem-access 0' command is executed.
+21:51:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:51:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:51:52 INFO  : 'con' command is executed.
+21:51:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:51:52 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+21:54:13 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+21:54:52 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+21:55:16 INFO  : Checking for BSP changes to sync application flags for project 'SoC_NeoPixel_App2'...
+21:55:26 INFO  : Disconnected from the channel tcfchan#5.
+21:55:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:55:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:55:36 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:55:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:55:42 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:55:42 INFO  : 'jtag frequency' command is executed.
+21:55:42 INFO  : Context for 'APU' is selected.
+21:55:43 INFO  : System reset is completed.
+21:55:46 INFO  : 'after 3000' command is executed.
+21:55:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:55:48 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit"
+21:55:48 INFO  : Context for 'APU' is selected.
+21:55:54 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa'.
+21:55:54 INFO  : 'configparams force-mem-access 1' command is executed.
+21:55:54 INFO  : Context for 'APU' is selected.
+21:55:54 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl' is done.
+21:55:55 INFO  : 'ps7_init' command is executed.
+21:55:55 INFO  : 'ps7_post_config' command is executed.
+21:55:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:55:55 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:55:55 INFO  : 'configparams force-mem-access 0' command is executed.
+21:55:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/bitstream/SoC_AXI_NeoPixel2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_AXI_NeoPixel2/export/SoC_AXI_NeoPixel2/hw/SoC_AXI_NeoPixel2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis2/SoC_NeoPixel_App2/Debug/SoC_NeoPixel_App2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:55:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:55:56 INFO  : 'con' command is executed.
+21:55:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:55:56 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis2\SoC_NeoPixel_App2_system\_ide\scripts\debugger_soc_neopixel_app2-default.tcl'
+22:20:54 INFO  : Disconnected from the channel tcfchan#6.

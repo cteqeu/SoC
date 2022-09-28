@@ -1,0 +1,204 @@
+21:52:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis\temp_xsdb_launch_script.tcl
+21:52:41 INFO  : Registering command handlers for Vitis TCF services
+21:52:41 INFO  : Platform repository initialization has completed.
+21:52:53 INFO  : XSCT server has started successfully.
+21:53:10 INFO  : plnx-install-location is set to ''
+21:53:10 INFO  : Successfully done setting XSCT server connection channel  
+21:53:15 INFO  : Successfully done query RDI_DATADIR 
+21:53:15 INFO  : Successfully done setting workspace for the tool. 
+21:54:04 INFO  : Result from executing command 'getProjects': SoC_AXI_NeoPixel
+21:54:04 INFO  : Result from executing command 'getPlatforms': 
+21:54:05 WARN  : An unexpected exception occurred in the module 'platform project logging'
+21:54:05 INFO  : Platform 'SoC_AXI_NeoPixel' is added to custom repositories.
+21:54:27 INFO  : Platform 'SoC_AXI_NeoPixel' is added to custom repositories.
+21:55:06 INFO  : Checking for BSP changes to sync application flags for project 'NeoPixel_App'...
+21:55:06 INFO  : Result from executing command 'getProjects': NeoPixel_App;NeoPixel_App_system;RemoteSystemsTempFiles;SoC_AXI_NeoPixel
+21:55:06 WARN  : Failed to closehw "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa"
+Reason: C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+21:55:06 INFO  : Result from executing command 'getProjects': NeoPixel_App;NeoPixel_App_system;RemoteSystemsTempFiles;SoC_AXI_NeoPixel
+21:55:06 ERROR : Failed to openhw "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa"
+Reason: C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+21:55:06 ERROR : Failed to update application flags from BSP for 'NeoPixel_App'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+22:01:12 INFO  : Result from executing command 'getProjects': SoC_AXI_NeoPixel
+22:01:12 INFO  : Result from executing command 'getPlatforms': SoC_AXI_NeoPixel|C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/SoC_AXI_NeoPixel.xpfm
+22:01:16 INFO  : Checking for BSP changes to sync application flags for project 'NeoPixel_App'...
+22:02:59 INFO  : Checking for BSP changes to sync application flags for project 'NeoPixel_App'...
+22:03:51 INFO  : Checking for BSP changes to sync application flags for project 'NeoPixel_App'...
+22:04:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:04:05 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:04:05 INFO  : 'jtag frequency' command is executed.
+22:04:05 INFO  : Context for 'APU' is selected.
+22:04:05 INFO  : System reset is completed.
+22:04:08 INFO  : 'after 3000' command is executed.
+22:04:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:04:10 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/bitstream/SoC_AXI_NeoPixel.bit"
+22:04:11 INFO  : Context for 'APU' is selected.
+22:04:11 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa'.
+22:04:11 INFO  : 'configparams force-mem-access 1' command is executed.
+22:04:11 INFO  : Context for 'APU' is selected.
+22:04:11 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/psinit/ps7_init.tcl' is done.
+22:04:12 INFO  : 'ps7_init' command is executed.
+22:04:12 INFO  : 'ps7_post_config' command is executed.
+22:04:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:04:12 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/Debug/NeoPixel_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:04:12 INFO  : 'configparams force-mem-access 0' command is executed.
+22:04:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/bitstream/SoC_AXI_NeoPixel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/Debug/NeoPixel_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:04:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:04:13 INFO  : 'con' command is executed.
+22:04:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:04:13 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis\NeoPixel_App_system\_ide\scripts\debugger_neopixel_app-default.tcl'
+22:04:44 INFO  : Checking for BSP changes to sync application flags for project 'NeoPixel_App'...
+22:05:00 INFO  : Disconnected from the channel tcfchan#4.
+22:05:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:05:01 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:05:01 ERROR : port closed
+22:05:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+22:05:01 ERROR : port closed
+22:05:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:05:08 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:05:08 INFO  : 'jtag frequency' command is executed.
+22:05:08 INFO  : Context for 'APU' is selected.
+22:05:08 INFO  : System reset is completed.
+22:05:11 INFO  : 'after 3000' command is executed.
+22:05:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:05:14 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/bitstream/SoC_AXI_NeoPixel.bit"
+22:05:14 INFO  : Context for 'APU' is selected.
+22:05:14 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa'.
+22:05:14 INFO  : 'configparams force-mem-access 1' command is executed.
+22:05:14 INFO  : Context for 'APU' is selected.
+22:05:14 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/psinit/ps7_init.tcl' is done.
+22:05:15 INFO  : 'ps7_init' command is executed.
+22:05:15 INFO  : 'ps7_post_config' command is executed.
+22:05:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:05:15 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/Debug/NeoPixel_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:05:15 INFO  : 'configparams force-mem-access 0' command is executed.
+22:05:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/bitstream/SoC_AXI_NeoPixel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/Debug/NeoPixel_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:05:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:05:16 INFO  : 'con' command is executed.
+22:05:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:05:16 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis\NeoPixel_App_system\_ide\scripts\debugger_neopixel_app-default.tcl'
+22:07:01 INFO  : Checking for BSP changes to sync application flags for project 'NeoPixel_App'...
+22:07:09 INFO  : Disconnected from the channel tcfchan#5.
+22:07:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:07:10 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:07:10 INFO  : 'jtag frequency' command is executed.
+22:07:10 INFO  : Context for 'APU' is selected.
+22:07:10 INFO  : System reset is completed.
+22:07:13 INFO  : 'after 3000' command is executed.
+22:07:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:07:16 INFO  : Device configured successfully with "C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/bitstream/SoC_AXI_NeoPixel.bit"
+22:07:16 INFO  : Context for 'APU' is selected.
+22:07:16 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa'.
+22:07:16 INFO  : 'configparams force-mem-access 1' command is executed.
+22:07:16 INFO  : Context for 'APU' is selected.
+22:07:16 INFO  : Sourcing of 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/psinit/ps7_init.tcl' is done.
+22:07:17 INFO  : 'ps7_init' command is executed.
+22:07:17 INFO  : 'ps7_post_config' command is executed.
+22:07:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:17 INFO  : The application 'C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/Debug/NeoPixel_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:07:17 INFO  : 'configparams force-mem-access 0' command is executed.
+22:07:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/bitstream/SoC_AXI_NeoPixel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/SoC_AXI_NeoPixel/export/SoC_AXI_NeoPixel/hw/SoC_AXI_NeoPixel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/Vitis/NeoPixel_App/Debug/NeoPixel_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:07:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:18 INFO  : 'con' command is executed.
+22:07:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:07:18 INFO  : Launch script is exported to file 'C:\devWorks\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\Vitis\NeoPixel_App_system\_ide\scripts\debugger_neopixel_app-default.tcl'
+22:08:27 INFO  : Disconnected from the channel tcfchan#6.

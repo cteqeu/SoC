@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Sep 28 11:17:45 2022
+# Process ID: 19132
+# Current directory: C:/Users/20002890/OneDrive - PXL/Hogeschool PXL/Onderwijs/2021-2022/DevWorks_backup27062022/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21264 C:\Users\20002890\OneDrive - PXL\Hogeschool PXL\Onderwijs\2021-2022\DevWorks_backup27062022\SoC_Neopixel_VHDL\SoC_AXI_NeoPixel\SoC_AXI_NeoPixel.xpr
+# Log file: C:/Users/20002890/OneDrive - PXL/Hogeschool PXL/Onderwijs/2021-2022/DevWorks_backup27062022/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/vivado.log
+# Journal file: C:/Users/20002890/OneDrive - PXL/Hogeschool PXL/Onderwijs/2021-2022/DevWorks_backup27062022/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel\vivado.jou
+# Running On: PF1K6K4W, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 16915 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/20002890/OneDrive - PXL/Hogeschool PXL/Onderwijs/2021-2022/DevWorks_backup27062022/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/SoC_AXI_NeoPixel.xpr}
+open_bd_design {C:/Users/20002890/OneDrive - PXL/Hogeschool PXL/Onderwijs/2021-2022/DevWorks_backup27062022/SoC_Neopixel_VHDL/SoC_AXI_NeoPixel/SoC_AXI_NeoPixel.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
