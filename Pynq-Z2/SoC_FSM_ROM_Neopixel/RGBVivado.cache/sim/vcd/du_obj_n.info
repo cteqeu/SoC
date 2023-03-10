@@ -1,0 +1,5 @@
+        In: {clk}                          VHDL   
+       Out: {addr[5:0]}                    VHDL   
+        In: {value[23:0]}                  VHDL   
+       Out: {d_out}                        VHDL   
+

@@ -1,0 +1,20 @@
++===============================+===============================+============================================================+
+| Launch Setup Clock            | Launch Hold Clock             | Pin                                                        |
++===============================+===============================+============================================================+
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[3]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[4]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[7]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[13]/D |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[10]/D |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[12]/D |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[9]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[1]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[6]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[15]/D |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[8]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[11]/D |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[14]/D |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[2]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[0]/D  |
+| clk_out1_design_1_clk_wiz_0_0 | clk_out1_design_1_clk_wiz_0_0 | design_1_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[5]/D  |
++-------------------------------+-------------------------------+------------------------------------------------------------+

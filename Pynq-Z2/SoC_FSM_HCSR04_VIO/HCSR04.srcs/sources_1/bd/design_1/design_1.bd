@@ -1,0 +1,201 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6766CA5CAD70E526",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../HCSR04.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vio_0": "",
+      "clk_wiz_0": "",
+      "HC_SR04_0": ""
+    },
+    "ports": {
+      "sonar_trig_0": {
+        "direction": "O"
+      },
+      "sonar_echo_0": {
+        "direction": "I"
+      },
+      "clk_in1_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_0",
+        "xci_path": "ip\\design_1_vio_0_0\\design_1_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_OUT": {
+            "value": "0"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "80.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "205.508"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "233.292"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "184.005"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "233.292"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "210"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "42.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "8.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "10.500"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "5"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "125"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "HC_SR04_0": {
+        "vlnv": "xilinx.com:module_ref:HC_SR04:1.0",
+        "xci_name": "design_1_HC_SR04_0_0",
+        "xci_path": "ip\\design_1_HC_SR04_0_0\\design_1_HC_SR04_0_0.xci",
+        "inst_hier_path": "HC_SR04_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "HC_SR04",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sonar_trig": {
+            "direction": "O"
+          },
+          "sonar_echo": {
+            "direction": "I"
+          },
+          "centimeter": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "HC_SR04_0_centimeter": {
+        "ports": [
+          "HC_SR04_0/centimeter",
+          "vio_0/probe_in0"
+        ]
+      },
+      "HC_SR04_0_sonar_trig": {
+        "ports": [
+          "HC_SR04_0/sonar_trig",
+          "sonar_trig_0"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "clk_in1_0",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "HC_SR04_0/clk"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "vio_0/clk"
+        ]
+      },
+      "sonar_echo_0_1": {
+        "ports": [
+          "sonar_echo_0",
+          "HC_SR04_0/sonar_echo"
+        ]
+      }
+    }
+  }
+}

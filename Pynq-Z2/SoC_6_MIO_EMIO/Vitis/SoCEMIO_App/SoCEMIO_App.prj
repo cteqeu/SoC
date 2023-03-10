@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="SoCEMIO_App" location="C:/devWorks/SoC_MIO_EMIO/Vitis/SoCEMIO_App" platform="C:/devWorks/SoC_MIO_EMIO/Vitis/SoCMIOEMIO/export/SoCMIOEMIO/SoCMIOEMIO.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="SoCEMIO_App_system" sysConfig="SoCMIOEMIO" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="12cda56e7fab05ffb7a1d45a4ec9577e">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1667044200" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.688083018" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

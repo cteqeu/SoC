@@ -1,0 +1,39 @@
+// Developed by www.cteq.eu
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "xparameters.h"
+#include "xgpiops.h
+
+#ifndef GPIO_DEVICE_ID
+#define GPIO_DEVICE_ID
+#endif
+
+#define LED_DELAY 100000
+#define printf xil_printf
+
+// Remember Bank 2 start at 54 as in the Zynq TRM pdf file stated...
+
+#define LED0 54
+#define LED1 55
+#define LED2 56
+#define LED3 57
+#define LED4_B 58
+#define LED4_R 59
+#define LED4_G 60
+#define LED5_B 61
+#define LED5_R 62
+#define LED5_G 63
+
+
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application");
+    cleanup_platform();
+    return 0;
+}

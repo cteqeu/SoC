@@ -1,0 +1,195 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar  9 19:38:15 2023
+| Host         : PF1K6K4W running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 32
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 32         |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.015 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[16]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[16]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.016 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[2]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.048 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[21]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[21]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.059 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[15]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[15]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.081 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[23]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[23]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.114 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[14]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[14]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.149 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[10]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[10]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.173 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[6]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[6]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.179 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[1]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[1]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.186 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[11]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[11]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.186 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[20]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[20]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.186 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[3]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.191 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[8]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[8]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.195 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[0]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[0]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.200 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[9]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[9]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.201 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[17]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[17]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.242 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[12]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[12]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.244 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[13]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[13]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.251 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[18]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[18]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.299 ns between design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[22]_psbram/C (clocked by clk_out2_design_1_clk_wiz_0_0) and design_1_i/NeoPixel_0/U0/comb_proc.GRB_reg[22]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.660 ns between design_1_i/NeoPixel_0/U0/addr_reg[0]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRBWRADDR[5] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.664 ns between design_1_i/NeoPixel_0/U0/addr_reg[0]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[5] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.701 ns between design_1_i/NeoPixel_0/U0/addr_reg[2]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRBWRADDR[7] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.705 ns between design_1_i/NeoPixel_0/U0/addr_reg[2]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[7] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.716 ns between design_1_i/NeoPixel_0/U0/addr_reg[3]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRBWRADDR[8] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.719 ns between design_1_i/NeoPixel_0/U0/addr_reg[3]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[8] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -1.737 ns between design_1_i/NeoPixel_0/U0/addr_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRBWRADDR[10] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -1.739 ns between design_1_i/NeoPixel_0/U0/addr_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -1.755 ns between design_1_i/NeoPixel_0/U0/addr_reg[4]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRBWRADDR[9] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -1.804 ns between design_1_i/NeoPixel_0/U0/addr_reg[1]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRBWRADDR[6] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -1.867 ns between design_1_i/NeoPixel_0/U0/addr_reg[1]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[6] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -1.887 ns between design_1_i/NeoPixel_0/U0/addr_reg[4]/C (clocked by clk_out1_design_1_clk_wiz_0_0) and design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[9] (clocked by clk_out2_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+

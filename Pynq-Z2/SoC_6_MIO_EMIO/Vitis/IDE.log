@@ -1,0 +1,63 @@
+21:21:31 DEBUG : Logs will be stored at 'C:/devWorks/SoC_MIO_EMIO/Vitis/IDE.log'.
+21:21:42 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\SoC_MIO_EMIO\Vitis\temp_xsdb_launch_script.tcl
+21:21:48 INFO  : Platform repository initialization has completed.
+21:21:48 INFO  : Registering command handlers for Vitis TCF services
+21:21:56 INFO  : XSCT server has started successfully.
+21:21:56 INFO  : plnx-install-location is set to ''
+21:21:56 INFO  : Successfully done setting XSCT server connection channel  
+21:21:58 INFO  : Successfully done setting workspace for the tool. 
+21:21:58 INFO  : Successfully done query RDI_DATADIR 
+21:23:17 INFO  : Result from executing command 'getProjects': SoCMIOEMIO
+21:23:17 INFO  : Result from executing command 'getPlatforms': 
+21:23:18 WARN  : An unexpected exception occurred in the module 'platform project logging'
+21:23:19 INFO  : Platform 'SoCMIOEMIO' is added to custom repositories.
+21:23:51 INFO  : Platform 'SoCMIOEMIO' is added to custom repositories.
+21:30:09 INFO  : Result from executing command 'getProjects': SoCMIOEMIO
+21:30:10 INFO  : Result from executing command 'getPlatforms': SoCMIOEMIO|C:/devWorks/SoC_MIO_EMIO/Vitis/SoCMIOEMIO/export/SoCMIOEMIO/SoCMIOEMIO.xpfm
+21:40:36 INFO  : Checking for BSP changes to sync application flags for project 'SoCEMIO_App'...
+21:40:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:41:01 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:41:01 INFO  : 'jtag frequency' command is executed.
+21:41:01 INFO  : Context for 'APU' is selected.
+21:41:01 INFO  : System reset is completed.
+21:41:04 INFO  : 'after 3000' command is executed.
+21:41:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:41:07 INFO  : Device configured successfully with "C:/devWorks/SoC_MIO_EMIO/Vitis/SoCEMIO_App/_ide/bitstream/SoCMIOEMIO.bit"
+21:41:07 INFO  : Context for 'APU' is selected.
+21:41:07 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/SoC_MIO_EMIO/Vitis/SoCMIOEMIO/export/SoCMIOEMIO/hw/SoCMIOEMIO.xsa'.
+21:41:07 INFO  : 'configparams force-mem-access 1' command is executed.
+21:41:07 INFO  : Context for 'APU' is selected.
+21:41:07 INFO  : Sourcing of 'C:/devWorks/SoC_MIO_EMIO/Vitis/SoCEMIO_App/_ide/psinit/ps7_init.tcl' is done.
+21:41:08 INFO  : 'ps7_init' command is executed.
+21:41:08 INFO  : 'ps7_post_config' command is executed.
+21:41:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:41:08 INFO  : The application 'C:/devWorks/SoC_MIO_EMIO/Vitis/SoCEMIO_App/Debug/SoCEMIO_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:41:08 INFO  : 'configparams force-mem-access 0' command is executed.
+21:41:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/SoC_MIO_EMIO/Vitis/SoCEMIO_App/_ide/bitstream/SoCMIOEMIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/SoC_MIO_EMIO/Vitis/SoCMIOEMIO/export/SoCMIOEMIO/hw/SoCMIOEMIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/SoC_MIO_EMIO/Vitis/SoCEMIO_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/SoC_MIO_EMIO/Vitis/SoCEMIO_App/Debug/SoCEMIO_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:41:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:41:09 INFO  : 'con' command is executed.
+21:41:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:41:09 INFO  : Launch script is exported to file 'C:\devWorks\SoC_MIO_EMIO\Vitis\SoCEMIO_App_system\_ide\scripts\debugger_socemio_app-default.tcl'
+22:31:08 INFO  : Disconnected from the channel tcfchan#2.

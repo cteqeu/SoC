@@ -1,0 +1,257 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1974016893E37189",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../RGBVivado.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "blk_mem_gen_0": "",
+      "clk_wiz_0": "",
+      "NeoPixel_0": ""
+    },
+    "ports": {
+      "d_out_0": {
+        "direction": "O"
+      },
+      "clk_in1_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "design_1_blk_mem_gen_0_0",
+        "xci_path": "ip\\design_1_blk_mem_gen_0_0\\design_1_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../RGBMemory.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Port_A_Write_Rate": {
+            "value": "0"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Remaining_Memory_Locations": {
+            "value": "FFFFFF"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "64"
+          },
+          "Write_Width_A": {
+            "value": "24"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "80.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "360.992"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "335.459"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "304.177"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "335.459"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "120"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLKOUT3_JITTER": {
+            "value": "411.350"
+          },
+          "CLKOUT3_PHASE_ERROR": {
+            "value": "335.459"
+          },
+          "CLKOUT3_REQUESTED_OUT_FREQ": {
+            "value": "25"
+          },
+          "CLKOUT3_USED": {
+            "value": "false"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "24.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "8.0"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "12.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "5"
+          },
+          "MMCM_CLKOUT2_DIVIDE": {
+            "value": "1"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "125"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "NeoPixel_0": {
+        "vlnv": "xilinx.com:module_ref:NeoPixel:1.0",
+        "xci_name": "design_1_NeoPixel_0_0",
+        "xci_path": "ip\\design_1_NeoPixel_0_0\\design_1_NeoPixel_0_0.xci",
+        "inst_hier_path": "NeoPixel_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "NeoPixel",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "addr": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "value": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "d_out": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "NeoPixel_0_addr": {
+        "ports": [
+          "NeoPixel_0/addr",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "NeoPixel_0_d_out": {
+        "ports": [
+          "NeoPixel_0/d_out",
+          "d_out_0"
+        ]
+      },
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "NeoPixel_0/value"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "clk_in1_0",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "NeoPixel_0/clk"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "blk_mem_gen_0/clka"
+        ]
+      }
+    }
+  }
+}
